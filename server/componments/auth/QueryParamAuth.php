@@ -8,7 +8,7 @@
 namespace app\componments\auth;
 
 use app\models\AdminAuth;
-use app\models\AuthGroup;
+
 use app\models\AdminGroup;
 use app\models\AdminGroupAuth;
 use app\models\AdminUser;
@@ -45,9 +45,9 @@ class QueryParamAuth extends AuthMethod
         }
 
         $service=\Yii::$app->getRequest()->post('service');
-        if($service=='user.login'){
-            return true;
-        }
+
+
+
 
         //验证token的
         UserService::getAdminUser();

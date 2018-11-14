@@ -3,11 +3,8 @@
 namespace app\modules\v1\forms\user;
 
 
+use app\componments\utils\ApiException;
 use app\models\AdminUser;
-use app\modules\v1\service\user\UserService;
-use app\modules\v1\utils\ApiException;
-use app\modules\v1\utils\CodeMsgMap;
-use yii\base\Model;
 use app\modules\v1\forms\CommonForm;
 
 class GetOneForm extends CommonForm

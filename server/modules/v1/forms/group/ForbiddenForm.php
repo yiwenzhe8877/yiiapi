@@ -5,9 +5,10 @@ namespace app\modules\v1\forms\group;
 
 use app\models\AdminGroup;
 use app\models\AdminUser;
-use app\modules\v1\utils\ApiException;
+
 use yii\base\Model;
 use app\modules\v1\forms\CommonForm;
+use app\componments\utils\ApiException;
 
 class ForbiddenForm extends CommonForm
 {

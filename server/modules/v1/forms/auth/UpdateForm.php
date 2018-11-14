@@ -8,7 +8,8 @@ use app\models\AdminGroup;
 use app\models\AdminUser;
 use app\modules\v1\forms\CommonForm;
 use app\modules\v1\service\model\UpdateService;
-use app\modules\v1\utils\ApiException;
+
+use app\componments\utils\ApiException;
 
 class UpdateForm extends CommonForm
 {

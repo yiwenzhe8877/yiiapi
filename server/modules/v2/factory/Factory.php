@@ -6,48 +6,20 @@
  * Time: 10:22
  */
 
-namespace app\modules\v1\factory;
+namespace app\modules\v2\factory;
 
 
-use app\modules\v1\utils\ApiException;
+use app\componments\utils\ApiException;
 
 class Factory
 {
     static public $SERVICE_MAP =[
-        //后台管理
-        'user.delete'=>'app\modules\v1\factory\UserFactory',
-        'user.add'=>'app\modules\v1\factory\UserFactory',
-        'user.update'=>'app\modules\v1\factory\UserFactory',
-        'user.getlist'=>'app\modules\v1\factory\UserFactory',
-        'user.getone'=>'app\modules\v1\factory\UserFactory',
-        'user.getadmin'=>'app\modules\v1\factory\UserFactory',
-        'user.changepassword'=>'app\modules\v1\factory\UserFactory',
-        'user.login'=>'app\modules\v1\factory\UserFactory',
-        'user.logout'=>'app\modules\v1\factory\UserFactory',
-        //后台管理组
-        'group.delete'=>'app\modules\v1\factory\GroupFactory',
-        'group.add'=>'app\modules\v1\factory\GroupFactory',
-        'group.update'=>'app\modules\v1\factory\GroupFactory',
-        'group.getlist'=>'app\modules\v1\factory\GroupFactory',
-        'group.getall'=>'app\modules\v1\factory\GroupFactory',
-        //权限
-        'auth.delete'=>'app\modules\v1\factory\AuthFactory',
-        'auth.add'=>'app\modules\v1\factory\AuthFactory',
-        'auth.update'=>'app\modules\v1\factory\AuthFactory',
-        'auth.getlist'=>'app\modules\v1\factory\AuthFactory',
-        'auth.getall'=>'app\modules\v1\factory\AuthFactory',
-        'auth.setgroupauth'=>'app\modules\v1\factory\AuthFactory',
-        'auth.syncgroupauth'=>'app\modules\v1\factory\AuthFactory',
-        'auth.getgroupauthlist'=>'app\modules\v1\factory\AuthFactory',
-        //菜单
-        'menu.delete'=>'app\modules\v1\factory\MenuFactory',
-        'menu.add'=>'app\modules\v1\factory\MenuFactory',
-        'menu.update'=>'app\modules\v1\factory\MenuFactory',
-        'menu.getlist'=>'app\modules\v1\factory\MenuFactory',
-        'menu.getall'=>'app\modules\v1\factory\MenuFactory',
-        'menu.syncgroupmenu'=>'app\modules\v1\factory\MenuFactory',
-        'menu.setgroupmenu'=>'app\modules\v1\factory\MenuFactory',
-        'menu.getmenugrouprelation'=>'app\modules\v1\factory\MenuFactory',
+        //会员
+        'member.register'=>'app\modules\v2\factory\MemberFactory',
+        'member.login'=>'app\modules\v2\factory\MemberFactory',
+        'member.forgetpassword'=>'app\modules\v2\factory\MemberFactory',
+        'member.logout'=>'app\modules\v2\factory\MemberFactory',
+        'member.getbaseinfo'=>'app\modules\v2\factory\MemberFactory',
 
     ];
 

@@ -3,10 +3,9 @@
 namespace app\modules\v1\forms\user;
 
 
-use app\models\AdminGroup;
+use app\componments\utils\ApiException;
 use app\models\AdminUser;
 use app\modules\v1\forms\CommonForm;
-use app\modules\v1\utils\ApiException;
 
 class ChangePasswordForm extends CommonForm
 {

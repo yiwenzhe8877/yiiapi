@@ -1,8 +1,8 @@
 <?php
 
-namespace app\modules\v1\common;
+namespace app\modules\v2\common;
 
-use app\componments\auth\QueryParamAuth;
+use app\modules\v2\components\auth\QueryParamAuth;
 use app\componments\filter\VerbFilter;
 use yii\filters\ContentNegotiator;
 use yii\filters\Cors;

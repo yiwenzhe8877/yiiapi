@@ -7,7 +7,7 @@ use app\models\AdminMenu;
 use app\modules\v1\forms\CommonForm;
 use app\modules\v1\service\menu\MenuService;
 use app\modules\v1\service\model\AddService;
-use app\modules\v1\utils\ApiException;
+use app\componments\utils\ApiException;
 
 class AddForm extends CommonForm
 {

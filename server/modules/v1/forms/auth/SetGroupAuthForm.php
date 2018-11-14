@@ -7,7 +7,7 @@ use app\models\AdminAuth;
 use app\models\AdminGroup;
 use app\models\AdminGroupAuth;
 use app\modules\v1\forms\CommonForm;
-use app\modules\v1\utils\ApiException;
+use app\componments\utils\ApiException;
 
 class SetGroupAuthForm extends CommonForm
 {

@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\componments\utils\Validate;
 use app\models\Article;
 use Yii;
 use yii\filters\AccessControl;
@@ -62,10 +63,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-
-        return 123;
-
-
+        return Validate::run_phone('18658771300');
     }
 
     /**

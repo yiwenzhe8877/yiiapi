@@ -26,7 +26,7 @@ class TokenController extends Controller
 {
     public $token='bdegkortvwxyABDIKMQRSTUWYZ023456';
 
-    public $url='http://localhost/yiiapi/server/web/index.php/v1/index/index';
+    public $url='http://localhost/yiiapi/server/web/index.php/v2/index/index';
     public  $map=[
         //管理组
         '管理组分页列表'=>['service'=>'group.getlist','pageNum'=>'1','group_name'=>"超级管理员"],

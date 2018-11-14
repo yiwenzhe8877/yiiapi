@@ -13,7 +13,7 @@ use Yii;
  * @property AdminGroup $group
  * @property AdminUser $user
  */
-class UserGroup extends \yii\db\ActiveRecord
+class AdminUserGroup extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}

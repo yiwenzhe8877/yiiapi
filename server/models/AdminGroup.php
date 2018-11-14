@@ -13,7 +13,7 @@ use Yii;
  * @property int $status 1表示启用,0表示关闭的
  *
  * @property AdminGroupAuth[] $groupAuths
- * @property UserGroup[] $userGroups
+ * @property AdminUserGroup[] $userGroups
  */
 class AdminGroup extends \yii\db\ActiveRecord
 {
@@ -48,7 +48,7 @@ class AdminGroup extends \yii\db\ActiveRecord
      */
     public function getUserGroups()
     {
-        return $this->hasMany(UserGroup::className(), ['group_id' => 'group_id']);
+        return $this->hasMany(AdminUserGroup::className(), ['group_id' => 'group_id']);
     }
 
 
@@ -58,7 +58,7 @@ class AdminGroup extends \yii\db\ActiveRecord
      */
     public function getGroupMenus()
     {
-        return $this->hasMany(MenuGroup::className(), ['group_id' => 'group_id']);
+        return $this->hasMany(AdminMenuGroup::className(), ['group_id' => 'group_id']);
     }
 
     public static function getGroupIdByUid($id){

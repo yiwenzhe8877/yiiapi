@@ -18,7 +18,7 @@ use yii\web\IdentityInterface;
  * @property int $group_id 管理组id
  * @property string $auth_key 密钥
  *
- * @property UserGroup[] $userGroups
+ * @property AdminUserGroup[] $userGroups
  */
 class AdminUser extends \yii\db\ActiveRecord implements \yii\web\IdentityInterface
 {
@@ -51,7 +51,7 @@ class AdminUser extends \yii\db\ActiveRecord implements \yii\web\IdentityInterfa
      */
     public function getUserGroups()
     {
-        return $this->hasone(UserGroup::className(), ['group_id' => 'group_id']);
+        return $this->hasone(AdminUserGroup::className(), ['group_id' => 'group_id']);
     }
 
     /**

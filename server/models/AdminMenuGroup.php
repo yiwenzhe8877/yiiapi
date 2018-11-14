@@ -13,14 +13,14 @@ use Yii;
  * @property AdminMenu $menu
  * @property AdminGroup $group
  */
-class MenuGroup extends \yii\db\ActiveRecord
+class AdminMenuGroup extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
      */
     public static function tableName()
     {
-        return 'tk_menu_group';
+        return 'tk_admin_menu_group';
     }
 
     /**

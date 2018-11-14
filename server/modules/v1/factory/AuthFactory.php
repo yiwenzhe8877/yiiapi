@@ -11,7 +11,7 @@ namespace app\modules\v1\factory;
 
 class AuthFactory extends BaseFactory
 {
-    protected $form_map = [
+    public $form_map = [
         'auth.delete'=>'app\modules\v1\forms\auth\DeleteForm',
         'auth.add'=>'app\modules\v1\forms\auth\AddForm',
         'auth.getlist'=>'app\modules\v1\forms\auth\GetListForm',

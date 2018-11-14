@@ -11,7 +11,7 @@ namespace app\modules\v1\factory;
 
 class UserFactory extends BaseFactory
 {
-    protected $form_map = [
+    public $form_map = [
         'user.delete'=>'app\modules\v1\forms\user\DeleteForm',
         'user.add'=>'app\modules\v1\forms\user\AddForm',
         'user.login'=>'app\modules\v1\forms\user\LoginForm',

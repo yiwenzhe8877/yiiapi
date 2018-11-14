@@ -18,8 +18,18 @@ class GetAllForm extends CommonForm
 
     public function rules()
     {
-        return [];
+        $result=parent::getRules(FORM_CLASS);
+
+
+        return array_merge($result,$this->addRule());
     }
+
+    public function addRule(){
+        return [
+
+        ];
+    }
+
 
     public function run(){
 

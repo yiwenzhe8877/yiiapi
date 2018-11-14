@@ -15,13 +15,21 @@ class GetOneForm extends CommonForm
     public $id;
 
 
+
     public function rules()
     {
-        return [
-            ['id','required','message'=>'id不能为空'],
+        $result=parent::getRules(FORM_CLASS);
 
+
+        return array_merge($result,$this->addRule());
+    }
+
+    public function addRule(){
+        return [
         ];
     }
+
+
 
     public function run($form){
         $user= AdminUser::findOne($form->id);

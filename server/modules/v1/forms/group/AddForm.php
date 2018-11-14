@@ -14,8 +14,16 @@ class AddForm extends CommonForm
     public $group_name;
 
 
+
     public function rules()
     {
+        $result=parent::getRules(FORM_CLASS);
+
+
+        return array_merge($result,$this->addRule());
+    }
+
+    public function addRule(){
         return [
             ['group_name','required','message'=>'管理组名称不能为空'],
         ];

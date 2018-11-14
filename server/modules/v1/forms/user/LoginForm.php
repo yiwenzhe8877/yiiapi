@@ -15,8 +15,17 @@ class LoginForm extends CommonForm
 
     private $_user;
 
+
+
     public function rules()
     {
+        $result=parent::getRules(FORM_CLASS);
+
+
+        return array_merge($result,$this->addRule());
+    }
+
+    public function addRule(){
         return [
             ['username','required','message'=>'用户名不能为空'],
             ['password','required','message'=>'密码不能为空'],
@@ -25,6 +34,7 @@ class LoginForm extends CommonForm
             [['username'],'checkstatus','skipOnEmpty' => false, 'skipOnError' => false,'params'=>['wrong_status'=>"用户被禁用",'del'=>'用户被删除']],
         ];
     }
+
 
     // 检测密码
     public function checkpwd($attribute, $params)

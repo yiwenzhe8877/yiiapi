@@ -23,10 +23,17 @@ class AddForm extends CommonForm
     public $del;
 
 
+
     public function rules()
     {
-        return [
+        $result=parent::getRules(FORM_CLASS);
 
+
+        return array_merge($result,$this->addRule());
+    }
+
+    public function addRule(){
+        return [
             ['username','required','message'=>'用户名不能为空'],
             ['password','required','message'=>'密码不能为空'],
             ['nickname','required','message'=>'昵称不能为空'],

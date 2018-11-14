@@ -17,14 +17,21 @@ class SetGroupMenuForm extends CommonForm
     public $menu_id;
 
 
+
     public function rules()
     {
+        $result=parent::getRules(FORM_CLASS);
+
+
+        return array_merge($result,$this->addRule());
+    }
+
+    public function addRule(){
         return [
             ['group_id','required','message'=>'管理组id不能为空'],
             ['menu_id','required','message'=>'菜单id不能为空'],
         ];
     }
-
 
     public function run($form){
 

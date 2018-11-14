@@ -23,7 +23,12 @@ class IndexController  extends BaseController
         $service=$post['service'];
 
         $factory = Factory::createInstance($service);
+
+
+        define('FORM_CLASS',$factory->form_map[$service]);
+
         $form=$factory->getForm($service);
+
 
         if($form->load(\Yii::$app->getRequest()->post(),'') && !$form->validate())
         {

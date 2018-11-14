@@ -19,16 +19,22 @@ class UpdateForm extends CommonForm
 
     public function rules()
     {
+        $result=parent::getRules(FORM_CLASS);
+
+
+        return array_merge($result,$this->addRule());
+    }
+
+    public function addRule(){
         return [
-            ['id','required','message'=>'id不能为空'],
-            ['status','required','message'=>'状态标志不能为空'],
-            ['del','required','message'=>'删除标志不能为空'],
+
         ];
     }
 
 
     public function run($form){
-        $model=AdminGroup::findAll([$form->id]);
+        $model=AdminGroup::find()->andWhere(['=','group_id',(int)$form->id]);
+
 
         if(!$model){
             ApiException::run("管理组id不存在",'900001',__CLASS__,__METHOD__,__LINE__);

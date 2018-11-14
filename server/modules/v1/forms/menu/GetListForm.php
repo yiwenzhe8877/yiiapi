@@ -16,11 +16,19 @@ class GetListForm extends CommonForm
     public $pageNum;
 
 
+    
 
     public function rules()
     {
+        $result=parent::getRules(FORM_CLASS);
+
+
+        return array_merge($result,$this->addRule());
+    }
+
+    public function addRule(){
         return [
-            [['pageNum'],'match','pattern'=>'/^\d+$/'],
+
         ];
     }
 

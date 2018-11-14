@@ -11,7 +11,7 @@ namespace app\modules\v1\factory;
 
 class GroupFactory extends BaseFactory
 {
-    protected $form_map = [
+    public $form_map = [
         'group.delete'=>'app\modules\v1\forms\group\DeleteForm',
         'group.add'=>'app\modules\v1\forms\group\AddForm',
         'group.getlist'=>'app\modules\v1\forms\group\GetListForm',

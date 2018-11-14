@@ -18,8 +18,16 @@ class AddForm extends CommonForm
 
 
 
+
     public function rules()
     {
+        $result=parent::getRules(FORM_CLASS);
+
+
+        return array_merge($result,$this->addRule());
+    }
+
+    public function addRule(){
         return [
             ['name','required','message'=>'权限名称不能为空'],
             ['router','required','message'=>'路由不能为空'],
@@ -27,8 +35,6 @@ class AddForm extends CommonForm
             ['sort','required','message'=>'排序不能为空'],
         ];
     }
-
-
 
 
     public function run($form){

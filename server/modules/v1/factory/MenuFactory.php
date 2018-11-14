@@ -11,7 +11,7 @@ namespace app\modules\v1\factory;
 
 class MenuFactory extends BaseFactory
 {
-    protected $form_map = [
+    public $form_map = [
         'menu.delete'=>'app\modules\v1\forms\menu\DeleteForm',
         'menu.add'=>'app\modules\v1\forms\menu\AddForm',
         'menu.getlist'=>'app\modules\v1\forms\menu\GetListForm',

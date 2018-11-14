@@ -24,8 +24,14 @@ class UpdateForm extends CommonForm
 
     public function rules()
     {
+        $result=parent::getRules(FORM_CLASS);
+
+
+        return array_merge($result,$this->addRule());
+    }
+
+    public function addRule(){
         return [
-            ['id','required','message'=>'id不能为空'],
             ['name','required','message'=>'名称不能为空'],
             ['module','required','message'=>'模块名不能为空'],
             ['controller','required','message'=>'控制器不能为空'],

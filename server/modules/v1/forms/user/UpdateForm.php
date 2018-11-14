@@ -21,8 +21,16 @@ class UpdateForm extends CommonForm
     public $del;
 
 
+
     public function rules()
     {
+        $result=parent::getRules(FORM_CLASS);
+
+
+        return array_merge($result,$this->addRule());
+    }
+
+    public function addRule(){
         return [
             ['id','required','message'=>'id不能为空'],
             ['nickname','required','message'=>'昵称不能为空'],
@@ -32,6 +40,8 @@ class UpdateForm extends CommonForm
             ['del','required','message'=>'删除标志不能为空'],
         ];
     }
+
+
 
 
     public function run($form){

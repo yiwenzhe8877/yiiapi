@@ -19,13 +19,22 @@ class GetGroupAuthListForm extends CommonForm
 
 
 
+
+
     public function rules()
     {
+        $result=parent::getRules(FORM_CLASS);
+
+
+        return array_merge($result,$this->addRule());
+    }
+
+    public function addRule(){
         return [
-            [['pageNum'],'match','pattern'=>'/^\d+$/'],
             [['group_id'],'match','pattern'=>'/^\d+$/'],
         ];
     }
+
 
     public function run($form){
 

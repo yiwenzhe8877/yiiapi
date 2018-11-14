@@ -15,14 +15,23 @@ class SetGroupAuthForm extends CommonForm
     public $auth_id;
 
 
+
     public function rules()
     {
-        return [
-            ['group_id','required','message'=>'管理组id不能为空'],
-            ['auth_id','required','message'=>'权限id不能为空'],
-        ];
+        $result=parent::getRules(FORM_CLASS);
+
+
+        return array_merge($result,$this->addRule());
     }
 
+    public function addRule(){
+        return [
+            ['group_id','required','message'=>'管理组id不能为空'],
+            ['group_id','match','pattern'=>'/^[1-9]\d*$/','message'=>'group_id必须是正整数'],
+            ['auth_id','required','message'=>'权限id不能为空'],
+            ['auth_id','match','pattern'=>'/^[1-9]\d*$/','message'=>'auth_id必须是正整数'],
+        ];
+    }
 
     public function run($form){
 

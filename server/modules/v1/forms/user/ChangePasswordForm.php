@@ -18,6 +18,13 @@ class ChangePasswordForm extends CommonForm
 
     public function rules()
     {
+        $result=parent::getRules(FORM_CLASS);
+
+
+        return array_merge($result,$this->addRule());
+    }
+
+    public function addRule(){
         return [
 
             ['user_id','required','message'=>'用户id不能为空'],

@@ -2,10 +2,9 @@
 
 namespace app\modules\v2\controllers;
 
+use app\componments\utils\ApiException;
 use app\modules\v2\common\BaseController;
 use app\modules\v2\factory\Factory;
-use app\modules\v2\utils\ApiException;
-use yii\web\Controller;
 
 class IndexController  extends BaseController
 {

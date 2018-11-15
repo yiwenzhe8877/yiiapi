@@ -8,8 +8,8 @@
 namespace app\modules\v1\service\user;
 
 use app\models\AdminUser;
+use app\modules\v1\utils\ApiException;
 
-use app\componments\utils\ApiException;
 class UserService
 {
     public static function getAdminUser(){

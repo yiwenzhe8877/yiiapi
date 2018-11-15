@@ -7,9 +7,7 @@
  */
 namespace app\modules\v1\service\sql;
 
-
-
-use app\componments\utils\ApiException;
+use app\modules\v1\utils\ApiException;
 use app\modules\v1\utils\Filter;
 
 class sqlService

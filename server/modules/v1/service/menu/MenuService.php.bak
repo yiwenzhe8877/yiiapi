@@ -8,8 +8,8 @@ use app\models\AdminGroupAuth;
 use app\models\AdminMenu;
 use app\models\AdminMenuGroup;
 use app\modules\v1\service\user\UserService;
+use app\modules\v1\utils\ApiException;
 
-use app\componments\utils\ApiException;
 
 class MenuService
 {

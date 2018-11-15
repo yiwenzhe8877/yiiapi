@@ -2,14 +2,12 @@
 
 namespace app\modules\v1\controllers;
 
+use app\componments\utils\ApiException;
 use app\modules\v1\common\BaseController;
 use app\modules\v1\factory\Factory;
-use app\modules\v1\utils\ApiException;
-use yii\web\Controller;
 
 class IndexController  extends BaseController
 {
-
 
     public function actionIndex()
     {
@@ -23,7 +21,6 @@ class IndexController  extends BaseController
         $service=$post['service'];
 
         $factory = Factory::createInstance($service);
-
 
         define('FORM_CLASS',$factory->form_map[$service]);
 

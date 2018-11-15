@@ -2,7 +2,7 @@
 
 namespace app\modules\v2\common;
 
-use app\modules\v2\components\auth\QueryParamAuth;
+use app\componments\auth\QueryParamAuthFrontEnd;
 use app\componments\filter\VerbFilter;
 use yii\filters\ContentNegotiator;
 use yii\filters\Cors;
@@ -17,7 +17,7 @@ class BaseController extends Controller
     {
         $behaviors = parent::behaviors();
         $behaviors['authenticator']=[
-            'class'=>QueryParamAuth::className(),
+            'class'=>QueryParamAuthFrontEnd::className(),
         ];
         $behaviors['contentNegotiator'] = [
             'class' => ContentNegotiator::className(),

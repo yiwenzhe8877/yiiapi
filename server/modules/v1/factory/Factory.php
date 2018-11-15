@@ -9,7 +9,7 @@
 namespace app\modules\v1\factory;
 
 
-use app\modules\v1\utils\ApiException;
+use app\componments\utils\ApiException;
 
 class Factory
 {

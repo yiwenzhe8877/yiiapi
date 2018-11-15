@@ -33,6 +33,7 @@ class ApiJsonFormatResponse extends JsonResponseFormatter
                     'status'=>'fail',
                     'code'=>"{$response->data['code']}",
                     'msg'=>$response->data['message'],
+
                 ];
             }
             $response->content = Json::encode($response->data, $options);

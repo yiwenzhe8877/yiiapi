@@ -7,25 +7,20 @@
 
 namespace app\componments\auth;
 
+use app\componments\utils\ApiException;
 use app\models\AdminAuth;
-
 use app\models\AdminGroup;
 use app\models\AdminGroupAuth;
-use app\models\AdminUser;
-use app\modules\v1\service\user\UserService;
-use app\modules\v1\utils\ApiException;
 use app\utils\ResponseMap;
-use yii\base\UserException;
 use yii\filters\auth\AuthMethod;
-use yii\log\Logger;
 
 /**
- * QueryParamAuth is an action filter that supports the authentication based on the access token passed through a query parameter.
+ * QueryParamAuthBackEnd is an action filter that supports the authentication based on the access token passed through a query parameter.
  *
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
-class QueryParamAuth extends AuthMethod
+class QueryParamAuthFrontEnd extends AuthMethod
 {
     /**
      * @var string the parameter name for passing the access token
@@ -47,10 +42,7 @@ class QueryParamAuth extends AuthMethod
         $service=\Yii::$app->getRequest()->post('service');
 
 
-
-
         //验证token的
-        UserService::getAdminUser();
 
         if (is_string($accessToken) && !empty($accessToken)) {
 

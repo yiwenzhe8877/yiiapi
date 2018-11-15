@@ -1,14 +1,16 @@
 <?php
-
-namespace Aliyun\DySDKLite;
-
 /**
- * 签名助手 2017/11/19
- *
- * Class SignatureHelper
+ * Created by PhpStorm.
+ * User: Administrator
+ * DateUtils: 2018/11/15
+ * Time: 19:23
  */
-class SignatureHelper {
 
+namespace app\componments\sms;
+
+
+class SignatureHelper
+{
     /**
      * 生成签名并发起请求
      *

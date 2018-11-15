@@ -2,7 +2,7 @@
 /**
  * Created by PhpStorm.
  * AdminUser: idz025
- * Date: 2018/10/26
+ * DateUtils: 2018/10/26
  * Time: 9:09
  */
 
@@ -29,9 +29,6 @@ class ApiException
                 $accessToken = $request->get('token');
             }
 
-
-
-
             $model=new ApiExceptionlog();
 
             $model->time=time();
@@ -45,7 +42,10 @@ class ApiException
             $model->msg=$msg;
             $model->save();
 
+            //$msg.=$method.$line;
         }
+
+
         throw new UserException($msg,$code);
     }
 }

@@ -27,6 +27,7 @@ class QueryParamAuthFrontEnd extends AuthMethod
      */
     public $tokenParam = 'token';
 
+
     /**
      * @inheritdoc
      */

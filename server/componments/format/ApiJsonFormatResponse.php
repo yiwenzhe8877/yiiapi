@@ -32,7 +32,7 @@ class ApiJsonFormatResponse extends JsonResponseFormatter
                 $response->data = [
                     'status'=>'fail',
                     'code'=>"{$response->data['code']}",
-                    'msg'=>$response->data['message'],
+                    'msg'=> $response->data['message'],
 
                 ];
             }

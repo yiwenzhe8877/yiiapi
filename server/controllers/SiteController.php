@@ -2,7 +2,12 @@
 
 namespace app\controllers;
 
-use app\componments\utils\Validate;
+use app\componments\sms\SendSms;
+use app\componments\utils\Ip;
+use app\componments\utils\RandomUtils;
+use app\componments\utils\ValidateUtils;
+use app\models\api\sms\SendSmsCodeApi;
+use app\models\api\sms\VerifySmsCodeApi;
 use app\models\Article;
 use Yii;
 use yii\filters\AccessControl;
@@ -63,7 +68,12 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return Validate::run_phone('18658771300');
+       $o=new VerifySmsCodeApi();
+       $o->setCode("412780");
+       $o->setPhone('18658771300');
+       echo $o->run();
+
+
     }
 
     /**

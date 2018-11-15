@@ -1,20 +1,18 @@
 <?php
-/**
- * Created by PhpStorm.
- * AdminUser: idz025
- * DateUtils: 2018/11/5
- * Time: 11:04
- */
-namespace app\modules\v1\service\sql;
 
-
+namespace app\componments\sql;
 
 use app\componments\utils\ApiException;
 
+/**
+ * Created by PhpStorm.
+ * User: Administrator
+ * Date: 2018/11/15
+ * Time: 21:56
+ */
 
-class sqlService
+class SqlGet
 {
-
     public static function get_list_by_page($field="*",$tableName="",$wheresql=[],$orderBy=""){
         $pagesize=\Yii::$app->params['page_size'];
         $post=\Yii::$app->getRequest()->post();
@@ -32,7 +30,7 @@ class sqlService
             $sql.=' where ';
             foreach ($wheresql as $k=>$v){
                 if(!empty($k) && !empty($v)){
-                    $sql.=Filter::sqlinject($k). Filter::sqlinject($v);
+                    $sql.=$k.$v;
                 }
             }
         }
@@ -69,7 +67,7 @@ class sqlService
         if(count($wheresql)>0){
             $sql.=' where ';
             foreach ($wheresql as $k=>$v){
-                $sql.=Filter::sqlinject($k). Filter::sqlinject($v);
+                $sql.=$k. $v;
             }
         }
 
@@ -91,6 +89,5 @@ class sqlService
             'list'=>$result
         ];
     }
-
 
 }

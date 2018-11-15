@@ -3,6 +3,7 @@
 namespace app\modules\v2\controllers;
 
 use app\componments\utils\ApiException;
+use app\models\api\sms\SendSmsCodeApi;
 use app\modules\v2\common\BaseController;
 use app\modules\v2\factory\Factory;
 
@@ -52,9 +53,10 @@ class IndexController  extends BaseController
     }
 
 
-    public function actionsCreate()
+    public function actionTest()
     {
 
+        SendSmsCodeApi::send_code('18658771302','123123','huasdhua');
 
     }
 

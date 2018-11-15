@@ -28,8 +28,7 @@ class MemberVerify extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name'], 'required'],
-            [['name'], 'string', 'max' => 50],
+
         ];
     }
 
@@ -39,16 +38,9 @@ class MemberVerify extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'category_id' => 'Category ID',
-            'name' => 'Name',
+
         ];
     }
 
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getArticleCategories()
-    {
-        return $this->hasMany(ArticleCategory::className(), ['category_id' => 'category_id']);
-    }
+
 }

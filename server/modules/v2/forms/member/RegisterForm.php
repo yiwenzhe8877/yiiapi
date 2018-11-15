@@ -4,7 +4,7 @@ namespace app\modules\v2\forms\member;
 
 
 use app\componments\utils\ApiException;
-use app\componments\utils\Validate;
+use app\componments\utils\ValidateUtils;
 use app\modules\v2\forms\CommonForm;
 
 class RegisterForm extends CommonForm
@@ -27,7 +27,7 @@ class RegisterForm extends CommonForm
     }
 
     public function checkphone($attribute, $params){
-        if(!Validate::run_phone($this->pam_phone)){
+        if(!ValidateUtils::run_phone($this->pam_phone)){
             ApiException::run($params['wrong'],'9000001');
         }
     }

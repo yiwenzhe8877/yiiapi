@@ -12,9 +12,6 @@ class LogoutForm extends CommonForm
 {
 
 
-
-
-
     public function run(){
 
 

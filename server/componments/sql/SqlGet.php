@@ -3,6 +3,7 @@
 namespace app\componments\sql;
 
 use app\componments\utils\ApiException;
+use app\componments\utils\Filter;
 
 /**
  * Created by PhpStorm.
@@ -30,7 +31,7 @@ class SqlGet
             $sql.=' where ';
             foreach ($wheresql as $k=>$v){
                 if(!empty($k) && !empty($v)){
-                    $sql.=$k.$v;
+                    $sql.=Filter::sqlinject($k).Filter::sqlinject($v);
                 }
             }
         }
@@ -67,7 +68,7 @@ class SqlGet
         if(count($wheresql)>0){
             $sql.=' where ';
             foreach ($wheresql as $k=>$v){
-                $sql.=$k. $v;
+                $sql.=Filter::sqlinject($k).Filter::sqlinject($v);
             }
         }
 

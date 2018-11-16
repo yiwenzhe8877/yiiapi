@@ -7,7 +7,7 @@
  */
 namespace app\componments\sql;
 
-class sqlCreate
+class SqlCreate
 {
 
 }

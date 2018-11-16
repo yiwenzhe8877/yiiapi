@@ -24,4 +24,8 @@ class DateUtils
         return mktime(23,59,59,date("m",$t),date("d",$t),date("Y",$t));
 
     }
+
+    public static function getYMD(){
+        return date('Y-m-d',time());
+    }
 }

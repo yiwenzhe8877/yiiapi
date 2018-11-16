@@ -9,7 +9,7 @@ namespace app\componments\sms;
 
 class Config
 {
-    private  $accessKeyId="LTAIiGM23mMsRm7J";
+    private  $accessKeyId="";
     private  $accessKeyScret="z5nJmxmOGtNl8KUrAJe7k8g5qd8rNx";
     private  $signName='铃铛优惠券';
     private  $verify_template_code='SMS_151085557';

@@ -23,6 +23,11 @@ header("Access-Control-Allow-Headers:Content-Type");
 defined('YII_DEBUG') or define('YII_DEBUG', true);
 defined('YII_ENV') or define('YII_ENV', 'dev');
 
+defined('APP_PATH')or define('APP_PATH', '../');
+defined('DATA_PATH')or define('DATA_PATH', APP_PATH.'data/');
+defined('IMG_PATH')or define('IMG_PATH', '../data/images/');
+
+
 
 require(__DIR__ . '/../functions.php');
 

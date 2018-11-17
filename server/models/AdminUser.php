@@ -8,7 +8,7 @@ use Yii;
 use yii\web\IdentityInterface;
 
 /**
- * This is the model class for table "tk_user".
+ * This is the model classes for table "tk_user".
  *
  * @property int $user_id 管理员id
  * @property string $username 管理员账号名

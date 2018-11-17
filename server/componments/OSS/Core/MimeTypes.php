@@ -162,7 +162,7 @@ class MimeTypes
         'bin' => 'application/octet-stream',
         'cdf' => 'application/x-netcdf',
         'cgm' => 'image/cgm',
-        'class' => 'application/octet-stream',
+        'classes' => 'application/octet-stream',
         'dcr' => 'application/x-director',
         'dif' => 'video/x-dv',
         'dir' => 'application/x-director',

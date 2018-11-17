@@ -5,7 +5,7 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "tk_article".
+ * This is the model classes for table "tk_article".
  *
  * @property int $article_id 文章id
  * @property int $dateline 发布时间

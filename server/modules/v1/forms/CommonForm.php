@@ -13,19 +13,26 @@ use yii\base\Model;
 
 class CommonForm extends Model
 {
-    public function rules()
-    {
-        return array_merge($this->getRules(FORM_CLASS),$this->addRule());
-    }
-
 
     public function addRule(){
-        return [];
+        return [
+        ];
+    }
+
+    public function rules()
+    {
+
+        $temp=$this->getRules(FORM_CLASS);
+        foreach ($this->addRule() as $k=>$v){
+            array_push($temp,$v);
+        }
+        return $temp;
     }
 
     public function getRules($class){
-        $rules=$this->myrules();
+        $rules=$this->baseRule();
         $arr= get_class_vars($class);
+
 
         $result=[];
         foreach ($arr as $k=>$v){
@@ -40,16 +47,11 @@ class CommonForm extends Model
     }
 
 
-    public function myrules()
+    private function baseRule()
     {
         return [
-            ['id','required','message'=>'id不能为空'],
-            ['id','match','pattern'=>'/^[1-9]\d*$/','message'=>'id必须是正整数'],
-            ['group_id','match','pattern'=>'/^[1-9]\d*$/','message'=>'group_id必须是正整数'],
-            ['status','required','message'=>'状态标志不能为空'],
-            ['del','required','message'=>'删除标志不能为空'],
-            [['pageNum'],'match','pattern'=>'/^[1-9]\d*$/','message'=>'pageNum必须是正整数'],
-
+            ['pageNum','match','pattern'=>'/^[1-9][0-9]*$/','message'=>'pageNum必须是正整数'],
+            ['id','match','pattern'=>'/^[1-9][0-9]*$/','message'=>'id必须是正整数'],
         ];
     }
 

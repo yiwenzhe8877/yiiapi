@@ -90,12 +90,12 @@ class RequestCore
     public $debug_mode = false;
 
     /**
-     * The default class to use for HTTP Requests (defaults to <RequestCore>).
+     * The default classes to use for HTTP Requests (defaults to <RequestCore>).
      */
     public $request_class = 'OSS\Http\RequestCore';
 
     /**
-     * The default class to use for HTTP Responses (defaults to <ResponseCore>).
+     * The default classes to use for HTTP Responses (defaults to <ResponseCore>).
      */
     public $response_class = 'OSS\Http\ResponseCore';
 
@@ -206,11 +206,11 @@ class RequestCore
     // CONSTRUCTOR/DESTRUCTOR
 
     /**
-     * Constructs a new instance of this class.
+     * Constructs a new instance of this classes.
      *
      * @param string $url (Optional) The URL to request or service endpoint to query.
      * @param string $proxy (Optional) The faux-url to use for proxy settings. Takes the following format: `proxy://user:pass@hostname:port`
-     * @param array $helpers (Optional) An associative array of classnames to use for request, and response functionality. Gets passed in automatically by the calling class.
+     * @param array $helpers (Optional) An associative array of classnames to use for request, and response functionality. Gets passed in automatically by the calling classes.
      * @return $this A reference to the current instance.
      */
     public function __construct($url = null, $proxy = null, $helpers = null)
@@ -221,12 +221,12 @@ class RequestCore
         $this->request_headers = array();
         $this->request_body = '';
 
-        // Set a new Request class if one was set.
+        // Set a new Request classes if one was set.
         if (isset($helpers['request']) && !empty($helpers['request'])) {
             $this->request_class = $helpers['request'];
         }
 
-        // Set a new Request class if one was set.
+        // Set a new Request classes if one was set.
         if (isset($helpers['response']) && !empty($helpers['response'])) {
             $this->response_class = $helpers['response'];
         }
@@ -314,7 +314,7 @@ class RequestCore
     }
 
     /**
-     * Sets a custom useragent string for the class.
+     * Sets a custom useragent string for the classes.
      *
      * @param string $ua (Required) The useragent string to use.
      * @return $this A reference to the current instance.
@@ -813,7 +813,7 @@ class RequestCore
      *
      * @param array $handles (Required) An indexed array of cURL handles to process simultaneously.
      * @param array $opt (Optional) An associative array of parameters that can have the following keys: <ul>
-     *    <li><code>callback</code> - <code>string|array</code> - Optional - The string name of a function to pass the response data to. If this is a method, pass an array where the <code>[0]</code> index is the class and the <code>[1]</code> index is the method name.</li>
+     *    <li><code>callback</code> - <code>string|array</code> - Optional - The string name of a function to pass the response data to. If this is a method, pass an array where the <code>[0]</code> index is the classes and the <code>[1]</code> index is the method name.</li>
      *    <li><code>limit</code> - <code>integer</code> - Optional - The number of simultaneous requests to make. This can be useful for scaling around slow server responses. Defaults to trusting cURLs judgement as to how many to use.</li></ul>
      * @return array Post-processed cURL responses.
      */

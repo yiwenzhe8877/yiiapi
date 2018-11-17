@@ -5,7 +5,7 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "tk_menu".
+ * This is the model classes for table "tk_menu".
  *
  * @property int $menu_id
  * @property string $name 菜单名

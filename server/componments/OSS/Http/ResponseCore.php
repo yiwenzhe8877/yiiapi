@@ -23,7 +23,7 @@ class ResponseCore
     public $status;
 
     /**
-     * Constructs a new instance of this class.
+     * Constructs a new instance of this classes.
      *
      * @param array $header (Required) Associative array of HTTP headers (typically returned by <RequestCore::get_response_header()>).
      * @param string $body (Required) XML-formatted response from AWS.

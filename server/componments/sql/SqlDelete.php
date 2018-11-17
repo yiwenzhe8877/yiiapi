@@ -51,7 +51,7 @@ class SqlDelete
 
     public  function run()
     {
-        $sql="update ".$this->getTableName()." set del = 1 where ";
+        $sql="update ".\Yii::$app->params['table_prefix'].$this->getTableName()." set del = 1 where ";
 
 
         if(count($this->getWhere())==0){
@@ -59,7 +59,8 @@ class SqlDelete
         }
 
         foreach ($this->getWhere() as $k=>$v){
-            $sql.=Filter::sqlinject($k).Filter::sqlinject($v);
+
+                $sql.=Filter::sqlinject($k).Filter::sqlinject($v);
         }
 
 

@@ -6,7 +6,7 @@ use app\modules\v1\utils\CodeMsgMap;
 use Yii;
 
 /**
- * This is the model class for table "tk_group".
+ * This is the model classes for table "tk_group".
  *
  * @property int $group_id 管理组id
  * @property string $name 组名称

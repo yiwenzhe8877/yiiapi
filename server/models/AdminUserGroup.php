@@ -5,7 +5,7 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "tk_user_group".
+ * This is the model classes for table "tk_user_group".
  *
  * @property int $user_id
  * @property int $group_id

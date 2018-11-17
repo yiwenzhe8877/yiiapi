@@ -28,6 +28,7 @@ class QueryParamAuthBackEnd extends AuthMethod
      * @var string the parameter name for passing the access token
      */
     public $tokenParam = 'token';
+    public static $token = 'token';
 
     public  $white=['user.login'];
 
@@ -70,6 +71,16 @@ class QueryParamAuthBackEnd extends AuthMethod
         }
 
         return true;
+    }
+
+    public static function getAdminToken(){
+        $request=\Yii::$app->getRequest();
+        $accessToken=$request->headers['token'];
+
+        if(!$accessToken){
+            $accessToken = $request->get(self::$token);
+        }
+        return $accessToken;
     }
 
     public function handlefailure($response)

@@ -5,7 +5,7 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "tk_article_category".
+ * This is the model classes for table "tk_article_category".
  *
  * @property int $article_id
  * @property int $category_id

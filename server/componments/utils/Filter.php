@@ -12,11 +12,14 @@ namespace app\componments\utils;
 
 class Filter
 {
-    public static $sqlinject_map=['delete','script','--','document','javascript'];
+    public static $sqlinject_map=['delete','script','--','document','javascript','-',"$", "(", ")", "%", "@","!"];
 
     public static function sqlinject($value){
         foreach (self::$sqlinject_map as $k=>$v){
-            $value=str_replace($v,'',trim($value));
+
+            if($v==$value){
+                ApiException::run('请不要使用非法字符'.$v,'900001',__CLASS__,__METHOD__,__LINE__);
+            }
         }
         return $value;
     }

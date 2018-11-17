@@ -3,6 +3,7 @@
 namespace app\componments\sql;
 
 use app\componments\utils\ApiException;
+use app\componments\utils\Assert;
 use app\componments\utils\Filter;
 
 /**
@@ -14,80 +15,171 @@ use app\componments\utils\Filter;
 
 class SqlGet
 {
-    public static function get_list_by_page($field="*",$tableName="",$wheresql=[],$orderBy=""){
-        $pagesize=\Yii::$app->params['page_size'];
-        $post=\Yii::$app->getRequest()->post();
 
-        if(!isset($post['pageNum']) || !is_numeric($post['pageNum'])){
-            ApiException::run("pageNum参数错误","900001");
-        }
+    private $_fields='';
+    private $_tableName='';
+    private $_where=[];
+    private $_orderBy='';
 
-        $pageNum=$post['pageNum'];
+    private $_pageNum;
 
-        $sql="select ".$field." from ".$tableName;
-
-        if(count($wheresql)>0){
-
-            $sql.=' where ';
-            foreach ($wheresql as $k=>$v){
-                if(!empty($k) && !empty($v)){
-                    $sql.=Filter::sqlinject($k).Filter::sqlinject($v);
-                }
-            }
-        }
-
-        if($orderBy!=''){
-            $sql.=' order By '.$orderBy;
-        }
-        $connection = \Yii::$app->db;
-        $command = $connection->createCommand($sql);
-        $result = $command->queryAll();
-        $count=count($result);
-
-        $sql.=' limit '.($pageNum-1)*($pagesize).','.($pagesize*$pageNum);
-
-        $connection = \Yii::$app->db;
-        $command = $connection->createCommand($sql);
-        $result = $command->queryAll();
-
-        return [
-            'pageNum'=>$pageNum,
-            'pageSize'=>$pagesize,
-            'total'=>(int)$count,
-            'list'=>$result
-        ];
-
-
+    /**
+     * @return mixed
+     */
+    public function getPageNum()
+    {
+        return $this->_pageNum;
     }
 
-    public static function get_all($field="*",$tableName="",$wheresql=[],$orderBy=""){
+    /**
+     * @param mixed $pageNum
+     */
+    public function setPageNum($pageNum)
+    {
+        $this->_pageNum = $pageNum;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFields()
+    {
+        return $this->_fields;
+    }
+
+    /**
+     * @param mixed $fields
+     */
+    public function setFields($fields)
+    {
+        $this->_fields = $fields;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getTableName()
+    {
+        return $this->_tableName;
+    }
+
+    /**
+     * @param mixed $tableName
+     */
+    public function setTableName($tableName)
+    {
+        $this->_tableName = $tableName;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getWhere()
+    {
+        return $this->_where;
+    }
+
+    /**
+     * @param mixed $where
+     */
+    public function setWhere($where)
+    {
+        $this->_where = $where;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOrderBy()
+    {
+        return $this->_orderBy;
+    }
+
+    /**
+     * @param mixed $orderBy
+     */
+    public function setOrderBy($orderBy)
+    {
+        $this->_orderBy = $orderBy;
+    }
 
 
-        $sql="select ".$field." from ".$tableName;
+    public  function get_list(){
+        $pagesize=\Yii::$app->params['page_size'];
 
-        if(count($wheresql)>0){
+
+        Assert::isNotPageNum($this->getPageNum());
+        Assert::isEmpty(['表名'=>$this->getTableName()]);
+
+
+        if($this->getFields()==''){
+            $this->setFields("*");
+        }
+
+
+
+        $sql="select ".$this->getFields()." from ".\Yii::$app->params['table_prefix'].$this->getTableName();
+
+
+        if(count($this->getWhere())>0){
             $sql.=' where ';
-            foreach ($wheresql as $k=>$v){
+            foreach ($this->getWhere() as $k=>$v){
                 $sql.=Filter::sqlinject($k).Filter::sqlinject($v);
             }
         }
 
-        if($orderBy!=''){
-            $sql.=' order By '.$orderBy;
+
+        if($this->getOrderBy()!=''){
+            $sql.=' order By '.$this->getOrderBy();
         }
         $connection = \Yii::$app->db;
         $command = $connection->createCommand($sql);
         $result = $command->queryAll();
         $count=count($result);
 
+        $sql.=' limit '.($this->getPageNum()-1)*($pagesize).','.($pagesize*$this->getPageNum());
+
+
+        $command = $connection->createCommand($sql);
+        $result = $command->queryAll();
+        return [
+            'pageNum'=>$this->getPageNum(),
+            'pageSize'=>$pagesize,
+            'total'=>$count,
+            'list'=>$result
+        ];
+
+    }
+    public  function get_all(){
+
+
+        if($this->getFields()==''){
+            $this->setFields("*");
+        }
+
+
+        Assert::isEmpty(['表名'=>$this->getTableName()]);
+
+        $sql="select ".$this->getFields()." from ".\Yii::$app->params['table_prefix'].$this->getTableName();
+
+        if(count($this->getWhere())>0){
+            $sql.=' where ';
+            foreach ($this->getWhere() as $k=>$v){
+                $sql.=Filter::sqlinject($k).Filter::sqlinject($v);
+            }
+        }
+
+        if($this->getOrderBy()!=''){
+            $sql.=' order By '.$this->getOrderBy();
+        }
+
 
         $connection = \Yii::$app->db;
         $command = $connection->createCommand($sql);
         $result = $command->queryAll();
-
         return [
-            'total'=>(int)$count,
-            'list'=>$result
+            'total'=>count($result),
+            'list'=>$result,
         ];
     }
 

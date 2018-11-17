@@ -9,5 +9,6 @@ return [
     'salt'=>'zz515',
     'cache_token_time'=>30,
     'domain'=>$domain,
-    'img_path'=>$domain.'data/images/'
+    'img_path'=>$domain.'data/images/',
+    'table_prefix'=>"tk_"
 ];

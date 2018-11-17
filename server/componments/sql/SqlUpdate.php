@@ -10,29 +10,31 @@ namespace app\componments\sql;
 
 
 use app\componments\utils\ApiException;
+use app\componments\utils\Assert;
 use app\componments\utils\Filter;
 
 class SqlUpdate
 {
     private $_tableName;
-    private $_where;
-    private $_fields;
+    private $_where=[];
+    private $_data=[];
 
     /**
      * @return mixed
      */
-    public function getFields()
+    public function getData()
     {
-        return $this->_fields;
+        return $this->_data;
     }
 
     /**
-     * @param mixed $fields
+     * @param mixed $data
      */
-    public function setFields($fields)
+    public function setData($data)
     {
-        $this->_fields = $fields;
+        $this->_data = $data;
     }
+
 
     /**
      * @return mixed
@@ -68,24 +70,22 @@ class SqlUpdate
 
     public  function run()
     {
-        $sql="update ".$this->getTableName()." set ";
+
+        Assert::isEmpty(['表名'=>$this->getTableName()]);
+        Assert::isEmpty(['setdata'=>$this->getData()]);
+        Assert::isEmpty(['setwhere'=>$this->getWhere()]);
+
+        $sql='update '.\Yii::$app->params['table_prefix'].$this->getTableName().' set ';
 
 
-        if(count($this->getWhere())==0){
-            ApiException::run("where参数为空",'900001');
-        }
-        if(count($this->getFields())==0){
-            ApiException::run("fields参数为空",'900001');
-        }
-
-        foreach ($this->getFields() as $k=>$v){
-            $sql.=Filter::sqlinject($k).'='.Filter::sqlinject($v).',';
+        foreach ($this->getData() as $k=>$v){
+                $sql.=Filter::sqlinject($k).'="'.Filter::sqlinject($v).'",';
         }
         $sql=substr($sql,0,strlen($sql)-1);
         
-
+        $sql.=' where ';
         foreach ($this->getWhere() as $k=>$v){
-            $sql.=Filter::sqlinject($k).Filter::sqlinject($v);
+            $sql.=Filter::sqlinject($k).'"'.Filter::sqlinject($v).'"';
         }
 
         $connection = \Yii::$app->db;
@@ -94,4 +94,32 @@ class SqlUpdate
 
         return $result;
     }
+
+    public function increase(){
+
+        Assert::isEmpty(['表名'=>$this->getTableName()]);
+        Assert::isEmpty(['setdata'=>$this->getData()]);
+        Assert::isEmpty(['setwhere'=>$this->getWhere()]);
+
+        $sql='update '.\Yii::$app->params['table_prefix'].$this->getTableName().' set ';
+
+
+        foreach ($this->getData() as $k=>$v){
+            $sql.=Filter::sqlinject($k).'='.$k.'+"'.Filter::sqlinject($v).'",';
+        }
+
+        $sql=substr($sql,0,strlen($sql)-1);
+
+        $sql.=' where ';
+        foreach ($this->getWhere() as $k=>$v){
+            $sql.=Filter::sqlinject($k).'"'.Filter::sqlinject($v).'"';
+        }
+
+        $connection = \Yii::$app->db;
+        $command = $connection->createCommand($sql);
+        $result = $command->execute();
+
+        return $result;
+    }
+
 }

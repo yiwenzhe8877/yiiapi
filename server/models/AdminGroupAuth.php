@@ -5,7 +5,7 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "tk_group_auth".
+ * This is the model classes for table "tk_group_auth".
  *
  * @property int $group_id 管理组id
  * @property string $auth_id 权限id

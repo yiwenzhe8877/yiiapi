@@ -6,7 +6,7 @@ use app\modules\v1\utils\CodeMsgMap;
 use Yii;
 
 /**
- * This is the model class for table "tk_auth".
+ * This is the model classes for table "tk_auth".
  *
  * @property string $auth_id 自增ID
  * @property string $auth_name 权限名称

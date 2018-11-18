@@ -37,7 +37,7 @@ $config = [
             'class'=>'app\componments\mq\RabbitMQ',
             'host'=>'127.0.0.1',
             'port'=>'5672',
-            'user'=>'rabbitmq_user',
+            'adminUser'=>'rabbitmq_user',
             'passwd'=>'e111111',
         ],
         'response'=>[
@@ -50,12 +50,9 @@ $config = [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
-
         'user' => [
-            'identityClass' => 'app\models\AdminUser',
-            'enableAutoLogin' => false,
-            'enableSession'=>false,
-            'loginUrl' => null,
+            'identityClass' => 'app\models\admin\user',
+
         ],
         'errorHandler' => [
             'errorAction' => 'site/error',

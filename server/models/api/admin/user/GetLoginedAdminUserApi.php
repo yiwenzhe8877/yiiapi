@@ -8,15 +8,19 @@
 namespace app\models\api\admin\user;
 
 use app\componments\auth\QueryParamAuthBackEnd;
-use app\models\AdminUser;
+use app\models\admin\user;
 
 class GetLoginedAdminUserApi
 {
     //取消所有的默认
     public static function getUid(){
-     return   AdminUser::findOne(['auth_key'=>QueryParamAuthBackEnd::getAdminToken()])->user_id;
+     return   user::findOne(['auth_key'=>QueryParamAuthBackEnd::getAdminToken()])->user_id;
     }
     public static function getName(){
-        return   AdminUser::findOne(['auth_key'=>QueryParamAuthBackEnd::getAdminToken()])->username;
+        return   user::findOne(['auth_key'=>QueryParamAuthBackEnd::getAdminToken()])->username;
     }
+    public static function getAllInfo(){
+        return   user::findOne(['auth_key'=>QueryParamAuthBackEnd::getAdminToken()]);
+    }
+
 }

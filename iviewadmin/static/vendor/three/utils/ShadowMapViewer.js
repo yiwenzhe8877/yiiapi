@@ -156,7 +156,7 @@ THREE.ShadowMapViewer = function ( light ) {
 			renderer.autoClear = false; // To allow render overlay
 			renderer.clearDepth();
 			renderer.render( scene, camera );
-			renderer.autoClear = userAutoClearSetting;	//Restore user's setting
+			renderer.autoClear = userAutoClearSetting;	//Restore adminUser's setting
 
 		}
 

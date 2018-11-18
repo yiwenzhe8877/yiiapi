@@ -3,8 +3,7 @@
 namespace app\modules\v1\forms\admin\user;
 
 
-use app\componments\utils\ApiException;
-use app\models\AdminUser;
+use app\models\api\admin\user\GetAdminUserApi;
 use app\modules\v1\forms\CommonForm;
 
 class GetOneForm extends CommonForm
@@ -13,15 +12,8 @@ class GetOneForm extends CommonForm
 
 
 
-
-
     public function run($form){
-        $user= AdminUser::findOne($form->id);
-        if(!$user){
-            ApiException::run("用户不存在",'9000001');
-
-        }
-        return $user;
+        return GetAdminUserApi::getById($form->id);
     }
 
 }

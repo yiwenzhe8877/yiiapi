@@ -21,10 +21,8 @@ class AddForm extends CommonForm
 
     public function addRule(){
         return [
-            ['name','required','message'=>'权限名称不能为空'],
-            ['module','required','message'=>'模块名称不能为空'],
-            ['controller','required','message'=>'控制器名称不能为空'],
-            ['action','required','message'=>'方法名称不能为空'],
+            [['name','module','controller','action'],'required','message'=>'{attribute}不能为空'],
+            ['name', 'unique', 'targetClass' => 'app\models\admin\auth', 'message' => '{attribute}已经被使用。'],
         ];
     }
 
@@ -32,13 +30,6 @@ class AddForm extends CommonForm
 
     public function run($form){
 
-        $model=AdminAuth::find()
-            ->andWhere(['=','name',$form->name])
-            ->one();
-
-        if($model){
-            ApiException::run("权限名称已经存在",'900001');
-        }
 
         $model=AdminAuth::find()
             ->andWhere(['=','module',$form->module])

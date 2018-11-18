@@ -5,7 +5,7 @@ namespace app\modules\v1\forms\goods\category;
 
 use app\componments\utils\ApiException;
 use app\models\AdminGroup;
-use app\models\AdminUser;
+use app\models\user;
 use app\modules\v1\forms\CommonForm;
 use app\modules\v1\service\model\AddService;
 
@@ -30,7 +30,7 @@ class AddForm extends CommonForm
 
 
     public function run($form){
-        $model=AdminUser::find()
+        $model=user::find()
             ->andWhere(['=','username',$form->username])
             ->one();
 
@@ -57,7 +57,7 @@ class AddForm extends CommonForm
             'auth_key'=>getRandom(),
             'del'=>0,
         ];
-        AddService::run('user',$form,$postwhere,$otherdata);
+        AddService::run('adminUser',$form,$postwhere,$otherdata);
 
         return "";
 

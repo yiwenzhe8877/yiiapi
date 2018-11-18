@@ -77,16 +77,18 @@ class SqlUpdate
 
         $sql='update '.\Yii::$app->params['table_prefix'].$this->getTableName().' set ';
 
-
         foreach ($this->getData() as $k=>$v){
                 $sql.=Filter::sqlinject($k).'="'.Filter::sqlinject($v).'",';
         }
+
         $sql=substr($sql,0,strlen($sql)-1);
         
         $sql.=' where ';
+
         foreach ($this->getWhere() as $k=>$v){
             $sql.=Filter::sqlinject($k).'"'.Filter::sqlinject($v).'"';
         }
+
 
         $connection = \Yii::$app->db;
         $command = $connection->createCommand($sql);

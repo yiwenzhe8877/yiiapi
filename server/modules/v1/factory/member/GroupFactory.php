@@ -1,9 +1,11 @@
 <?php
+namespace app\modules\v1\factory\member;
 
-namespace app\modules\v1\factory;
 
 
-class MemberGroupFactory extends BaseFactory
+use app\modules\v1\factory\BaseFactory;
+
+class GroupFactory extends BaseFactory
 {
     public $form_map = [
 

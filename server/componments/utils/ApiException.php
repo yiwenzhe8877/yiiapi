@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * AdminUser: idz025
+ * adminUser: idz025
  * DateUtils: 2018/10/26
  * Time: 9:09
  */
@@ -10,7 +10,7 @@ namespace app\componments\utils;
 
 
 use app\models\ApiExceptionlog;
-use app\models\AdminUser;
+use app\models\user;
 use yii\base\UserException;
 
 class ApiException

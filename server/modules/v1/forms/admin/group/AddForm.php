@@ -3,6 +3,7 @@
 namespace app\modules\v1\forms\admin\group;
 
 
+use app\componments\sql\SqlCreate;
 use app\models\AdminGroup;
 use app\modules\v1\forms\CommonForm;
 use app\modules\v1\service\auth\AuthService;
@@ -16,11 +17,10 @@ class AddForm extends CommonForm
 
 
 
-
-
     public function addRule(){
         return [
             ['group_name','required','message'=>'管理组名称不能为空'],
+            ['group_name', 'unique', 'targetClass' => 'app\models\admin\group', 'message' => '{attribute}已经被使用。'],
         ];
     }
 
@@ -29,21 +29,12 @@ class AddForm extends CommonForm
 
     public function run($form){
 
-        $model=AdminGroup::find()
-            ->andWhere(['=','group_name',$form->group_name])
-            ->one();
-
-        if($model){
-            ApiException::run("管理组名称已经存在",'900001');
-        }
 
 
-
-        $otherdata=[
-            'status'=>1,
-            'del'=>0,
-        ];
-        AddService::run('admingroup',$form,[],$otherdata);
+        $obj=new SqlCreate();
+        $obj->setTableName('admin_group');
+        $obj->setData($form);
+        return $obj->run();
 
 
 

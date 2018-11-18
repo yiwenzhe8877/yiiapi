@@ -11,7 +11,7 @@ use Yii;
  * @property int $group_id
  *
  * @property AdminGroup $group
- * @property AdminUser $user
+ * @property adminUser $adminUser
  */
 class AdminUserGroup extends \yii\db\ActiveRecord
 {
@@ -31,7 +31,7 @@ class AdminUserGroup extends \yii\db\ActiveRecord
         return [
             [['user_id', 'group_id'], 'integer'],
             [['group_id'], 'exist', 'skipOnError' => true, 'targetClass' => AdminGroup::className(), 'targetAttribute' => ['group_id' => 'group_id']],
-            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => AdminUser::className(), 'targetAttribute' => ['user_id' => 'user_id']],
+            [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => user::className(), 'targetAttribute' => ['user_id' => 'user_id']],
         ];
     }
 
@@ -41,7 +41,7 @@ class AdminUserGroup extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'user_id' => 'AdminUser ID',
+            'user_id' => 'adminUser ID',
             'group_id' => 'AdminGroup ID',
         ];
     }
@@ -59,6 +59,6 @@ class AdminUserGroup extends \yii\db\ActiveRecord
      */
     public function getUser()
     {
-        return $this->hasOne(AdminUser::className(), ['user_id' => 'user_id']);
+        return $this->hasOne(user::className(), ['user_id' => 'user_id']);
     }
 }

@@ -4,7 +4,7 @@ namespace app\componments\template;
 
 
 use app\componments\utils\ApiException;
-use app\models\AdminUser;
+use app\models\user;
 use app\modules\v2\forms\CommonForm;
 
 class Form extends CommonForm
@@ -21,7 +21,7 @@ class Form extends CommonForm
         return [
             ['username','required','message'=>'用户名不能为空'],
             ['password','required','message'=>'密码不能为空'],
-            ['username', 'exist','targetClass' => '\app\models\AdminUser', 'message' => '用户不存在'],
+            ['username', 'exist','targetClass' => '\app\models\user', 'message' => '用户不存在'],
             [['password'],'checkpwd','skipOnEmpty' => false, 'skipOnError' => false,'params'=>['wrong_pwd'=>"密码错误"]],
             [['username'],'checkstatus','skipOnEmpty' => false, 'skipOnError' => false,'params'=>['wrong_status'=>"用户被禁用",'del'=>'用户被删除']],
         ];
@@ -32,7 +32,7 @@ class Form extends CommonForm
     public function checkpwd($attribute, $params)
     {
 
-        $user=AdminUser::findOne(['username'=>$this->username,'password'=>md5($this->password.\Yii::$app->params['salt'])]);
+        $user=user::findOne(['username'=>$this->username,'password'=>md5($this->password.\Yii::$app->params['salt'])]);
 
         if(!$user){
             ApiException::run($params['wrong_pwd'],"900001");
@@ -45,12 +45,12 @@ class Form extends CommonForm
     public function checkstatus()
     {
 
-        $user=AdminUser::findOne(['username'=>$this->username,'status'=>0]);
+        $user=user::findOne(['username'=>$this->username,'status'=>0]);
 
         if($user){
             ApiException::run("用户被禁用","900001");
         }
-        $user=AdminUser::findOne(['username'=>$this->username,'del'=>1]);
+        $user=user::findOne(['username'=>$this->username,'del'=>1]);
 
         if($user){
             ApiException::run("用户被删除","900001");
@@ -72,7 +72,7 @@ class Form extends CommonForm
         }else{
             $auth_key=getRandom();
 
-            AdminUser::updateAll([
+            user::updateAll([
                 'auth_key'=>$auth_key
             ],[
                 'username'=>$form->username

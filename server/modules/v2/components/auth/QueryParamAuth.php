@@ -12,7 +12,7 @@ use app\models\AdminAuth;
 
 use app\models\AdminGroup;
 use app\models\AdminGroupAuth;
-use app\models\AdminUser;
+use app\models\user;
 use app\modules\v1\service\user\UserService;
 use app\modules\v1\utils\ApiException;
 use app\utils\ResponseMap;

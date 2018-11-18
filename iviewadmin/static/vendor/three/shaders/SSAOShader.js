@@ -66,7 +66,7 @@ THREE.SSAOShader = {
 		"#define DL 2.399963229728653",  // PI * ( 3.0 - sqrt( 5.0 ) )
 		"#define EULER 2.718281828459045",
 
-		// user variables
+		// adminUser variables
 
 		"const int samples = 64;",     // ao sample count
 

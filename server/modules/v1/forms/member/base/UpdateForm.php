@@ -6,7 +6,7 @@ namespace app\modules\v1\forms\member\base;
 
 use app\componments\sql\SqlUpdate;
 use app\models\AdminGroup;
-use app\models\AdminUser;
+use app\models\user;
 use app\modules\v1\forms\CommonForm;
 use app\modules\v1\service\model\UpdateService;
 

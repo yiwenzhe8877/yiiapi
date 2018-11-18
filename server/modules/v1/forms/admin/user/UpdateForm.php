@@ -2,15 +2,17 @@
 
 namespace app\modules\v1\forms\admin\user;
 
+use app\componments\sql\SqlUpdate;
+use app\componments\utils\Assert;
 use app\models\AdminGroup;
-use app\models\AdminUser;
+use app\models\admin\user;
 use app\modules\v1\forms\CommonForm;
 use app\modules\v1\service\model\UpdateService;
 
 
 class UpdateForm extends CommonForm
 {
-    public $id;
+    public $user_id;
 
     public $nickname;
     public $phone;
@@ -19,17 +21,9 @@ class UpdateForm extends CommonForm
     public $del;
 
 
-
-
-
     public function addRule(){
         return [
-            ['id','required','message'=>'id不能为空'],
-            ['nickname','required','message'=>'昵称不能为空'],
-            ['phone','required','message'=>'手机号不能为空'],
-            ['group_name','required','message'=>'管理组不能为空'],
-            ['status','required','message'=>'状态标志不能为空'],
-            ['del','required','message'=>'删除标志不能为空'],
+            [['user_id','nickname','phone','group_name','status','del'],'required','message'=>'{attribute}不能为空'],
         ];
     }
 
@@ -37,28 +31,17 @@ class UpdateForm extends CommonForm
 
 
     public function run($form){
-        $model=AdminUser::find()->where(['=','user_id',$form->id])->one();
+
+        Assert::RecordNotExist('admin_user',['user_id='=>$form->user_id]);
+        Assert::RecordNotExist('admin_group',['group_name='=>$form->group_name]);
 
 
-        if(!$model){
-            ApiException::run("用户id不存在",'900001',__CLASS__,__METHOD__,__LINE__);
-        }
+        $obj=new SqlUpdate();
+        $obj->setTableName('admin_user');
+        $obj->setData($form);
+        $obj->setWhere(['user_id='=>$form->user_id]);
+        return $obj->run();
 
-        $group=AdminGroup::find()->where(['=','group_name',$form->group_name])->one();
-        if(!$group){
-            ApiException::run("用户组不存在",'900001',__CLASS__,__METHOD__,__LINE__);
-        }
-
-
-
-        if(!YII_DEBUG){
-
-            UpdateService::run('user',$form->id,'id',$form);
-        }
-
-
-
-        return "";
     }
 
 

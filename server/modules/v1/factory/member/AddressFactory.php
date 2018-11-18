@@ -1,10 +1,12 @@
 <?php
 
 
-namespace app\modules\v1\factory;
+namespace app\modules\v1\factory\member;
 
 
-class MemberAddressFactory extends BaseFactory
+use app\modules\v1\factory\BaseFactory;
+
+class AddressFactory extends BaseFactory
 {
     public $form_map = [
 

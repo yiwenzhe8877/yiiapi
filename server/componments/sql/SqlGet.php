@@ -108,6 +108,7 @@ class SqlGet
         $pagesize=\Yii::$app->params['page_size'];
 
 
+
         Assert::isNotPageNum($this->getPageNum());
         Assert::isEmpty(['表名'=>$this->getTableName()]);
 
@@ -124,7 +125,7 @@ class SqlGet
         if(count($this->getWhere())>0){
             $sql.=' where ';
             foreach ($this->getWhere() as $k=>$v){
-                $sql.=Filter::sqlinject($k).Filter::sqlinject($v);
+                $sql.=Filter::sqlinject($k).'"'.Filter::sqlinject($v).'"';
             }
         }
 
@@ -165,7 +166,7 @@ class SqlGet
         if(count($this->getWhere())>0){
             $sql.=' where ';
             foreach ($this->getWhere() as $k=>$v){
-                $sql.=Filter::sqlinject($k).Filter::sqlinject($v);
+                $sql.=Filter::sqlinject($k).'"'.Filter::sqlinject($v).'"';
             }
         }
 

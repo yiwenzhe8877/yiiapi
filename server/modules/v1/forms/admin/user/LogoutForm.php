@@ -3,9 +3,9 @@
 namespace app\modules\v1\forms\admin\user;
 
 use app\componments\utils\ApiException;
-use app\models\AdminUser;
+use app\models\admin\user;
+use app\models\api\admin\user\GetLoginedAdminUserApi;
 use app\modules\v1\forms\CommonForm;
-use app\modules\v1\service\user\UserService;
 
 class LogoutForm extends CommonForm
 {
@@ -13,17 +13,11 @@ class LogoutForm extends CommonForm
 
     public function run(){
 
-
-        $user=UserService::getAdminUser();
-
-        
-        if(!$user){
-            ApiException::run("token不存在或错误",'900001');
-        }
+        $uid=GetLoginedAdminUserApi::getUid();
 
         if(!YII_DEBUG){
 
-            $model=AdminUser::find()->andWhere(['=','username',$user->username])->one();
+            $model=user::findone($uid);
 
             $model->auth_key=getRandom();
             $model->save();

@@ -3,7 +3,7 @@
 namespace app\modules\v1\forms\admin\auth;
 
 
-use app\models\AdminUser;
+use app\models\user;
 use app\modules\v1\service\sql\sqlService;
 use app\modules\v1\utils\CodeMsgMap;
 

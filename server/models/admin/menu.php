@@ -1,6 +1,6 @@
 <?php
 
-namespace app\models;
+namespace app\models\admin;
 
 use Yii;
 
@@ -16,7 +16,7 @@ use Yii;
  * @property string $controller 控制器
  * @property string $action 方法
  */
-class AdminMenu extends \yii\db\ActiveRecord
+class menu extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
@@ -32,7 +32,7 @@ class AdminMenu extends \yii\db\ActiveRecord
     //获得后台菜单
     public static function getMenu($id){
 
-        $group_id=AdminUser::findOne($id)->userGroups->group_id;
+        $group_id=user::findOne($id)->userGroups->group_id;
 
         $menuarr=AdminGroup::findOne($group_id)->groupMenus;
 

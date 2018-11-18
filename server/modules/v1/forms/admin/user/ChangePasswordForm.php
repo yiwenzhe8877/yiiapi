@@ -4,7 +4,8 @@
 namespace app\modules\v1\forms\admin\user;
 
 use app\componments\utils\ApiException;
-use app\models\AdminUser;
+use app\componments\utils\Assert;
+use app\models\admin\user;
 use app\modules\v1\forms\CommonForm;
 
 class ChangePasswordForm extends CommonForm
@@ -22,30 +23,24 @@ class ChangePasswordForm extends CommonForm
 
             ['user_id','required','message'=>'用户id不能为空'],
             ['password','required','message'=>'密码不能为空'],
+            [['user_id'], 'exist','targetClass' => 'app\models\admin\user', 'message' => '用户不存在'],
             ['passwordagain','required','message'=>'再次密码不能为空'],
         ];
     }
 
 
     public function run($form){
-        $model=AdminUser::findOne($form->user_id);
-
-        if(!$model){
-            ApiException::run("用户id不存在",'900001');
-        }
-
-        if($form->password!==$form->passwordagain){
-            ApiException::run("两次输入的密码不一致",'900001');
-        }
 
 
+        Assert::PasswordNotEqual($form->password,$form->passwordagain);
+        Assert::PwdNotStrong($form->password);
 
 
-        $model=AdminUser::findOne($form->user_id);
+        $model=user::findOne($form->user_id);
 
         $model->password=md5($form->password.\Yii::$app->params['salt']);
 
-        $model->save();
+      //  $model->save();
         return "";
     }
 

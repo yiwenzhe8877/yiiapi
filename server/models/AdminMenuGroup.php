@@ -42,7 +42,7 @@ class AdminMenuGroup extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'menu_id' => 'AdminMenu ID',
+            'menu_id' => 'menu ID',
             'group_id' => 'AdminGroup ID',
         ];
     }

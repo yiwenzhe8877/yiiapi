@@ -9,7 +9,7 @@ use app\componments\utils\ApiException;
 use app\componments\utils\Ip;
 use app\componments\utils\RandomUtils;
 use app\models\AdminGroup;
-use app\models\AdminUser;
+use app\models\user;
 use app\models\api\member\group\MemberGroupApi;
 use app\models\MemberBase;
 use app\modules\v1\forms\CommonForm;

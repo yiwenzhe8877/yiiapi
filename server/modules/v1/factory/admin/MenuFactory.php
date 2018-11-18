@@ -1,15 +1,17 @@
 <?php
 /**
  * Created by PhpStorm.
- * AdminUser: idz025
+ * adminUser: idz025
  * DateUtils: 2018/11/2
  * Time: 10:23
  */
 
-namespace app\modules\v1\factory;
+namespace app\modules\v1\factory\admin;
 
 
-class AdminMenuFactory extends BaseFactory
+use app\modules\v1\factory\BaseFactory;
+
+class MenuFactory extends BaseFactory
 {
     public $form_map = [
         'adminmenu.delete'=>'app\modules\v1\forms\admin\menu\DeleteForm',

@@ -8,7 +8,7 @@ use app\componments\utils\ApiException;
 use app\componments\utils\Ip;
 use app\componments\utils\RandomUtils;
 use app\models\AdminGroup;
-use app\models\AdminUser;
+use app\models\user;
 use app\models\api\admin\user\GetLoginedAdminUserApi;
 use app\models\api\member\address\SetDefaultAddressApi;
 use app\models\api\member\base\GetMemberInfoApi;

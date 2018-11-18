@@ -3,9 +3,11 @@
 namespace app\modules\v1\forms\admin\user;
 
 
+use app\componments\sql\SqlCreate;
 use app\componments\utils\ApiException;
 use app\models\AdminGroup;
-use app\models\AdminUser;
+use app\models\admin\user;
+use app\models\api\admin\group\AdminGroupApi;
 use app\modules\v1\forms\CommonForm;
 use app\modules\v1\service\model\AddService;
 
@@ -14,52 +16,32 @@ class AddForm extends CommonForm
 
     public $username;
     public $password;
-    public $nickname;
-    public $phone;
-    public $group_name;
-    public $status;
-    public $del;
+
 
 
         
     public function addRule(){
         return [
-            [['username','password','nickname','phone','group_name','status','del'],'required','message'=>'{attribute}不能为空'],
+            [['username','password'],'required','message'=>'{attribute}不能为空'],
+            ['username', 'unique', 'targetClass' => 'app\models\admin\user', 'message' => '{attribute}已经被使用。'],
         ];
     }
 
 
     public function run($form){
-        $model=AdminUser::find()
-            ->andWhere(['=','username',$form->username])
-            ->one();
 
-
-        if($model){
-            ApiException::run("用户名已经存在",'900001');
-        }
-
-        $group=AdminGroup::find()
-            ->andWhere(['=','group_name',$form->group_name])
-            ->one();
-        if(!$group){
-            ApiException::run("用户组名称不存在",'900001');
-        }
-
-
-
-        $postwhere=[
-            'password'=>md5($form->password.\Yii::$app->params['salt'])
-        ];
 
         $otherdata=[
-            'group_id'=>$group->group_id,
+            'group_id'=>AdminGroupApi::getDefaultGroupId(),
+            'group_name'=>AdminGroupApi::getDefaultGroupName(),
             'auth_key'=>getRandom(),
-            'del'=>0,
+            'password'=>md5($form->password.\Yii::$app->params['salt'])
         ];
-        AddService::run('user',$form,$postwhere,$otherdata);
-
-        return "";
+        $obj=new SqlCreate();
+        $obj->setTableName('admin_user');
+        $obj->setData($form);
+        $obj->setCoverData($otherdata);
+        return $obj->run();
 
     }
 

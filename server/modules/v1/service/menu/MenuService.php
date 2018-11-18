@@ -5,7 +5,7 @@ namespace app\modules\v1\service\menu;
 use app\models\AdminAuth;
 use app\models\AdminGroup;
 use app\models\AdminGroupAuth;
-use app\models\AdminMenu;
+use app\models\admin\menu;
 use app\models\AdminMenuGroup;
 use app\modules\v1\service\user\UserService;
 

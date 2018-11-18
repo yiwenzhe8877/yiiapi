@@ -4,7 +4,7 @@ namespace app\modules\v2\forms\member;
 
 
 use app\componments\utils\ApiException;
-use app\models\AdminUser;
+use app\models\user;
 use app\modules\v2\forms\CommonForm;
 use app\modules\v2\service\user\UserService;
 
@@ -24,7 +24,7 @@ class LogoutForm extends CommonForm
 
         if(!YII_DEBUG){
 
-            $model=AdminUser::find()->andWhere(['=','username',$user->username])->one();
+            $model=user::find()->andWhere(['=','username',$user->username])->one();
 
             $model->auth_key=getRandom();
             $model->save();

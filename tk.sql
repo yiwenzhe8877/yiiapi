@@ -375,7 +375,7 @@ CREATE TABLE IF NOT EXISTS `tk_member_loginlog` (
   `username` varchar(100) DEFAULT NULL COMMENT '用户名',
   `browser` varchar(100) DEFAULT NULL COMMENT '浏览器版本',
   `platform` varchar(100) DEFAULT NULL COMMENT '平台系统',
-  `user_agent` varchar(500) DEFAULT NULL COMMENT 'user-agent标识',
+  `user_agent` varchar(500) DEFAULT NULL COMMENT 'adminUser-agent标识',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=43460 DEFAULT CHARSET=utf8 COMMENT='用户登录日志表';
 

@@ -3,10 +3,8 @@
 namespace app\modules\v1\forms\admin\group;
 
 
+use app\componments\sql\SqlGet;
 use app\modules\v1\forms\CommonForm;
-use app\modules\v1\service\sql\sqlService;
-use app\modules\v1\utils\CodeMsgMap;
-use app\modules\v1\utils\Filter;
 
 class GetListForm extends CommonForm
 {
@@ -14,10 +12,14 @@ class GetListForm extends CommonForm
 
 
 
-    public function run(){
+    public function run($form){
 
+        $obj=new SqlGet();
+        $obj->setTableName('admin_group');
+        $obj->setOrderBy('group_id desc');
+        $obj->setPageNum($form->pageNum);
+        return $obj->get_list();
 
-        return sqlService::get_list_by_page('*','tk_admin_group',[],'group_id desc');
 
     }
 

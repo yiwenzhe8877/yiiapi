@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * AdminUser: admin
+ * adminUser: admin
  * DateUtils: 2018/7/23
  * Time: 17:20
  */

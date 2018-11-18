@@ -1,15 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * AdminUser: idz025
- * DateUtils: 2018/11/2
- * Time: 10:23
- */
 
-namespace app\modules\v1\factory;
+namespace app\modules\v1\factory\admin;
 
+use app\modules\v1\factory\BaseFactory;
 
-class AdminUserFactory extends BaseFactory
+class UserFactory extends BaseFactory
 {
     public $form_map = [
         'adminuser.delete'=>'app\modules\v1\forms\admin\user\DeleteForm',
@@ -21,7 +16,6 @@ class AdminUserFactory extends BaseFactory
         'adminuser.getlist'=>'app\modules\v1\forms\admin\user\GetListForm',
         'adminuser.update'=>'app\modules\v1\forms\admin\user\UpdateForm',
         'adminuser.changepassword'=>'app\modules\v1\forms\admin\user\ChangePasswordForm',
-
 
     ];
 

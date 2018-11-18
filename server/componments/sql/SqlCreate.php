@@ -14,17 +14,17 @@ use app\componments\utils\Filter;
 class SqlCreate
 {
     private  $_map=[
-        'admin_user'=> 'app\models\AdminUser',
-        'admin_user_group'=> 'app\models\AdminUserGroup',
-        'admin_auth'=> 'app\models\AdminAuth',
-        'admin_group_auth'=> 'app\models\AdminGroupAuth',
-        'admin_group'=> 'app\models\AdminGroup',
-        'admin_menu'=> 'app\models\AdminMenu',
-        'admin_menu_group'=> 'app\models\AdminMenuGroup',
-        'member_base'=> 'app\models\MemberBase',
-        'member_group'=> 'app\models\MemberGroup',
-        'member_address'=> 'app\models\MemberAddress',
-        'member_msg'=> 'app\models\MemberMsg',
+        'admin_user'=> 'app\models\admin\user',
+        'admin_user_group'=> 'app\models\admin\user\group',
+        'admin_auth'=> 'app\models\admin\auth',
+        'admin_group_auth'=> 'app\models\admin\group\auth',
+        'admin_group'=> 'app\models\admin\group',
+        'admin_menu'=> 'app\models\admin\menu',
+        'admin_menu_group'=> 'app\models\admin\menu\group',
+        'member_base'=> 'app\models\member\base',
+        'member_group'=> 'app\models\member\group',
+        'member_address'=> 'app\models\member\address',
+        'member_msg'=> 'app\models\member\msg',
     ];
     private $_tableName='';
     private $_data=[];

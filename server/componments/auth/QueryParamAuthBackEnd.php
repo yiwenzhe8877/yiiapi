@@ -11,6 +11,7 @@ use app\componments\utils\ApiException;
 use app\models\AdminAuth;
 use app\models\AdminGroup;
 use app\models\AdminGroupAuth;
+use app\models\api\admin\user\GetLoginedAdminUserApi;
 use app\modules\v1\service\user\UserService;
 use app\utils\ResponseMap;
 
@@ -30,7 +31,7 @@ class QueryParamAuthBackEnd extends AuthMethod
     public $tokenParam = 'token';
     public static $token = 'token';
 
-    public  $white=['user.login'];
+    public  $white=['adminUser.login'];
 
     /**
      * @inheritdoc
@@ -50,12 +51,12 @@ class QueryParamAuthBackEnd extends AuthMethod
         }
 
 
-        //验证token的
-        UserService::getAdminUser();
+
 
         if (is_string($accessToken) && !empty($accessToken)) {
 
-            $identity = $user->loginByAccessToken($accessToken, get_class($this));
+            //$identity = $adminUser->loginByAccessToken($accessToken, get_class($this));
+            $identity =GetLoginedAdminUserApi::getAllInfo();
 
             if ($identity !== null) {
 

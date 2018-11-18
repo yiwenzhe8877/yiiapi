@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0444797-2417-4062-91be-2659b99bb471" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/SiteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/member/base.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/controllers/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/factory/member/Base_Factory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/factory/member/GroupFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/factory/member/GroupFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/base/AddForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/base/ChangePasswordForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/baseinfo/ChangePasswordForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/base/ChangeRichesForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/baseinfo/ChangeRichesForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/base/GetAllForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/base/GetListForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/base/UpdateForm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/componments/format/ApiJsonFormatResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/componments/format/ApiJsonFormatResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/componments/utils/ApiException.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/componments/utils/ApiException.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,13 +28,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="log" value="14" />
-          <entry key="php" value="607" />
+          <entry key="php" value="609" />
           <entry key="txt" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="607" />
+          <entry key="PHP" value="609" />
           <entry key="PLAIN_TEXT" value="26" />
         </counts>
       </usages-collector>
@@ -52,13 +42,13 @@
         <counts>
           <entry key="dummy" value="140" />
           <entry key="log" value="2" />
-          <entry key="php" value="10969" />
+          <entry key="php" value="11179" />
           <entry key="txt" value="206" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="10969" />
+          <entry key="PHP" value="11179" />
           <entry key="PLAIN_TEXT" value="348" />
         </counts>
       </usages-collector>
@@ -78,31 +68,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v1/controllers/IndexController.php">
+        <entry file="file://$PROJECT_DIR$/server/componments/format/ApiJsonFormatResponse.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="e#46#85#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/Factory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1914">
-              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            <state relative-caret-position="296">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/member/GroupFactory.php">
+        <entry file="file://$PROJECT_DIR$/server/componments/utils/ApiException.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+              <caret line="44" column="79" selection-start-line="44" selection-start-column="79" selection-end-line="44" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -154,8 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/logs/UpdateForm.php" />
-        <option value="$PROJECT_DIR$/server/models/admin/operatorlogs.php" />
         <option value="$PROJECT_DIR$/server/modules/v1/factory/admin/OperatorLogsFactory.php" />
         <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/operatorlogs/GetListForm.php" />
         <option value="$PROJECT_DIR$/server/models/common/dlycorp.php" />
@@ -205,6 +181,8 @@
         <option value="$PROJECT_DIR$/server/modules/v1/factory/Factory.php" />
         <option value="$PROJECT_DIR$/server/modules/v1/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/server/modules/v1/factory/member/GroupFactory.php" />
+        <option value="$PROJECT_DIR$/server/componments/format/ApiJsonFormatResponse.php" />
+        <option value="$PROJECT_DIR$/server/componments/utils/ApiException.php" />
       </list>
     </option>
   </component>
@@ -309,6 +287,26 @@
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="componments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="componments" type="462c0819:PsiDirectoryNode" />
+              <item name="format" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="componments" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
@@ -493,7 +491,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56928000" />
+    <option name="totallyTimeSpent" value="58021000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -559,16 +557,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/common/TestFactory.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/test/TestFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/common/DistrictFactory.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
@@ -901,13 +889,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/controllers/IndexController.php">
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/member/GroupFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#46#85#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="330">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -918,10 +903,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/member/GroupFactory.php">
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#46#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/componments/format/ApiJsonFormatResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/componments/utils/ApiException.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <caret line="44" column="79" selection-start-line="44" selection-start-column="79" selection-end-line="44" selection-end-column="79" />
         </state>
       </provider>
     </entry>

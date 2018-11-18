@@ -29,10 +29,13 @@ class ApiJsonFormatResponse extends JsonResponseFormatter
             else
             {
                 $response->setStatusCode(200);
+
+
                 $response->data = [
                     'status'=>'fail',
                     'code'=>"{$response->data['code']}",
-                    'msg'=> $response->data['message'],
+                    'msg'=> json_decode(($response->data['message']))->msg,
+                    'location'=>json_decode(($response->data['message']))->location ,
 
                 ];
             }

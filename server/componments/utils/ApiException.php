@@ -42,6 +42,8 @@ class ApiException
             $model->msg=$msg;
             $model->save();
 
+            $msg=json_encode(['msg'=>$msg,'location'=>$class.'---'.$method.'---第'.$line.'行']);
+
             //$msg.=$method.$line;
         }
 

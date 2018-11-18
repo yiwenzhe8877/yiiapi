@@ -6,10 +6,7 @@ namespace app\modules\v1\forms\admin\auth;
 use app\componments\sql\SqlCreate;
 use app\componments\utils\ApiException;
 use app\models\admin\auth;
-use app\models\AdminAuth;
-use app\models\AdminGroup;
 use app\modules\v1\forms\CommonForm;
-use app\modules\v1\service\model\AddService;
 
 
 class AddForm extends CommonForm

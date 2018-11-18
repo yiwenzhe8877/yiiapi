@@ -172,6 +172,7 @@ class AdminGroupApi
                 }
             }
         }
+        return "";
     }
 
     //
@@ -204,32 +205,7 @@ class AdminGroupApi
         return "";
     }
 
-    public static function syncMenus(){
-        set_time_limit(0);
-        $menu=menu::find()->all();
-        $group=group::find()->all();
 
-        for($i=0;$i<count($group);$i++){
-
-            $group_id=$group[$i]->group_id;
-            for($j=0;$j<count($menu);$j++){
-                $menu_id=$menu[$j]->menu_id;
-
-                $data=menugroup::find()
-                    ->andWhere(['=','group_id',$group_id])
-                    ->andWhere(['=','menu_id',$menu_id])
-                    ->one();
-                if(!$data){
-                    $model=new menugroup();
-                    $model->menu_id=$menu_id;
-                    $model->group_id=$group_id;
-                    $model->is_enable=1;
-                    $model->save();
-                }
-            }
-        }
-        return "";
-    }
 
     public static function getGroupMenus($group_id){
 

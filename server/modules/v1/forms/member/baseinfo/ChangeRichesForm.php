@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\v1\forms\member\base;
+namespace app\modules\v1\forms\member\baseinfo;
 
 
 use app\componments\sql\SqlUpdate;

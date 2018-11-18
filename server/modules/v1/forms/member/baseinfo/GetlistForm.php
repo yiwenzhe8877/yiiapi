@@ -1,26 +1,25 @@
 <?php
 
-namespace app\modules\v1\forms\member\base;
+namespace app\modules\v1\forms\member\baseinfo;
+
 
 
 
 use app\componments\sql\SqlGet;
 use app\modules\v1\forms\CommonForm;
 
-
-class GetAllForm extends CommonForm
+class GetListForm extends CommonForm
 {
 
 
 
-
-    public function run(){
-
+    public function run($form){
 
         $obj=new SqlGet();
         $obj->setTableName('member_base');
         $obj->setOrderBy('member_id desc');
-        return $obj->get_all();
+        $obj->setPageNum($form->pageNum);
+        return $obj->get_list();
     }
 
 }

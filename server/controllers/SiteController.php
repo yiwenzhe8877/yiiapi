@@ -12,7 +12,7 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        $tablename='tk_freight_template';
+        $tablename='tk_member_baseinfo';
         $module='v1';
 
 

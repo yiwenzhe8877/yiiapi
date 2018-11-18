@@ -6,7 +6,6 @@ namespace app\modules\v1\forms\member\address;
 
 use app\componments\sql\SqlGet;
 use app\modules\v1\forms\CommonForm;
-use app\modules\v1\service\sql\sqlService;
 
 class GetListForm extends CommonForm
 {

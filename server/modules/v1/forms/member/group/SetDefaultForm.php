@@ -4,10 +4,9 @@ namespace app\modules\v1\forms\member\group;
 
 
 
-use app\componments\sql\SqlGet;
-use app\componments\sql\SqlUpdate;
+use app\models\admin\menugroup;
 use app\models\api\member\group\MemberGroupApi;
-use app\models\MemberGroup;
+use app\models\member\group;
 use app\modules\v1\forms\CommonForm;
 
 
@@ -20,7 +19,7 @@ class SetDefaultForm extends CommonForm
     public function addRule(){
         return [
             [['group_id'],'required','message'=>'{attribute}不能为空'],
-            [['group_id'], 'exist','targetClass' => 'app\models\MemberGroup', 'message' => '用户组不存在'],
+            [['group_id'], 'exist','targetClass' => 'app\models\member\group', 'message' => '用户组不存在'],
         ];
     }
 
@@ -29,15 +28,14 @@ class SetDefaultForm extends CommonForm
     public function run($form){
 
 
-
         $group=MemberGroupApi::getDefaultGroup();
-        MemberGroup::updateAll([
+        group::updateAll([
             'is_default'=>0
         ],[
             'group_id'=>$group->group_id
         ]);
 
-        MemberGroup::updateAll([
+        group::updateAll([
             'is_default'=>1
         ],[
             'group_id'=>$form->group_id

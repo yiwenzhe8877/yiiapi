@@ -2,120 +2,124 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0444797-2417-4062-91be-2659b99bb471" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/server/models/admin/user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/api/admin/group/AdminGroupApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/api/admin/group/ForbidAdminGroupApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/api/admin/menu/AdminMenuSyncApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/models/api/admin/user/GetAdminUserApi.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/admin/operatorlogs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/common/district.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/common/dlycorp.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/common/setting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/freight/template.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/goods/goods.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/goods/logs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/goods/models.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/models/goods/product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/factory/admin/OperatorLogsFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/factory/common/DistrictFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/factory/common/DlycorpFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/factory/common/SettingFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/factory/goods/GoodsFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/factory/goods/LogsFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/factory/goods/ModelsFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/factory/goods/ProductFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/operatorlogs/GetListForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/common/district/AddForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/common/district/DeleteForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/common/district/GetAllForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/common/district/GetListForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/AddForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/DeleteForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/GetAllForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/GetListForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/common/setting/AddForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/common/setting/DeleteForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/common/setting/GetAllForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/common/setting/GetListForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/goods/AddForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/goods/DeleteForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/goods/GetAllForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/goods/GetListForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/logs/AddForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/logs/DeleteForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/logs/GetAllForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/logs/GetListForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/logs/UpdateForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/models/AddForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/models/DeleteForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/models/GetAllForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/models/GetListForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/models/UpdateForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/product/AddForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/product/DeleteForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/product/GetAllForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/product/GetListForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/product/UpdateForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/build/three.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/three/build/three.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/build/three.module.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/three/build/three.module.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/controls/VRControls.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/three/controls/VRControls.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/AWDLoader.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/AWDLoader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/DRACOLoader.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/DRACOLoader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/GLTFLoader.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/GLTFLoader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/sea3d/SEA3D.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/sea3d/SEA3D.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/BokehShader2.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/BokehShader2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/SSAOShader.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/SSAOShader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/utils/ShadowMapViewer.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/three/utils/ShadowMapViewer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/vr/DaydreamController.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/three/vr/DaydreamController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/vr/GearVRController.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/three/vr/GearVRController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/vr/ViveController.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/three/vr/ViveController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/SyntaxHighlighter/shCore.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/SyntaxHighlighter/shCore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/codemirror/codemirror.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/codemirror/codemirror.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/highcharts.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/highcharts.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/map.src.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/map.src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/jquery-1.10.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/jquery-1.10.2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/video-js/video-js.css" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/video-js/video-js.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/video-js/video.dev.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/video-js/video.dev.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/video-js/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/video-js/video.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/xss.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/xss.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/ueditor.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/ueditor.all.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/ueditor.all.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/ueditor.all.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/componments/OSS/Http/RequestCore.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/componments/OSS/Http/RequestCore.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/componments/auth/QueryParamAuthBackEnd.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/componments/auth/QueryParamAuthBackEnd.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/componments/sql/SqlCreate.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/componments/sql/SqlCreate.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/componments/sql/SqlGet.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/componments/sql/SqlGet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/componments/sql/SqlUpdate.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/componments/sql/SqlUpdate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/componments/template/Form.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/componments/template/Form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/componments/utils/ApiException.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/componments/utils/ApiException.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/componments/utils/Assert.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/componments/utils/Assert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/componments/utils/CodeMsgMap.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/componments/utils/CodeMsgMap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/componments/utils/Filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/componments/utils/Filter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/AdminGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/admin/group.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/AdminMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/admin/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/AdminMenuGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/AdminMenuGroup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/AdminUser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/AdminUserGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/AdminUserGroup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/ApiExceptionlog.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/ApiExceptionlog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/SiteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/AdminAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/admin/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/AdminGroupAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/admin/groupauth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/AdminMenuGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/admin/menugroup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/AdminUserGroup.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/Article.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/ArticleCategory.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/Category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/GoodsCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/goods/category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/MemberAddress.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/member/address.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/MemberBase.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/member/base.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/MemberCart.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/member/cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/MemberFavorite.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/member/favorite.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/MemberFootprint.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/member/footprint.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/MemberGroup.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/member/group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/MemberLoginlog.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/member/loginlog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/MemberMsg.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/member/msg.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/MemberPointer.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/member/pointer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/MemberProfile.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/member/profile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/MemberSysmsg.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/member/sysmsg.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/MemberVerify.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/member/verify.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/admin/group.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/admin/group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/api/admin/group/AdminGroupApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/api/admin/group/AdminGroupApi.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/models/api/admin/user/GetLoginedAdminUserApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/api/admin/user/GetLoginedAdminUserApi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/controllers/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/factory/AdminAuthFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/factory/admin/AuthFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/factory/AdminGroupFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/factory/admin/GroupFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/factory/AdminMenuFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/factory/admin/MenuFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/factory/AdminUserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/factory/admin/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/api/member/group/MemberGroupApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/api/member/group/MemberGroupApi.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v1/factory/Factory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/factory/Factory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/factory/GoodsClassFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/factory/goods/CategoryFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/factory/MemberAddressFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/factory/member/AddressFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/factory/MemberBaseFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/factory/member/Base_Factory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/factory/MemberGroupFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/factory/member/GroupFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/factory/MemberMsgFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/factory/member/MsgFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/CommonForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/CommonForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/AddForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/AddForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/DeleteForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/DeleteForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/GetAllForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/GetAllForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/GetGroupAuthListForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/GetGroupAuthListForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/GetListForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/GetListForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/SetGroupAuthForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/SetGroupAuthForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/SyncGroupAuthForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/SyncGroupAuthForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/UpdateForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/UpdateForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/group/AddForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/group/AddForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/group/DeleteForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/group/DeleteForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/group/ForbiddenForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/group/ForbiddenForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/group/GetAllForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/group/GetAllForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/group/GetListForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/group/GetListForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/group/UpdateForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/group/UpdateForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/AddForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/AddForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/DeleteForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/DeleteForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/GetAllForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/GetAllForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/AddForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/AddForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/ChangePasswordForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/ChangePasswordForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/DeleteForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/DeleteForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/GetListForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/GetListForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/GetOneForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/GetOneForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/LoginForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/LoginForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/LogoutForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/LogoutForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/UpdateForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/UpdateForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/getAdminForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/getAdminForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/goods/classes/AddForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/classes/AddForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/goods/classes/DeleteForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/classes/DeleteForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/GetListForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/GetListForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/GetMenuGroupRelationForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/GetMenuGroupRelationForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/SetGroupMenuForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/SetGroupMenuForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/SyncGroupMenuForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/SyncGroupMenuForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/UpdateForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/UpdateForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/goods/classes/AddForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/category/AddForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/goods/classes/DeleteForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/category/DeleteForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/goods/classes/GetAllForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/category/GetAllForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/goods/classes/GetListForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/goods/category/GetListForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/address/AddForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/address/AddForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/address/GetListForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/address/GetListForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/address/UpdateForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/address/UpdateForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/base/AddForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/base/AddForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/base/ChangePasswordForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/base/ChangePasswordForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/base/ChangeRichesForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/base/ChangeRichesForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/base/GetListForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/base/GetListForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/base/UpdateForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/base/UpdateForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/group/AddForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/group/AddForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/group/GetListForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/group/GetListForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/group/SetDefaultForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/group/SetDefaultForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/group/UpdateForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/group/UpdateForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/msg/AddForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/msg/AddForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/msg/GetListForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/msg/GetListForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/msg/SetReadForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/msg/SetReadForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/msg/UpdateForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/msg/UpdateForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/service/menu/MenuService.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/service/menu/MenuService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/service/model/AddService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/service/model/UpdateService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/service/sql/AddOrUpdateService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/service/sql/sqlService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/service/sql/sqlService.php.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/service/user/UserService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/service/user/UserService.php.bak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/components/auth/QueryParamAuth.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/components/auth/QueryParamAuth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/factory/BaseFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/factory/BaseFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/factory/Factory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/factory/Factory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/factory/MemberFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/factory/MemberFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/CommonForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/CommonForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/member/ForgetPasswordForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/member/ForgetPasswordForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/member/GetBaseInfoForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/member/GetBaseInfoForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/member/LoginForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/member/LoginForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/member/LogoutForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/member/LogoutForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tests/acceptance/LoginCest.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/tests/acceptance/LoginCest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tests/functional/LoginFormCest.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/tests/functional/LoginFormCest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tests/unit/models/UserTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/tests/unit/models/UserTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tk.sql" beforeDir="false" afterPath="$PROJECT_DIR$/tk.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/service/auth/AuthService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/service/auth/AuthService.php.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/service/menu/MenuService.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/service/menu/MenuService.php.bak" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -139,32 +143,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="log" value="11" />
-          <entry key="php" value="335" />
+          <entry key="log" value="14" />
+          <entry key="php" value="542" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="335" />
-          <entry key="PLAIN_TEXT" value="11" />
+          <entry key="PHP" value="542" />
+          <entry key="PLAIN_TEXT" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="88" />
-          <entry key="log" value="1" />
-          <entry key="php" value="6851" />
+          <entry key="dummy" value="137" />
+          <entry key="log" value="2" />
+          <entry key="php" value="9655" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="6851" />
-          <entry key="PLAIN_TEXT" value="89" />
+          <entry key="PHP" value="9655" />
+          <entry key="PLAIN_TEXT" value="139" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="30" />
+          <entry key="PHP Class.type" value="47" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -178,113 +182,91 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/group/GetAllForm.php">
+        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/AddForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#53#84#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="66">
+              <caret line="2" selection-start-line="2" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/group/GetListForm.php">
+        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/DeleteForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-              <folding>
-                <element signature="e#53#84#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="99">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/group/AddForm.php">
+        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/GetAllForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-              <folding>
-                <element signature="e#53#87#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="99">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/GetListForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/setting/AddForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="2" selection-start-line="2" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/setting/DeleteForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/setting/GetAllForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/setting/GetListForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/models/admin/auth.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/user/AddForm.php">
+        <entry file="file://$PROJECT_DIR$/server/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="38" column="10" lean-forward="true" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
-              <folding>
-                <element signature="e#52#86#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/models/api/admin/group/AdminGroupApi.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/user/ChangePasswordForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-990">
-              <folding>
-                <element signature="e#52#91#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/user/getAdminForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-200">
-              <folding>
-                <element signature="e#52#83#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v1/service/auth/AuthService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="758">
-              <caret line="35" column="9" selection-start-line="13" selection-start-column="7" selection-end-line="35" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/group/UpdateForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-              <folding>
-                <element signature="e#53#87#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/menu/AddForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="25" selection-start-line="25" selection-end-line="26" />
-              <folding>
-                <element signature="e#52#86#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="297">
+              <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -299,11 +281,33 @@
       <find>MemberMsgFactory</find>
       <find>goodsCategoryFactory</find>
       <find>CodeMsgMap</find>
+      <find>set</find>
+      <find>sync</find>
+      <find>sync`</find>
+      <find>goods</find>
+      <find>category</find>
+      <find>models</find>
+      <find>menu</find>
+      <find>goodscategory</find>
+      <find>goods\category</find>
+      <find>district</find>
+      <find>dlycorp</find>
     </findStrings>
     <replaceStrings>
       <replace>class</replace>
       <replace>member</replace>
       <replace>goods\CategoryFactory</replace>
+      <replace>models</replace>
+      <replace>goodsgoods</replace>
+      <replace>goods</replace>
+      <replace>product</replace>
+      <replace>goodslogs</replace>
+      <replace>logs</replace>
+      <replace>operatorlogs</replace>
+      <replace>commondistrict</replace>
+      <replace>common\district</replace>
+      <replace>dlycorp</replace>
+      <replace>setting</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -312,57 +316,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/user/DeleteForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/user/LoginForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/user/LogoutForm.php" />
-        <option value="$PROJECT_DIR$/server/models/api/admin/menu/AdminMenu.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/GetAllForm.php" />
-        <option value="$PROJECT_DIR$/server/componments/sql/SqlCreate.php" />
-        <option value="$PROJECT_DIR$/server/models/admin/menu.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/AddForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/service/menu/MenuService.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/user/GetOneForm.php" />
-        <option value="$PROJECT_DIR$/server/models/admin/Adminuser.php" />
-        <option value="$PROJECT_DIR$/server/models/admin/AdminUser.php" />
-        <option value="$PROJECT_DIR$/server/models/api/admin/user/GetAdminUserApi.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/factory/AdminUserFactory.php" />
-        <option value="$PROJECT_DIR$/server/config/web.php" />
-        <option value="$PROJECT_DIR$/server/models/admin/user.php" />
-        <option value="$PROJECT_DIR$/server/config/db.php" />
-        <option value="$PROJECT_DIR$/server/models/api/admin/user/GetLoginedAdminUserApi.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/factory/member/BaseFactory.php" />
-        <option value="$PROJECT_DIR$/server/models/api/admin/menu/AdminMenuSyncApi.php" />
-        <option value="$PROJECT_DIR$/server/models/api/admin/group/group.php" />
-        <option value="$PROJECT_DIR$/server/models/admin/group.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/factory/admin/UserFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/factory/member/Base_Factory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/factory/member/GroupFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/factory/member/MsgFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/factory/goods/CategoryFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/factory/admin/MenuFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/factory/admin/AuthFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/factory/member/AddressFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/user/UpdateForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/user/GetListForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/group/GetListForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/factory/admin/GroupFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/factory/Factory.php" />
-        <option value="$PROJECT_DIR$/server/runtime/logs/app.log" />
-        <option value="$PROJECT_DIR$/server/runtime/logs/error.log" />
-        <option value="$PROJECT_DIR$/server/runtime/logs/sql.log" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/group/ForbiddenForm.php" />
-        <option value="$PROJECT_DIR$/server/componments/sql/SqlGet.php" />
-        <option value="$PROJECT_DIR$/server/componments/sql/SqlUpdate.php" />
-        <option value="$PROJECT_DIR$/server/componments/utils/Filter.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/controllers/IndexController.php" />
-        <option value="$PROJECT_DIR$/server/models/api/admin/group/ForbidAdminGroupApi.php" />
-        <option value="$PROJECT_DIR$/server/componments/utils/Assert.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/group/DeleteForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/group/GetAllForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/group/UpdateForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/group/AddForm.php" />
-        <option value="$PROJECT_DIR$/server/models/api/admin/group/AdminGroupApi.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/user/AddForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/factory/goods/ModelsFactory.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/category/AddForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/models/AddForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/models/GetAllForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/models/GetListForm.php" />
+        <option value="$PROJECT_DIR$/server/models/goods/goods.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/factory/goods/GoodsFactory.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/goods/AddForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/goods/DeleteForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/goods/GetAllForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/goods/GetListForm.php" />
+        <option value="$PROJECT_DIR$/server/models/goods/product.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/factory/goods/ProductFactory.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/product/AddForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/product/DeleteForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/product/GetListForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/product/UpdateForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/models/DeleteForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/product/GetAllForm.php" />
+        <option value="$PROJECT_DIR$/server/models/goods/logs.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/factory/goods/LogFactory.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/factory/goods/LogsFactory.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/logs/AddForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/logs/DeleteForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/logs/GetAllForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/logs/GetListForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/goods/logs/UpdateForm.php" />
+        <option value="$PROJECT_DIR$/server/models/admin/operatorlogs.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/factory/admin/OperatorLogsFactory.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/operatorlogs/GetListForm.php" />
+        <option value="$PROJECT_DIR$/server/models/common/dlycorp.php" />
+        <option value="$PROJECT_DIR$/server/models/common/district.php" />
+        <option value="$PROJECT_DIR$/server/models/common/setting.php" />
+        <option value="$PROJECT_DIR$/server/models/freight/template.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/factory/common/DlycorpFactory.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/factory/common/DistrictFactory.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/factory/common/SettingFactory.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/district/AddForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/district/DeleteForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/district/GetAllForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/district/GetListForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/AddForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/DeleteForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/GetAllForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/GetListForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/setting/AddForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/setting/DeleteForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/setting/GetAllForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/setting/GetListForm.php" />
+        <option value="$PROJECT_DIR$/server/models/admin/auth.php" />
+        <option value="$PROJECT_DIR$/server/controllers/SiteController.php" />
       </list>
     </option>
   </component>
@@ -445,10 +449,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
-    <option name="y" value="101" />
-    <option name="width" value="1855" />
-    <option name="height" value="878" />
+    <option name="x" value="503" />
+    <option name="y" value="166" />
+    <option name="width" value="1775" />
+    <option name="height" value="846" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -472,154 +476,19 @@
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="componments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="componments" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="group" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-              <item name="group" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
               <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -627,9 +496,6 @@
               <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-              <item name="goods" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
@@ -637,52 +503,6 @@
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="v1" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
@@ -719,18 +539,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\models\api\admin\group" />
-      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v1\factory\admin" />
-      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\componments\api\sms" />
-      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v2\forms\member" />
-      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\models" />
+      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v1\forms\common\setting" />
+      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v1\forms\common\dlycorp" />
+      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v1\forms\common\district" />
+      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v1\forms\admin\operatorlogs" />
+      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v1\forms\goods\logs" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\models\goods" />
+      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\models\member" />
       <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\models\admin" />
       <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v1\factory\goods" />
       <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v1\factory\member" />
-      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v1\factory\admin" />
-      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\models\api\admin\menu" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -762,7 +582,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31572000" />
+    <option name="totallyTimeSpent" value="50292000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -774,10 +594,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="101" width="1855" height="878" extended-state="0" />
+    <frame x="503" y="166" width="1775" height="846" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18997215" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18017493" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -828,400 +648,381 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/member/address/AddForm.php">
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/goods/goods/DeleteForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/service/menu/MenuService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" column="2" selection-start-line="15" selection-start-column="2" selection-end-line="40" />
+        <state relative-caret-position="527">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <element signature="e#47#72#0#PHP" expanded="true" />
+            <element signature="e#54#88#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/user/GetOneForm.php">
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/goods/goods/GetAllForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+        <state relative-caret-position="593">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/goods/goods/GetListForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/goods/product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/goods/ProductFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/componments/sql/SqlUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-70">
+          <caret line="70" column="21" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/goods/product/AddForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
-            <element signature="e#52#98#0#PHP" expanded="true" />
+            <element signature="e#54#88#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/common/BaseController.php">
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/goods/models/UpdateForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="99">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
-            <element signature="e#41#88#0#PHP" expanded="true" />
+            <element signature="e#57#91#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/admin/AdminUserFactory.php">
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/goods/models/DeleteForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/config/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/admin/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/api/admin/user/GetAdminUserApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="461">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
-            <element signature="e#135#174#0#PHP" expanded="true" />
+            <element signature="e#56#90#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/api/admin/user/GetLoginedAdminUserApi.php">
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/goods/product/DeleteForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="11" selection-start-line="11" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="e#55#89#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/goods/product/GetAllForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="18" column="41" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/goods/product/GetListForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/goods/product/UpdateForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/goods/models.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="27" lean-forward="true" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/goods/logs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/goods/ModelsFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="18" column="6" lean-forward="true" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/goods/LogsFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/goods/logs/DeleteForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/goods/logs/GetAllForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <caret line="20" selection-start-line="20" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/goods/logs/GetListForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/goods/logs/AddForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="23" />
           <folding>
-            <element signature="e#134#181#0#PHP" expanded="true" />
+            <element signature="e#55#89#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/admin/menu.php">
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/goods/logs/UpdateForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="164">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/admin/menugroup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="10" column="18" lean-forward="true" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/admin/operatorlogs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/admin/MenuFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+        <state relative-caret-position="330">
+          <caret line="15" column="22" selection-end-line="27" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/admin/AuthFactory.php">
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/admin/OperatorLogsFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        <state relative-caret-position="334">
+          <caret line="20" column="76" selection-start-line="20" selection-start-column="76" selection-end-line="20" selection-end-column="76" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/admin/UserFactory.php">
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/operatorlogs/AddForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132">
+          <caret line="2" column="43" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/operatorlogs/GetListForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/common/dlycorp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/common/district.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" lean-forward="true" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/common/setting.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/goods/category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="14" column="20" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/freight/template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/goods/CategoryFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="12" column="26" selection-end-line="21" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/common/DlycorpFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/common/DistrictFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/common/SettingFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/district/AddForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" selection-start-line="2" selection-end-line="3" />
+          <folding>
+            <element signature="e#48#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/district/DeleteForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/district/GetAllForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/district/GetListForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/goods/CategoryFactory.php">
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/AddForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+        <state relative-caret-position="66">
+          <caret line="2" selection-start-line="2" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/member/AddressFactory.php">
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/DeleteForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        <state relative-caret-position="99">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/member/Base_Factory.php">
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/GetAllForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="99">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/member/GroupFactory.php">
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/GetListForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/member/MsgFactory.php">
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/setting/AddForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        <state relative-caret-position="66">
+          <caret line="2" selection-start-line="2" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/BaseFactory.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/user/DeleteForm.php">
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/setting/DeleteForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="66">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/user/UpdateForm.php">
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/setting/GetAllForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#51#85#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="99">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/user/LogoutForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#51#90#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/user/GetListForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-          <folding>
-            <element signature="e#52#83#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/api/admin/menu/AdminMenuSyncApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="7" selection-start-line="7" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/admin/group.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/admin/GroupFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/config/db.php">
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/common/setting/GetListForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/runtime/logs/app.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/runtime/logs/error.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/runtime/logs/sql.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/Factory.php">
+    <entry file="file://$PROJECT_DIR$/server/models/admin/auth.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="132">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/group/ForbiddenForm.php">
+    <entry file="file://$PROJECT_DIR$/server/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding>
-            <element signature="e#53#104#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#46#85#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/componments/sql/SqlUpdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="80" column="33" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/componments/sql/SqlGet.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="175" selection-start-line="175" selection-end-line="175" />
-          <folding>
-            <element signature="e#39#78#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/componments/utils/Filter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="21" column="16" lean-forward="true" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/componments/utils/Assert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="80" column="4" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/api/admin/group/ForbidAdminGroupApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding>
-            <element signature="e#135#169#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/group/DeleteForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/group/GetAllForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#53#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/group/GetListForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#53#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/service/model/UpdateService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-728">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/service/model/AddService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-891" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/group/UpdateForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding>
-            <element signature="e#53#87#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/menu/AddForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="25" selection-start-line="25" selection-end-line="26" />
-          <folding>
-            <element signature="e#52#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/service/auth/AuthService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="35" column="9" selection-start-line="13" selection-start-column="7" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/group/AddForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="e#53#87#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/user/ChangePasswordForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-990">
-          <folding>
-            <element signature="e#52#91#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/user/getAdminForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-200">
-          <folding>
-            <element signature="e#52#83#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/api/admin/group/AdminGroupApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/user/AddForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="38" column="10" lean-forward="true" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
-          <folding>
-            <element signature="e#52#86#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="297">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
         </state>
       </provider>
     </entry>

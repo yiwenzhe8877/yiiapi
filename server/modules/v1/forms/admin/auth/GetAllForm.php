@@ -3,12 +3,9 @@
 namespace app\modules\v1\forms\admin\auth;
 
 
-use app\models\user;
-use app\modules\v1\service\sql\sqlService;
-use app\modules\v1\utils\CodeMsgMap;
 
-use app\modules\v1\utils\Filter;
-use yii\base\Model;
+
+use app\componments\sql\SqlGet;
 use app\modules\v1\forms\CommonForm;
 
 class GetAllForm extends CommonForm
@@ -22,7 +19,11 @@ class GetAllForm extends CommonForm
     public function run(){
 
 
-        return sqlService::get_all('*','tk_admin_auth',[],'group_id desc');
+        $obj=new SqlGet();
+        $obj->setTableName('admin_auth');
+        $obj->setOrderBy('auth_id desc');
+        return $obj->get_all();
+
 
     }
 

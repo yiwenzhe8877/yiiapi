@@ -74,12 +74,16 @@ class Factory
         'membermsg.getlist'=>'app\modules\v1\factory\member\MsgFactory',
         'membermsg.getall'=>'app\modules\v1\factory\member\MsgFactory',
         'membermsg.setread'=>'app\modules\v1\factory\member\MsgFactory',
-        //商品
+        //商品类别
         'goodscategory.add'=>'app\modules\v1\factory\goods\CategoryFactory',
         'goodscategory.update'=>'app\modules\v1\factory\goods\CategoryFactory',
         'goodscategory.getlist'=>'app\modules\v1\factory\goods\CategoryFactory',
         'goodscategory.getall'=>'app\modules\v1\factory\goods\CategoryFactory',
-
+        //商品模型
+        'goodsmodels.add'=>'app\modules\v1\factory\goods\ModelsFactory',
+        'goodsmodels.update'=>'app\modules\v1\factory\goods\ModelsFactory',
+        'goodsmodels.getlist'=>'app\modules\v1\factory\goods\ModelsFactory',
+        'goodsmodels.getall'=>'app\modules\v1\factory\goods\ModelsFactory',
     ];
 
 

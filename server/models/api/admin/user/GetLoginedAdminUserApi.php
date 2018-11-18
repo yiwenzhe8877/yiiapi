@@ -19,6 +19,11 @@ class GetLoginedAdminUserApi
     public static function getName(){
         return   user::findOne(['auth_key'=>QueryParamAuthBackEnd::getAdminToken()])->username;
     }
+
+    public static function getGroupId(){
+        return   user::findOne(['auth_key'=>QueryParamAuthBackEnd::getAdminToken()])->group_id;
+
+    }
     public static function getAllInfo(){
         return   user::findOne(['auth_key'=>QueryParamAuthBackEnd::getAdminToken()]);
     }

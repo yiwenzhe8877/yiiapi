@@ -6,6 +6,7 @@ namespace app\modules\v1\forms\admin\menu;
 use app\componments\sql\SqlCreate;
 use app\componments\utils\ApiException;
 use app\componments\utils\Assert;
+use app\models\api\admin\group\AdminGroupApi;
 use app\modules\v1\forms\CommonForm;
 
 class AddForm extends CommonForm
@@ -39,11 +40,9 @@ class AddForm extends CommonForm
         $obj->run();
 
 
-        //管理组和菜单同步
-        //MenuService::sync();
+        return AdminGroupApi::syncMenus();
 
 
-        return "";
     }
 
 

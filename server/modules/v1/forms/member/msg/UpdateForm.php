@@ -5,16 +5,12 @@ namespace app\modules\v1\forms\member\msg;
 
 
 use app\componments\sql\SqlUpdate;
-use app\models\AdminGroup;
-use app\models\user;
 use app\models\api\member\address\SetDefaultAddressApi;
 use app\modules\v1\forms\CommonForm;
-use app\modules\v1\service\model\UpdateService;
 
 
 class UpdateForm extends CommonForm
 {
-
 
     public $name;
     public $phone;
@@ -31,7 +27,7 @@ class UpdateForm extends CommonForm
         return [
             [['name','phone','province','city',"district",'community','address','is_default','addr_id'],'required','message'=>'{attribute}不能为空'],
             ['phone','match','pattern'=>'/^[1][3456789][0-9]{9}$/','message'=>'phone必须是手机号'],
-            [['addr_id'], 'exist','targetClass' => 'app\models\MemberAddress', 'message' => '地址id不存在'],
+            [['addr_id'], 'exist','targetClass' => 'app\models\member\address', 'message' => '地址id不存在'],
             ['is_default','in','range'=>['1','0'],'message'=>'{attribute}非法'],
         ];
     }

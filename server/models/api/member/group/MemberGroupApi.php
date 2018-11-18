@@ -8,14 +8,14 @@
 namespace app\models\api\member\group;
 
 use app\componments\sql\SqlGet;
-use app\models\MemberGroup;
+use app\models\member\group;
 
 class MemberGroupApi
 {
     //获得默认用户组
     public static function getDefaultGroup(){
 
-        return MemberGroup::findone(['is_default'=>1]);
+        return group::findone(['is_default'=>1]);
 
     }
 }

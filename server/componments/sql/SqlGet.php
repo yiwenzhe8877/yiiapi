@@ -174,7 +174,6 @@ class SqlGet
             $sql.=' order By '.$this->getOrderBy();
         }
 
-
         $connection = \Yii::$app->db;
         $command = $connection->createCommand($sql);
         $result = $command->queryAll();

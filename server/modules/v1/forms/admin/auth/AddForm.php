@@ -3,7 +3,9 @@
 namespace app\modules\v1\forms\admin\auth;
 
 
+use app\componments\sql\SqlCreate;
 use app\componments\utils\ApiException;
+use app\models\admin\auth;
 use app\models\AdminAuth;
 use app\models\AdminGroup;
 use app\modules\v1\forms\CommonForm;
@@ -31,7 +33,7 @@ class AddForm extends CommonForm
     public function run($form){
 
 
-        $model=AdminAuth::find()
+        $model=auth::find()
             ->andWhere(['=','module',$form->module])
             ->andWhere(['=','controller',$form->controller])
             ->andWhere(['=','action',$form->action])
@@ -40,17 +42,12 @@ class AddForm extends CommonForm
             ApiException::run("模块-控制器-方法同时存在",'900001');
         }
 
-        $otherdata=[
-            'sort'=>1,
-            'status'=>1,
-            'del'=>0,
-        ];
-        AddService::run('auth',$form,[],$otherdata);
+        $obj=new SqlCreate();
+        $obj->setTableName('admin_auth');
+        $obj->setData($form);
+        return $obj->run();
 
 
-
-
-        return "";
     }
 
 

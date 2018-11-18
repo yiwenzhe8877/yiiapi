@@ -25,6 +25,7 @@ class SqlCreate
         'member_group'=> 'app\models\member\group',
         'member_address'=> 'app\models\member\address',
         'member_msg'=> 'app\models\member\msg',
+        'goods_category'=> 'app\models\goods\category',
     ];
     private $_tableName='';
     private $_data=[];

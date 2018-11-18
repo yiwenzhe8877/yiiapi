@@ -24,4 +24,7 @@ class group extends \yii\db\ActiveRecord
     {
         return 'tk_admin_group';
     }
+    public function getGroupMenus(){
+        return $this->hasMany(menugroup::className(),['group_id' => 'group_id']);
+    }
 }

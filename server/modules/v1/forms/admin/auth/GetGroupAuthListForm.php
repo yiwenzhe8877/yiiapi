@@ -3,6 +3,8 @@
 namespace app\modules\v1\forms\admin\auth;
 
 
+use app\models\admin\auth;
+use app\models\api\admin\group\AdminGroupApi;
 use app\modules\v1\forms\CommonForm;
 use app\modules\v1\service\auth\AuthService;
 
@@ -14,22 +16,16 @@ class GetGroupAuthListForm extends CommonForm
 
 
 
-
-
-
-
     public function addRule(){
         return [
-            [['group_id'],'match','pattern'=>'/^\d+$/'],
+            [['group_id'], 'exist','targetClass' => 'app\models\admin\group', 'message' => '{attribute}不存在'],
         ];
     }
 
 
     public function run($form){
 
-
-
-        return AuthService::get_list_by_groupid($form->pageNum,$form->group_id);
+        return AdminGroupApi::getAuthsListByGroupId($form->pageNum,$form->group_id);
 
     }
 

@@ -14,32 +14,7 @@ class DeleteForm extends CommonForm
 
 
 
-
-
-
-
-
     public function run($form){
-
-
-        $arr=explode(',',$form->id);
-
-        foreach ($arr as $v){
-            $model=AdminMenu::find()
-                ->andWhere(['=','menu_id',$v])
-                ->one();
-
-            if(!$model){
-                ApiException::run("id不存在",'900001');
-            }
-
-            $model=AdminMenu::findOne($v);
-            $model->del=1;
-            $model->save();
-        }
-
-        return "";
-
 
     }
 

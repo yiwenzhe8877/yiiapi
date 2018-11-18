@@ -4,14 +4,10 @@ namespace app\modules\v1\forms\member\base;
 
 
 use app\componments\sql\SqlCreate;
-use app\componments\utils\ApiException;
 use app\componments\utils\Ip;
 use app\componments\utils\RandomUtils;
-use app\models\AdminGroup;
-use app\models\user;
 use app\models\api\member\group\MemberGroupApi;
 use app\modules\v1\forms\CommonForm;
-use app\modules\v1\service\model\AddService;
 
 class AddForm extends CommonForm
 {
@@ -23,7 +19,7 @@ class AddForm extends CommonForm
     public function addRule(){
         return [
             [['password','pam_account'],'required','message'=>'{attribute}不能为空'],
-            ['pam_account', 'unique', 'targetClass' => 'app\models\MemberBase', 'message' => '此用户名已经被使用。'],
+            ['pam_account', 'unique', 'targetClass' => 'app\models\member\base', 'message' => '此用户名已经被使用。'],
         ];
     }
 

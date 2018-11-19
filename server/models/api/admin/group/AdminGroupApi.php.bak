@@ -75,7 +75,7 @@ class AdminGroupApi
                 ->one();
 
             if(!$model){
-                ApiException::run("权限id和组group_id:".$v."不存在",'100003');
+                ApiException::run("权限id和组group_id:".$v."不存在",'900001');
             }
         }
 

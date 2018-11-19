@@ -26,7 +26,7 @@ class DeleteForm extends CommonForm
                 ->one();
 
             if(!$model){
-                ApiException::run("用户id不存在",'100003');
+                ApiException::run("用户id不存在",'900001');
             }
 
             $model=user::findOne($v);

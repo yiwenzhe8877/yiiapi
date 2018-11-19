@@ -16,7 +16,7 @@ class GetAdminUserApi
 {
     public static function getById($id){
         $user= user::findOne($id);
-            ApiException::run("用户不存在",'100003');
+            ApiException::run("用户不存在",'9000001');
 
         return $user;
     }

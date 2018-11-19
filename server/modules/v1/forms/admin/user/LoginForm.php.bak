@@ -47,12 +47,12 @@ class LoginForm extends CommonForm
         $user=user::findOne(['username'=>$this->username,'status'=>0]);
 
         if($user){
-            ApiException::run("用户被禁用","100012");
+            ApiException::run("用户被禁用","900001");
         }
         $user=user::findOne(['username'=>$this->username,'del'=>1]);
 
         if($user){
-            ApiException::run("用户被删除","100013");
+            ApiException::run("用户被删除","900001");
         }
 
         return true;

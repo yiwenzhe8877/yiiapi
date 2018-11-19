@@ -18,7 +18,7 @@ class CommonSettingApi
            ->one();
 
        if(!$ret)
-           ApiException::run("微信配置错误".$key,'100006');
+           ApiException::run("微信配置错误".$key);
 
        return $ret->value;
 

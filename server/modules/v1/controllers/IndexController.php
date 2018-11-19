@@ -34,7 +34,7 @@ class IndexController  extends BaseController
 
         if(!$form->validate())
         {
-            ApiException::run($form->getError(),'900000',__CLASS__,__METHOD__,__LINE__);
+            ApiException::run($form->getError(),'900002',__CLASS__,__METHOD__,__LINE__);
         }
 
 

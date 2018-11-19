@@ -10,7 +10,6 @@ namespace app\componments\utils;
 
 
 use app\models\ApiExceptionlog;
-use app\models\user;
 use yii\base\UserException;
 
 class ApiException

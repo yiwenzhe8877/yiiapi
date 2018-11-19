@@ -15,10 +15,9 @@ class SiteController extends Controller
     public function actionIndex()
     {
 
-        var_dump(CommonSettingApi::getValue('wx','appid'));
-        die();
 
-        $tablename='tk_common_setting';
+
+        $tablename='tk_store_setting';
         $module='v1';
 
         $this->makeApi($tablename);

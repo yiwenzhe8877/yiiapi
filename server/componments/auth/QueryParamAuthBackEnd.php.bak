@@ -132,7 +132,7 @@ class QueryParamAuthBackEnd extends AuthMethod
 
 
         if(!$data){
-            ApiException::run(ResponseMap::Map('710002'),'710002',__CLASS__,__METHOD__,__LINE__);
+            ApiException::run('该用户所在组没有权限调用该接口','900001',__CLASS__,__METHOD__,__LINE__);
         }
 
 

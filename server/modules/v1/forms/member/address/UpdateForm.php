@@ -24,6 +24,8 @@ class UpdateForm extends CommonForm
     public $addr_id;
 
 
+
+
     public function addRule(){
         return [
             [['name','phone','province','city',"district",'community','address','is_default','addr_id'],'required','message'=>'{attribute}不能为空'],

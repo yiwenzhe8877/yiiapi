@@ -30,7 +30,7 @@ class Factory
         //判断是否存在这个服务
         if(!array_key_exists($service,self::$SERVICE_MAP))
         {
-            ApiException::run("该服务不存在",'100010');
+            ApiException::run("该服务不存在",'900001');
         }
 
         $clazz = self::$SERVICE_MAP[$service];

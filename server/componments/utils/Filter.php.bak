@@ -19,7 +19,7 @@ class Filter
         foreach (self::$sqlinject_map as $k=>$v){
 
             if($v===$value){
-                ApiException::run('请不要使用非法字符'.$v,'100005',__CLASS__,__METHOD__,__LINE__);
+                ApiException::run('请不要使用非法字符'.$v,'900001',__CLASS__,__METHOD__,__LINE__);
             }
         }
         return $value;

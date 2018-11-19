@@ -21,12 +21,10 @@ class CommonForm extends Model
 
     public function rules()
     {
-
         $temp=$this->getRules(FORM_CLASS);
         foreach ($this->addRule() as $k=>$v){
             array_push($temp,$v);
         }
-
         return $temp;
     }
 
@@ -51,8 +49,6 @@ class CommonForm extends Model
     private function baseRule()
     {
         return [
-            ['pageNum','match','pattern'=>'/^[1-9][0-9]*$/','message'=>'pageNum必须是正整数'],
-            ['id','match','pattern'=>'/^[1-9][0-9]*$/','message'=>'id必须是正整数'],
         ];
     }
 

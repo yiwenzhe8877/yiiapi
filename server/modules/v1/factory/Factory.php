@@ -46,14 +46,16 @@ class Factory
         'adminmenu.getmenugrouprelation'=>'app\modules\v1\factory\admin\MenuFactory',
 
         //后台客户
-        'memberbase.delete'=>'app\modules\v1\factory\member\Base_Factory',
-        'memberbase.add'=>'app\modules\v1\factory\member\Base_Factory',
-        'memberbase.update'=>'app\modules\v1\factory\member\Base_Factory',
-        'memberbase.getlist'=>'app\modules\v1\factory\member\Base_Factory',
-        'memberbase.getall'=>'app\modules\v1\factory\member\Base_Factory',
-        'memberbase.changepassword'=>'app\modules\v1\factory\member\Base_Factory',
-        'memberbase.changeriches'=>'app\modules\v1\factory\member\Base_Factory',
-        
+        'memberbaseinfo.delete'=>'app\modules\v1\factory\member\BaseinfoFactory',
+        'memberbaseinfo.add'=>'app\modules\v1\factory\member\BaseinfoFactory',
+        'memberbaseinfo.update'=>'app\modules\v1\factory\member\BaseinfoFactory',
+        'memberbaseinfo.getlist'=>'app\modules\v1\factory\member\BaseinfoFactory',
+        'memberbaseinfo.getall'=>'app\modules\v1\factory\member\BaseinfoFactory',
+        'memberbaseinfo.changepassword'=>'app\modules\v1\factory\member\BaseinfoFactory',
+        'memberbaseinfo.changeriches'=>'app\modules\v1\factory\member\BaseinfoFactory',
+        'memberbaseinfo.xcxadd'=>'app\modules\v1\factory\member\BaseinfoFactory',
+        'memberbaseinfo.xcxdecrptunionid'=>'app\modules\v1\factory\member\BaseinfoFactory',
+
         //后台客户组
         'membergroup.delete'=>'app\modules\v1\factory\member\GroupFactory',
         'membergroup.add'=>'app\modules\v1\factory\member\GroupFactory',
@@ -84,6 +86,8 @@ class Factory
         'goodsmodels.update'=>'app\modules\v1\factory\goods\ModelsFactory',
         'goodsmodels.getlist'=>'app\modules\v1\factory\goods\ModelsFactory',
         'goodsmodels.getall'=>'app\modules\v1\factory\goods\ModelsFactory',
+
+
     ];
 
 

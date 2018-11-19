@@ -2,6 +2,8 @@
 
 namespace app\controllers;
 
+use app\models\api\common\setting\CommonSettingApi;
+use app\models\common\setting;
 use yii\web\Controller;
 
 
@@ -12,10 +14,14 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        $tablename='tk_member_baseinfo';
+
+        var_dump(CommonSettingApi::getValue('wx','appid'));
+        die();
+
+        $tablename='tk_common_setting';
         $module='v1';
 
-
+        $this->makeApi($tablename);
         $this->makeModel($tablename);
         $this->makeFactory($tablename,$module);
         $this->makeform($tablename,$module,'add');
@@ -25,6 +31,35 @@ class SiteController extends Controller
         $this->makeform($tablename,$module,'delete');
     }
 
+    private function makeApi($tablename){
+        if($tablename=='')return;
+
+        $arr=explode('_',$tablename);
+        $one=$arr[1];
+        $two=$arr[2];
+        $z=file_get_contents('./template/api.txt');
+        $z=str_replace('{one}',$one,$z);
+        $z=str_replace('{two}',$two,$z);
+        $z=str_replace('{classname}',ucfirst($one).ucfirst($two).'Api',$z);
+
+        $dir_one='../models/api/'.$one;
+        $dir_two=$dir_one.'/'.$two;
+
+        $filename=ucfirst($one).ucfirst($two).'Api.php';
+        if(!is_dir($dir_one)){
+            mkdir($dir_one);
+        }
+        if(!is_dir($dir_two)){
+            mkdir($dir_two);
+        }
+
+        if(!file_exists($dir_two.'/'.$filename)){
+            $myfile = fopen($dir_two.'/'.$filename, "w") or die("Unable to open file!");
+            fwrite($myfile, $z);
+            fclose($myfile);
+        }
+
+    }
 
     private function makeModel($tablename){
         if($tablename=='')return;

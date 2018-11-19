@@ -14,7 +14,7 @@ class GetAllForm extends CommonForm
 
     public function run($form){
 
-
+        return [1];
         $obj=new SqlGet();
         $obj->setTableName('goods_models');
         $obj->setOrderBy('sort desc');

@@ -26,6 +26,7 @@ class CommonForm extends Model
         foreach ($this->addRule() as $k=>$v){
             array_push($temp,$v);
         }
+
         return $temp;
     }
 

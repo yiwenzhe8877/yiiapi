@@ -17,7 +17,7 @@ class ApiException
 {
 
     //抛出异常
-    public static function run($msg='',$code='',$class='',$method='',$line=''){
+    public static function run($msg='',$code='900001',$class='',$method='',$line=''){
 
         if(YII_DEBUG){
 

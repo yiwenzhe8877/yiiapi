@@ -28,15 +28,17 @@ class IndexController  extends BaseController
 
         $form=$factory->getForm($service);
 
+        $form->load(\Yii::$app->getRequest()->post(),'');
 
-        if($form->load(\Yii::$app->getRequest()->post(),'') && !$form->validate())
+
+
+        if(!$form->validate())
         {
             ApiException::run($form->getError(),'900000',__CLASS__,__METHOD__,__LINE__);
         }
 
 
         $service=$factory->getRun($service);
-
         $data=\Yii::$app->getRequest()->post();
 
         foreach ($data as $key=>$value)

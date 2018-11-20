@@ -11,6 +11,9 @@ class ApiJsonFormatResponse extends JsonResponseFormatter
     //格式化响应
     protected function formatJson($response)
     {
+
+        $service=\Yii::$app->getRequest()->post('service');
+        $url=\Yii::$app->getRequest()->getUrl();
         $response->getHeaders()->set('Content-Type', 'application/json; charset=UTF-8');
         if ($response->data !== null) {
             $options = $this->encodeOptions;
@@ -22,7 +25,8 @@ class ApiJsonFormatResponse extends JsonResponseFormatter
             {
                 $response->data=[
                     'status'=>"success",
-                    'code'=>'000000',
+                    'code'=>'0',
+                    'msg'=>'成功',
                     'data'=>$response->data
                 ];
             }
@@ -30,12 +34,12 @@ class ApiJsonFormatResponse extends JsonResponseFormatter
             {
                 $response->setStatusCode(200);
 
-
-
                 $response->data = [
                     'status'=>'fail',
                     'code'=>"{$response->data['code']}",
                     'msg'=> json_decode(($response->data['message']))->msg,
+                    'service'=>$service,
+                    'url'=>$url,
                     'location'=>json_decode(($response->data['message']))->location ,
 
                 ];

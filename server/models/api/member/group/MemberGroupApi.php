@@ -7,7 +7,6 @@
  */
 namespace app\models\api\member\group;
 
-use app\componments\sql\SqlGet;
 use app\models\member\group;
 
 class MemberGroupApi

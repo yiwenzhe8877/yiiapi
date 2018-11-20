@@ -8,6 +8,8 @@ use yii\base\UserException;
 class ResponseMap
 {
     protected static $map = [
+
+
         //公共类
         '100001'=>'空值',
         '100002'=>'页码错误',

@@ -15,7 +15,7 @@ class SiteController extends Controller
     public function actionIndex()
     {
 
-
+        return 123;
 
         $tablename='tk_store_setting';
         $module='v1';

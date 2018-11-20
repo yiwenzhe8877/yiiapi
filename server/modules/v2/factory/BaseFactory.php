@@ -21,7 +21,7 @@ class BaseFactory
 
     public function getRun($service)
     {
-        $clazz = $this->run_map[$service];
+        $clazz = $this->form_map[$service];
         return new $clazz();
     }
 

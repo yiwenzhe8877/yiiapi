@@ -14,12 +14,9 @@ use app\componments\utils\ApiException;
 class Factory
 {
     static public $SERVICE_MAP =[
-        //会员
-        'member.register'=>'app\modules\v2\factory\MemberFactory',
-        'member.login'=>'app\modules\v2\factory\MemberFactory',
-        'member.forgetpassword'=>'app\modules\v2\factory\MemberFactory',
-        'member.logout'=>'app\modules\v2\factory\MemberFactory',
-        'member.getbaseinfo'=>'app\modules\v2\factory\MemberFactory',
+
+        'memberbaseinfo.xcxadd'=>'app\modules\v2\factory\member\BaseinfoFactory',
+        'memberbaseinfo.xcxdecrptunionid'=>'app\modules\v2\factory\member\BaseinfoFactory',
 
     ];
 

@@ -2,27 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0444797-2417-4062-91be-2659b99bb471" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/componments/testapi/ApiTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/componments/auth/QueryParamAuthBackEnd.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/componments/auth/QueryParamAuthBackEnd.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/componments/format/ApiJsonFormatResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/componments/format/ApiJsonFormatResponse.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/componments/utils/ApiException.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/componments/utils/ApiException.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/componments/auth/QueryParamAuthBackEnd.php.bak" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/componments/utils/Assert.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/componments/utils/Assert.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/componments/utils/CodeMsgMap.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/componments/utils/Constants.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/componments/utils/Filter.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/componments/utils/Filter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/componments/utils/MapUtils.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/componments/utils/ResponseMap.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/componments/utils/ResponseMap.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config/params.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/params.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/SiteController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/api/admin/group/AdminGroupApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/api/admin/group/AdminGroupApi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/api/admin/user/GetAdminUserApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/api/admin/user/GetAdminUserApi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/api/common/setting/CommonSettingApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/api/common/setting/CommonSettingApi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/api/member/baseinfo/ChangePasswordApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/api/member/baseinfo/ChangePasswordApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/api/admin/user/GetLoginedAdminUserApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/api/admin/user/GetLoginedAdminUserApi.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v1/controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/controllers/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/factory/Factory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/factory/Factory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/CommonForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/CommonForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/AddForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/AddForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/LoginForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/LoginForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/member/address/UpdateForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/member/address/UpdateForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/AddForm.php.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/DeleteForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/DeleteForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/user/LoginForm.php.bak" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,34 +41,34 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="bak" value="1" />
-          <entry key="log" value="14" />
-          <entry key="php" value="641" />
+          <entry key="log" value="18" />
+          <entry key="php" value="666" />
           <entry key="txt" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="641" />
-          <entry key="PLAIN_TEXT" value="27" />
+          <entry key="PHP" value="666" />
+          <entry key="PLAIN_TEXT" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="140" />
-          <entry key="log" value="2" />
-          <entry key="php" value="11726" />
+          <entry key="dummy" value="148" />
+          <entry key="log" value="5" />
+          <entry key="php" value="13145" />
           <entry key="txt" value="206" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="11726" />
-          <entry key="PLAIN_TEXT" value="348" />
+          <entry key="PHP" value="13145" />
+          <entry key="PLAIN_TEXT" value="359" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="48" />
+          <entry key="PHP Class.type" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -88,38 +81,76 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/componments/testapi/ApiTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="89" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/componments/utils/ResponseMap.php">
+        <entry file="file://$PROJECT_DIR$/server/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state relative-caret-position="447">
+              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+              <folding>
+                <element signature="e#35#71#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/member/GetBaseInfoForm.php">
+        <entry file="file://$PROJECT_DIR$/server/componments/utils/HttpUtils.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="132">
+              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/models/api/member/baseinfo/ChangePasswordApi.php">
+        <entry file="file://$PROJECT_DIR$/server/runtime/logs/app.log">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/modules/v1/controllers/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="75" column="28" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="28" />
+            <state relative-caret-position="495">
+              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+              <folding>
+                <element signature="e#46#85#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/componments/utils/Assert.php">
+        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/user/DeleteForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="198">
+              <caret line="13" column="23" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/user/AddForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="27" column="5" selection-start-line="22" selection-start-column="3" selection-end-line="27" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/CommonForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1518">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
             </state>
           </provider>
         </entry>
@@ -171,15 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/district/AddForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/district/DeleteForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/district/GetAllForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/district/GetListForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/AddForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/DeleteForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/GetAllForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/dlycorp/GetListForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/common/setting/AddForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v1/forms/common/setting/DeleteForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v1/forms/common/setting/GetAllForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v1/forms/common/setting/GetListForm.php" />
@@ -190,12 +212,10 @@
         <option value="$PROJECT_DIR$/server/web/template/factory.txt" />
         <option value="$PROJECT_DIR$/server/modules/v1/common/TestFactory.php" />
         <option value="$PROJECT_DIR$/server/modules/v1/factory/test/TestFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/AddForm.php" />
         <option value="$PROJECT_DIR$/server/models/api/admin/group/AdminGroupApi.php" />
         <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/group/AddForm.php" />
         <option value="$PROJECT_DIR$/server/web/template/addform.txt" />
         <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/group/DeleteForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/user/DeleteForm.php" />
         <option value="$PROJECT_DIR$/server/web/template/deleteform.txt" />
         <option value="$PROJECT_DIR$/server/modules/v1/forms/member/msg/UpdateForm.php" />
         <option value="$PROJECT_DIR$/server/web/template/updateform.txt" />
@@ -210,18 +230,29 @@
         <option value="$PROJECT_DIR$/server/modules/v1/factory/Factory.php" />
         <option value="$PROJECT_DIR$/server/modules/v1/factory/member/GroupFactory.php" />
         <option value="$PROJECT_DIR$/server/componments/utils/ApiException.php" />
-        <option value="$PROJECT_DIR$/server/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/server/modules/v1/forms/store/setting/DeleteForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v1/forms/store/setting/AddForm.php" />
         <option value="$PROJECT_DIR$/server/componments/utils/Constants.php" />
         <option value="$PROJECT_DIR$/server/componments/utils/MapUtils.php" />
-        <option value="$PROJECT_DIR$/server/componments/format/ApiJsonFormatResponse.php" />
         <option value="$PROJECT_DIR$/server/modules/v1/forms/member/address/UpdateForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v1/forms/CommonForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v1/forms/member/address/GetListForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v1/controllers/IndexController.php" />
         <option value="$PROJECT_DIR$/server/models/api/member/baseinfo/ChangePasswordApi.php" />
+        <option value="$PROJECT_DIR$/server/componments/sql/SqlCreate.php" />
+        <option value="$PROJECT_DIR$/server/componments/utils/Assert.php" />
+        <option value="$PROJECT_DIR$/server/componments/utils/Filter.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/auth/AddForm.php" />
         <option value="$PROJECT_DIR$/server/componments/utils/ResponseMap.php" />
+        <option value="$PROJECT_DIR$/server/config/params.php" />
+        <option value="$PROJECT_DIR$/server/models/api/admin/user/GetLoginedAdminUserApi.php" />
+        <option value="$PROJECT_DIR$/server/componments/format/ApiJsonFormatResponse.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/user/DeleteForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/server/componments/testapi/TestCase.php" />
+        <option value="$PROJECT_DIR$/server/componments/testapi/TestCases.php" />
+        <option value="$PROJECT_DIR$/server/componments/testapi/ApiTest.php" />
+        <option value="$PROJECT_DIR$/server/runtime/logs/app.log" />
+        <option value="$PROJECT_DIR$/server/controllers/SiteController.php" />
       </list>
     </option>
   </component>
@@ -309,10 +340,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="535" />
-    <option name="y" value="135" />
+    <option name="x" value="349" />
+    <option name="y" value="111" />
     <option name="width" value="1519" />
-    <option name="height" value="852" />
+    <option name="height" value="832" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -344,37 +375,20 @@
               <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="componments" type="462c0819:PsiDirectoryNode" />
-              <item name="format" type="462c0819:PsiDirectoryNode" />
+              <item name="testapi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="componments" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-              <item name="baseinfo" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
@@ -388,22 +402,6 @@
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="v1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
@@ -428,7 +426,7 @@
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="v1" type="462c0819:PsiDirectoryNode" />
               <item name="forms" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
@@ -437,40 +435,21 @@
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="v1" type="462c0819:PsiDirectoryNode" />
               <item name="forms" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-              <item name="address" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="runtime" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v2" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v2" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v2" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
+              <item name="runtime" type="462c0819:PsiDirectoryNode" />
+              <item name="logs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -532,12 +511,12 @@
       <workItem from="1542193712321" duration="2915000" />
       <workItem from="1542196963856" duration="7112000" />
       <workItem from="1542280419007" duration="9918000" />
-      <workItem from="1542624237755" duration="9186000" />
+      <workItem from="1542624237755" duration="17295000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67207000" />
+    <option name="totallyTimeSpent" value="75316000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -549,10 +528,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="535" y="135" width="1519" height="852" extended-state="0" />
+    <frame x="349" y="111" width="1519" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23303632" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.23303632" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -574,16 +553,16 @@
       <window_info anchor="right" id="Remote Host" order="4" weight="0.15565032" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17217484" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23303632" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.13015184" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.125" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32973805" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
@@ -603,38 +582,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/auth/DeleteForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/freight/TemplateFactory.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/freight/template.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/freight/template/DeleteForm.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/freight/template/GetallForm.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/freight/template/GetlistForm.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/freight/template/UpdateForm.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/freight/template/AddForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/models/member/baseinfo.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -697,20 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/Factory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1914">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/models/store/setting.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -718,16 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/auth/AddForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-          <folding>
-            <element signature="e#52#86#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -742,13 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/componments/auth/QueryParamAuthBackEnd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret line="25" column="6" selection-start-line="25" selection-start-column="6" selection-end-line="25" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -769,61 +685,18 @@
     <entry file="file://$PROJECT_DIR$/server/componments/utils/RandomUtils.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/componments/utils/ApiException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/componments/utils/PwdEncryptUtils.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/componments/utils/HttpUtils.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/componments/utils/Filter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-226" />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/componments/utils/DateUtils.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-358" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/componments/format/ApiJsonFormatResponse.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/member/address/GetListForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/controllers/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="28" column="42" lean-forward="true" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-          <folding>
-            <element signature="e#46#85#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/CommonForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
@@ -837,20 +710,20 @@
     <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/member/address/GetAllForm.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/componments/utils/Assert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/models/api/member/baseinfo/ChangePasswordApi.php.bak">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/componments/utils/Assert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/member/GetBaseInfoForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
@@ -861,10 +734,144 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/componments/sql/SqlCreate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="135" column="35" selection-start-line="135" selection-start-column="35" selection-end-line="135" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/componments/utils/Filter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/componments/auth/QueryParamAuthBackEnd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-132">
+          <caret line="44" column="47" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/params.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/api/admin/user/GetLoginedAdminUserApi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/componments/format/ApiJsonFormatResponse.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/componments/testapi/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="1" selection-start-line="1" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/componments/utils/ApiException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="8" selection-start-line="8" selection-end-line="9" />
+          <folding>
+            <element signature="e#134#165#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/auth/AddForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#52#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/CommonForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/user/AddForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="27" column="5" selection-start-line="22" selection-start-column="3" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/user/DeleteForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="23" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <folding>
+            <element signature="e#46#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/factory/Factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/componments/utils/ResponseMap.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state relative-caret-position="198">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/runtime/logs/app.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/componments/utils/HttpUtils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/componments/testapi/ApiTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+          <folding>
+            <element signature="e#35#71#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

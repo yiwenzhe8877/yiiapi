@@ -2,8 +2,8 @@
 
 namespace app\controllers;
 
-use app\models\api\common\setting\CommonSettingApi;
-use app\models\common\setting;
+use app\componments\testapi\ApiTest;
+use app\componments\utils\HttpUtils;
 use yii\web\Controller;
 
 
@@ -14,6 +14,34 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
+        return [
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'data'=>['service'=>'adminuser.delete'],
+                'code'=>'10010001'
+            ],
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'data'=>['service'=>'adminuser.delete','admin_id'=>'1'],'code'=>'0'],
+               ['token'=>'1','url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",'data'=>['service'=>'adminuser.delete','admin_id'=>'123123'],'code'=>'10010001'],
+        ];
+
+
+        $obj=new ApiTest();
+        $ret=$obj->getCaseAdmin();
+        $url=$obj->getCaseAdminUrl();
+        set_time_limit(0);
+
+        for ($i=0;$i<count($ret);$i++){
+
+            $code=$ret[$i]['code'];
+            $data=['ss'=>"123"];
+
+        }
+        $ret=HttpUtils::post($url,[]);
+        var_dump($ret);
 
         return 123;
 

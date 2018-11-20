@@ -10,5 +10,8 @@ return [
     'cache_token_time'=>30,
     'domain'=>$domain,
     'img_path'=>$domain.'data/images/',
-    'table_prefix'=>"tk_"
+    'table_prefix'=>"tk_",
+    'admin_token'=>"token",
+    'middle_token'=>"token",
+    'member_token'=>"token",
 ];

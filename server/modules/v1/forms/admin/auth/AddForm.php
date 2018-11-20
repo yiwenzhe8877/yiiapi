@@ -5,6 +5,7 @@ namespace app\modules\v1\forms\admin\auth;
 
 use app\componments\sql\SqlCreate;
 use app\componments\utils\ApiException;
+use app\componments\utils\ResponseMap;
 use app\models\admin\auth;
 use app\modules\v1\forms\CommonForm;
 
@@ -17,7 +18,6 @@ class AddForm extends CommonForm
     public $action;
 
 
-
     public function addRule(){
         return [
             [['name','module','controller','action'],'required','message'=>'{attribute}不能为空'],
@@ -25,10 +25,7 @@ class AddForm extends CommonForm
         ];
     }
 
-
-
     public function run($form){
-
 
         $model=auth::find()
             ->andWhere(['=','module',$form->module])
@@ -36,7 +33,7 @@ class AddForm extends CommonForm
             ->andWhere(['=','action',$form->action])
             ->one();
         if($model){
-            ApiException::run("模块-控制器-方法同时存在",'100004');
+            ApiException::run(ResponseMap::Map('10050001'),'10050001');
         }
 
         $obj=new SqlCreate();

@@ -7,15 +7,20 @@ use app\modules\v1\forms\CommonForm;
 
 class DeleteForm extends CommonForm
 {
-    public $id;
+    public $admin_id;
 
-
+    public function addRule(){
+        return [
+            [['admin_id'],'required','message'=>'{attribute}不能为空'],
+            [['admin_id'], 'exist','targetClass' => 'app\models\admin\group', 'message' => '{attribute}不存在'],
+        ];
+    }
 
     public function run($form){
         $obj=new SqlUpdate();
-        $obj->setTableName('member_base');
+        $obj->setTableName('admin_user');
         $obj->setData($form);
-        $obj->setWhere(['member_id='=>$form->member_id]);
+        $obj->setWhere(['admin_id='=>$form->admin_id]);
         return $obj->run();
 
     }

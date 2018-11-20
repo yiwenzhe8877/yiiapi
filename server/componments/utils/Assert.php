@@ -17,14 +17,13 @@ class Assert
         foreach ($arr as $k=>$v){
             if(is_string($v)){
                 if(empty($v) || $v=='' || $v==null){
-                    ApiException::run($k."不存在或者为空",'100001',__CLASS__,__METHOD__,__LINE__);
+                    ApiException::run(ResponseMap::Map('-1'),'-1',__CLASS__,__METHOD__,__LINE__);
                 }
             }
 
             if(is_array($v)){
-
                 if(count($v)==0)
-                    ApiException::run($k."不能为空",'100001',__CLASS__,__METHOD__,__LINE__);
+                    ApiException::run(ResponseMap::Map('-1'),'-1',__CLASS__,__METHOD__,__LINE__);
                 }
             }
     }
@@ -32,7 +31,7 @@ class Assert
     public static function isNotPageNum($v){
 
         if(!preg_match('/^[1-9][0-9]*$/',$v,$ma)){
-            ApiException::run("页码错误",'100002',__CLASS__,__METHOD__,__LINE__);
+            ApiException::run(ResponseMap::Map('-1'),'-1',__CLASS__,__METHOD__,__LINE__);
         }
     }
 

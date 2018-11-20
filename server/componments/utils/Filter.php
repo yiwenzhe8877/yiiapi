@@ -17,9 +17,8 @@ class Filter
     public static function sqlinject($value){
 
         foreach (self::$sqlinject_map as $k=>$v){
-
             if($v===$value){
-                ApiException::run('请不要使用非法字符'.$v,'100005',__CLASS__,__METHOD__,__LINE__);
+                ApiException::run('参数包含非法字符'.$v,'10010007',__CLASS__,__METHOD__,__LINE__);
             }
         }
         return $value;

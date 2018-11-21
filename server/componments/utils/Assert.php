@@ -38,7 +38,7 @@ class Assert
 
     public static function PasswordNotEqual($a,$b){
         if($a!==$b)
-            ApiException::run("两次输入的密码不一致",'700002',__CLASS__,__METHOD__,__LINE__);
+            ApiException::run("两次输入的密码不一致",'10040005',__CLASS__,__METHOD__,__LINE__);
 
     }
     //密码强度

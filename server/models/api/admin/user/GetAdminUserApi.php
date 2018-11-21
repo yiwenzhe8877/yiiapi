@@ -15,7 +15,10 @@ use app\models\admin\user;
 class GetAdminUserApi
 {
     public static function getById($id){
-        $user= user::findOne($id);
+        $user= user::find()
+            ->andWhere(['=','admin_id',$id])
+            ->one();
+        if(!$user)
             ApiException::run("用户不存在",'100003');
 
         return $user;

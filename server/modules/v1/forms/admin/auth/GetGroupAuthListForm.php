@@ -18,6 +18,8 @@ class GetGroupAuthListForm extends CommonForm
 
     public function addRule(){
         return [
+            [['pageNum','group_id'],'required','message'=>'{attribute}不能为空'],
+
             [['group_id'], 'exist','targetClass' => 'app\models\admin\group', 'message' => '{attribute}不存在'],
         ];
     }

@@ -8,12 +8,13 @@
 namespace app\componments\auth;
 
 use app\componments\utils\ApiException;
-use app\models\AdminAuth;
-use app\models\AdminGroup;
-use app\models\AdminGroupAuth;
+use app\componments\utils\ResponseMap;
+use app\models\admin\auth;
+use app\models\admin\group;
+use app\models\admin\groupauth;
+use app\models\admin\user;
 use app\models\api\admin\user\GetLoginedAdminUserApi;
-use app\modules\v1\service\user\UserService;
-use app\utils\ResponseMap;
+
 
 use yii\filters\auth\AuthMethod;
 
@@ -25,63 +26,54 @@ use yii\filters\auth\AuthMethod;
  */
 class QueryParamAuthBackEnd extends AuthMethod
 {
-    /**
-     * @var string the parameter name for passing the access token
-     */
-    public $tokenParam = 'token';
-    public static $token = 'token';
-
-    public  $white=['adminUser.login'];
+    public $white=['adminuser.login'];
 
     /**
      * @inheritdoc
      */
     public function authenticate($user, $request, $response)
     {
+        //service
 
-        $accessToken=$request->headers['token'];
+        $service=$request->headers['service'];
 
-        if(!$accessToken){
-            $accessToken = $request->get($this->tokenParam);
-        }
 
-        $service=\Yii::$app->getRequest()->post('service');
+        if(empty($service) || !isset($service))
+            ApiException::run(ResponseMap::Map('10010015'),'10010015',__CLASS__,__METHOD__,__LINE__);
+
+
         if(in_array($service,$this->white)){
             return true;
         }
 
+        //token
+        $accessToken=$request->headers[\Yii::$app->params['admin_token']];
 
-
-
-        if (is_string($accessToken) && !empty($accessToken)) {
-
-            //$identity = $adminUser->loginByAccessToken($accessToken, get_class($this));
-            $identity =GetLoginedAdminUserApi::getAllInfo();
-
-            if ($identity !== null) {
-
-                $this->handleApiAuth($identity);
-                return $identity;
-            }
+        if(!$accessToken){
+            $accessToken = $request->get(\Yii::$app->params['admin_token']);
         }
 
+        if(empty($accessToken))
+            ApiException::run(ResponseMap::Map('10010014'),'10010014',__CLASS__,__METHOD__,__LINE__);
 
-        if (empty($accessToken) ) {
 
-            $this->handlefailure($response);
-        }
+
+        $identity = user::find()
+            ->andWhere(['=','auth_key',$accessToken])
+            ->one();
+
+
+        if ($identity === null)
+            ApiException::run(ResponseMap::Map('10010005'),'10010005',__CLASS__,__METHOD__,__LINE__);
+
+        $this->handleApiAuth($identity,$service);
+
 
         return true;
     }
 
- 
 
-    public function handlefailure($response)
-    {
-       ApiException::run(ResponseMap::Map('300001'),'300001',__CLASS__,__METHOD__,__LINE__);
-    }
-
-    public function handleApiAuth($identity){
+    public function handleApiAuth($identity,$service){
 
         if($identity->username=='admin'){
             return;
@@ -89,55 +81,49 @@ class QueryParamAuthBackEnd extends AuthMethod
 
         $group_id=$identity->group_id;
 
-        $group=AdminGroup::findOne($group_id);
+        $group=group::findOne($group_id);
 
-        if(!$group){
-            ApiException::run(ResponseMap::Map('710001'),'710001',__CLASS__,__METHOD__,__LINE__);
-        }
+        if(!$group)
+            ApiException::run(ResponseMap::Map('10040003'),'10040003',__CLASS__,__METHOD__,__LINE__);
+
 
         $re=\Yii::$app->getRequest()->pathInfo;
 
         $arr=explode('/',$re);
 
         $module=$arr[0];
-        $controller=$arr[1];
-        $action=$arr[2];
 
 
-        $auth=AdminAuth::find()
+
+        $auth=auth::find()
             ->andwhere(['=','module',$module])
-            ->andwhere(['=','controller',$controller])
-            ->andwhere(['=','action',$action])
+            ->andwhere(['=','service',$service])
             ->one();
 
-        if(!$auth){
-            ApiException::run('该接口不存在','900001',__CLASS__,__METHOD__,__LINE__);
-        }
+        if(!$auth)
+            ApiException::run(ResponseMap::Map('10010010'),'10010010',__CLASS__,__METHOD__,__LINE__);
 
-        if($auth->del==1){
-            ApiException::run('该接口被删除','900001',__CLASS__,__METHOD__,__LINE__);
-        }
-        if($auth->status==0){
-            ApiException::run('该接口被禁用','900001',__CLASS__,__METHOD__,__LINE__);
-        }
+        if($auth->del==1)
+            ApiException::run(ResponseMap::Map('10010011'),'10010011',__CLASS__,__METHOD__,__LINE__);
+
+        if($auth->status==0)
+            ApiException::run(ResponseMap::Map('10010012'),'10010012',__CLASS__,__METHOD__,__LINE__);
+
 
         $auth_id=$auth->auth_id;
 
-
-        $data=AdminGroupAuth::find()
+        $data=groupauth::find()
             ->where(['=','group_id',$group_id])
             ->andwhere(['=','auth_id',$auth_id])
-            ->andwhere(['=','status',1])
+            ->andwhere(['=','is_enable',1])
             ->all();
 
 
-        if(!$data){
-            ApiException::run(ResponseMap::Map('710002'),'710002',__CLASS__,__METHOD__,__LINE__);
-        }
+        if(!$data)
+            ApiException::run(ResponseMap::Map('10040004'),'10040004',__CLASS__,__METHOD__,__LINE__);
+
 
 
     }
-
-
 
 }

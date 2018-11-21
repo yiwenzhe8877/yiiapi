@@ -4,16 +4,12 @@ namespace app\modules\v1\forms\admin\group;
 
 
 use app\componments\sql\SqlUpdate;
-use app\componments\utils\ApiException;
-use app\models\AdminGroup;
 use app\modules\v1\forms\CommonForm;
-use app\modules\v1\service\model\UpdateService;
 
 class UpdateForm extends CommonForm
 {
     public $group_id;
-    public $status;
-    public $del;
+
 
     public function addRule(){
         return [

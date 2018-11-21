@@ -15,8 +15,6 @@ class GetListForm extends CommonForm
     {
         return [
             [['pageNum'],'required','message'=>'{attribute}不能为空'],
-
-            ['pageNum','match','pattern'=>'/^[1-9][0-9]*$/','message'=>'pageNum必须是正整数'],
         ];
 
     }

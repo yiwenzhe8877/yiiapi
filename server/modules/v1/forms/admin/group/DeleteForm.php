@@ -4,25 +4,29 @@ namespace app\modules\v1\forms\admin\group;
 
 
 
+use app\componments\sql\SqlUpdate;
 use app\modules\v1\forms\CommonForm;
 
 class DeleteForm extends CommonForm
 {
-    public $id;
+    public $group_id;
 
 
     public function rules()
     {
         return [
-            [['id'],'required','message'=>'{attribute}不能为空'],
-            ['id','match','pattern'=>'/^[1-9][0-9]*$/','message'=>'{attribute}必须是正整数'],
+            [['group_id'],'required','message'=>'{attribute}不能为空'],
+            [['group_id'], 'exist','targetClass' => 'app\models\admin\group', 'message' => '{attribute}不存在'],
         ];
     }
 
 
     public function run($form){
-
-        return 0;
+        $obj=new SqlUpdate();
+        $obj->setTableName('admin_group');
+        $obj->setData(['del'=>1]);
+        $obj->setWhere(['group_id='=>$form->group_id]);
+        return $obj->run();
     }
 
 }

@@ -32,6 +32,8 @@ class AddForm extends CommonForm
             ->andWhere(['=','controller',$form->controller])
             ->andWhere(['=','action',$form->action])
             ->one();
+
+
         if($model){
             ApiException::run(ResponseMap::Map('10050001'),'10050001');
         }

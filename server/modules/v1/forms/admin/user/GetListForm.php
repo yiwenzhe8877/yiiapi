@@ -11,7 +11,11 @@ class GetListForm extends CommonForm
 {
     public $pageNum;
 
-
+    public function addRule(){
+        return [
+            [['pageNum'],'required','message'=>'{attribute}不能为空'],
+        ];
+    }
 
 
     public function run($form){
@@ -19,7 +23,7 @@ class GetListForm extends CommonForm
 
         $obj=new SqlGet();
         $obj->setTableName('admin_user');
-        $obj->setOrderBy('user_id desc');
+        $obj->setOrderBy('admin_id desc');
         $obj->setPageNum($form->pageNum);
         return        $obj->get_list();
 

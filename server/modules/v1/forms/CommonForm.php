@@ -55,6 +55,8 @@ class CommonForm extends Model
     //返回第一个错误信息
     public function getError()
     {
+
+
         if(empty($this->errors))
         {
             return "";

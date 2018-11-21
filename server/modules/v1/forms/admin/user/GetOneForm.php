@@ -8,12 +8,18 @@ use app\modules\v1\forms\CommonForm;
 
 class GetOneForm extends CommonForm
 {
-    public $id;
+    public $admin_id;
 
-
+    public function addRule(){
+        return [
+            [['admin_id'],'required','message'=>'{attribute}不能为空'],
+            [['admin_id'], 'exist','targetClass' => 'app\models\admin\user', 'message' => '{attribute}不存在'],
+        ];
+    }
 
     public function run($form){
-        return GetAdminUserApi::getById($form->id);
+
+        return GetAdminUserApi::getById($form->admin_id);
     }
 
 }

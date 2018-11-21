@@ -14,13 +14,7 @@ class ForbidAdminGroupApi
 {
     public static function forbid($group_id){
 
-        Assert::RecordNotExist('admin_group',['group_id='=>$group_id]);
 
-        $obj=new SqlUpdate();
-        $obj->setTableName('admin_group');
-        $obj->setData(['status'=>0]);
-        $obj->setWhere(['group_id='=>$group_id]);
-        return $obj->run();
 
     }
 

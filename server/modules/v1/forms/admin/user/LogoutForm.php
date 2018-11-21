@@ -2,7 +2,6 @@
 
 namespace app\modules\v1\forms\admin\user;
 
-use app\componments\utils\ApiException;
 use app\models\admin\user;
 use app\models\api\admin\user\GetLoginedAdminUserApi;
 use app\modules\v1\forms\CommonForm;

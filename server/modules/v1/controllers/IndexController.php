@@ -15,12 +15,11 @@ class IndexController  extends BaseController
     {
 
 
-        $post=\Yii::$app->getRequest()->post();
-        if(empty($post['service']) || !isset($post['service'])){
-            ApiException::run("service参数缺失",'900001',__CLASS__,__METHOD__,__LINE__);
-        }
 
-        $service=$post['service'];
+
+        $service=\Yii::$app->getRequest()->headers['service'];
+
+        $postData=\Yii::$app->getRequest()->post();
 
         $factory = Factory::createInstance($service);
 
@@ -28,16 +27,15 @@ class IndexController  extends BaseController
 
         $form=$factory->getForm($service);
 
-        $form->load(\Yii::$app->getRequest()->post(),'');
+        $form->load($postData,'');
 
         if(!$form->validate())
-        {
             ApiException::run($form->getError(),'10010001',__CLASS__,__METHOD__,__LINE__);
-        }
+
 
 
         $service=$factory->getRun($service);
-        $data=\Yii::$app->getRequest()->post();
+        $data=$postData;
 
         foreach ($data as $key=>$value)
         {

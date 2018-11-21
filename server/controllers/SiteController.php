@@ -2,8 +2,13 @@
 
 namespace app\controllers;
 
+use app\componments\sql\SqlGet;
 use app\componments\testapi\ApiTest;
 use app\componments\utils\HttpUtils;
+use app\componments\utils\RandomUtils;
+use app\models\api\common\setting\CommonSettingApi;
+use app\models\apitest\usercase;
+use app\models\common\setting;
 use yii\web\Controller;
 
 
@@ -11,51 +16,285 @@ class SiteController extends Controller
 {
 
 
+    public function getTestCase(){
 
-    public function actionIndex()
-    {
-        return [
+        $config= [
             [
                 'token'=>'1',
                 'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
-                'data'=>['service'=>'adminuser.delete'],
-                'code'=>'10010001'
+                'service'=>'adminuser.delete',
+                'data'=>[],
+                'code'=>'10010001',
+                'code_msg'=>'没参数'
             ],
             [
                 'token'=>'1',
                 'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
-                'data'=>['service'=>'adminuser.delete','admin_id'=>'1'],'code'=>'0'],
-               ['token'=>'1','url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",'data'=>['service'=>'adminuser.delete','admin_id'=>'123123'],'code'=>'10010001'],
+                'service'=>'adminuser.delete',
+                'data'=>['admin_id'=>1],
+                'code'=>'0',
+                'code_msg'=>'ok'
+            ],
+
+
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'adminuser.update',
+                'data'=>['admin_id'=>'1','group_name'=>'超级管理员'],
+                'code'=>'0',
+                'code_msg'=>'ok'
+            ],
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'adminuser.update',
+                'data'=>['admin_id'=>'1','group_name'=>''],
+                'code'=>'10010001',
+                'code_msg'=>''
+            ],
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'adminuser.getlist',
+                'data'=>['pageNum'=>'1'],
+                'code'=>'0',
+                'code_msg'=>''
+            ],
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'adminuser.getlist',
+                'data'=>[],
+                'code'=>'10010001',
+                'code_msg'=>''
+            ],
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'adminuser.getone',
+                'data'=>['admin_id'=>'1'],
+                'code'=>'0',
+                'code_msg'=>''
+            ],
+
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'adminuser.getadmin',
+                'data'=>[],
+                'code'=>'0',
+                'code_msg'=>''
+            ],
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'adminuser.changepassword',
+                'data'=>['admin_id'=>'1','password'=>'123','passwordagain'=>'123'],
+                'code'=>'0',
+                'code_msg'=>''
+            ],
+
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'adminuser.changepassword',
+                'data'=>['admin_id'=>'1','password'=>'123','passwordagain'=>'1233'],
+                'code'=>'10040005',
+                'code_msg'=>''
+            ],
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'adminuser.login',
+                'data'=>['username'=>'admin','password'=>'123'],
+                'code'=>'0',
+                'code_msg'=>''
+            ],
+            //adminuser.logout
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'adminuser.logout',
+                'data'=>[],
+                'code'=>'0',
+                'code_msg'=>''
+            ],
+            //admingroup.delete
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'admingroup.delete',
+                'data'=>['group_id'=>'1'],
+                'code'=>'0',
+                'code_msg'=>''
+            ],
+
+
+            //admingroup.update
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'admingroup.update',
+                'data'=>['group_id'=>'1','del'=>'1'],
+                'code'=>'0',
+                'code_msg'=>''
+            ],
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'admingroup.update',
+                'data'=>['group_id'=>'1','del'=>'1','status'=>'1'],
+                'code'=>'0',
+                'code_msg'=>''
+            ],
+            //admingroup.getlist
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'admingroup.getlist',
+                'data'=>['pageNum'=>'1'],
+                'code'=>'0',
+                'code_msg'=>''
+            ],
+            //admingroup.getall
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'admingroup.getall',
+                'data'=>[],
+                'code'=>'0',
+                'code_msg'=>''
+            ],
+            //admingroup.forbid
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'admingroup.forbid',
+                'data'=>['group_id'=>'1'],
+                'code'=>'0',
+                'code_msg'=>''
+            ],
+            //adminauth.delete
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'adminauth.delete',
+                'data'=>['auth_id'=>'345'],
+                'code'=>'0',
+                'code_msg'=>''
+            ],
+            //adminauth.update
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'adminauth.update',
+                'data'=>['auth_id'=>'345','name'=>'ssss'],
+                'code'=>'0',
+                'code_msg'=>''
+            ],
+            //adminauth.getlist
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'adminauth.getlist',
+                'data'=>['pageNum'=>'1'],
+                'code'=>'0',
+                'code_msg'=>''
+            ],
+            //adminauth.getall
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'adminauth.getall',
+                'data'=>[],
+                'code'=>'0',
+                'code_msg'=>''
+            ],
+            //adminauth.setgroupauth
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                        'service'=>'adminauth.setgroupauth',
+                'data'=>['group_id'=>'1','auth_id'=>'345,346'],
+                'code'=>'0',
+                'code_msg'=>''
+            ],
+            //adminauth.getgroupauthlist
+            [
+                'token'=>'1',
+                'url'=>"http://localhost/yiiapi/server/web/index.php/v1/index/index",
+                'service'=>'adminauth.getgroupauthlist',
+                'data'=>['pageNum'=>'1','group_id'=>'1'],
+                'code'=>'0',
+                'code_msg'=>''
+            ],
+
         ];
+        return $config;
+
+    }
 
 
-        $obj=new ApiTest();
-        $ret=$obj->getCaseAdmin();
-        $url=$obj->getCaseAdminUrl();
-        set_time_limit(0);
+    public function actionDotest($dev='',$service='')
+    {
+        $config=$this->getTestCase();
 
-        for ($i=0;$i<count($ret);$i++){
+        for ($i=0;$i<count($config);$i++){
+            $ret=usercase::find()
+                ->andWhere(['=','service',$config[$i]['service']])
+                ->andWhere(['=','data',json_encode($config[$i]['data'])])
+                ->andWhere(['=','code',$config[$i]['code']])
+                ->one();
 
-            $code=$ret[$i]['code'];
-            $data=['ss'=>"123"];
+            if(!$ret){
+                if($config[$i]['service']==$service){
+                    $obj=new usercase();
+                    $obj->service=$config[$i]['service'];
+                    $obj->code=$config[$i]['code'];
+                    $obj->url=$config[$i]['url'];
+                    $obj->token=$config[$i]['token'];
+                    $obj->data=json_encode($config[$i]['data']);
+                    $obj->save();
+                }
 
+            }
         }
-        $ret=HttpUtils::post($url,[]);
-        var_dump($ret);
 
-        return 123;
 
-        $tablename='tk_store_setting';
+
+        $obj=new SqlGet();
+        $obj->setTableName('apitest_usercase');
+        $obj->setOrderBy('id desc');
+        if(isset($service) && !empty($service)){
+            $obj->setWhere(['service='=>$service]);
+        }
+        $list=$obj->get_all()['list'];
+
+
+        return $list;
+       // return ['data'=>$obj->get_all(),'token'=>$token,'url'=>$url];
+    }
+
+    public function actionIndex()
+    {
+
+        echo 2;
+        return;
+
+
+
+        $tablename='tk_apitest_usercase';
         $module='v1';
 
         $this->makeApi($tablename);
         $this->makeModel($tablename);
         $this->makeFactory($tablename,$module);
         $this->makeform($tablename,$module,'add');
-        $this->makeform($tablename,$module,'getlist');
-        $this->makeform($tablename,$module,'getall');
         $this->makeform($tablename,$module,'update');
         $this->makeform($tablename,$module,'delete');
+        $this->makeform($tablename,$module,'getlist');
+        $this->makeform($tablename,$module,'getall');
     }
 
     private function makeApi($tablename){

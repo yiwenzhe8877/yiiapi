@@ -1,28 +1,24 @@
 <?php
 
-namespace app\modules\v2\forms\goods\product;
+namespace app\modules\v1\forms\goods\product;
 
 
 
 use app\componments\sql\SqlGet;
-use app\modules\v2\forms\CommonForm;
-
+use app\modules\v1\forms\CommonForm;
 
 class GetAllForm extends CommonForm
 {
-    public function addRule(){
-        return [
-        ];
-    }
 
-    public function run(){
+
+
+    public function run($form){
 
 
         $obj=new SqlGet();
         $obj->setTableName('goods_product');
-        $obj->setOrderBy('group_id desc');
-        $obj->setWhere( ['is_enabled='=>1]);
-
+        $obj->setOrderBy('sort desc');
+        $obj->setWhere(['del='=>'0']);
         return $obj->get_all();
     }
 

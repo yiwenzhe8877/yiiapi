@@ -18,6 +18,9 @@ $config = [
         ],
         'v2' => [
             'class' => 'app\modules\v2\v2',
+        ],
+        'v3' => [
+            'class' => 'app\modules\v3\v3',
         ]
     ],
 

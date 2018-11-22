@@ -1,26 +1,39 @@
 <?php
 
-namespace app\modules\v2\forms\goods\category;
+namespace app\modules\v1\forms\goods\category;
 
-use app\componments\sql\SqlUpdate;
-use app\modules\v2\forms\CommonForm;
+
+use app\componments\utils\ApiException;
+use app\models\user;
+use app\modules\v1\forms\CommonForm;
 
 class DeleteForm extends CommonForm
 {
-    public $classid;
+    public $id;
 
-    public function addRule(){
-        return [
-            [['classid'], 'exist','targetClass' => 'app\models\goods\category', 'message' => '{attribute}不存在'],
-        ];
-    }
+
 
     public function run($form){
-        $obj=new SqlUpdate();
-        $obj->setTableName('goods_category');
-        $obj->setData(['del'=>1]);
-        $obj->setWhere(['classid='=>$form->classid]);
-        return $obj->run();
+
+        $arr=explode(',',$form->id);
+
+
+
+        foreach ($arr as $v){
+            $model=user::find()
+                ->andWhere(['=','user_id',$v])
+                ->one();
+
+            if(!$model){
+                ApiException::run("用户id不存在",'900001');
+            }
+
+            $model=user::findOne($v);
+            $model->del=1;
+            $model->save();
+        }
+        return "";
+
 
     }
 

@@ -1,17 +1,22 @@
 <?php
 
+
 namespace app\modules\v2\factory\goods;
+
 
 use app\modules\v2\factory\BaseFactory;
 
 class ProductFactory extends BaseFactory
 {
     public $form_map = [
-        'goodsproduct.delete'=>'app\modules\v1\forms\goods\product\DeleteForm',
-        'goodsproduct.add'=>'app\modules\v1\forms\goods\product\AddForm',
-        'goodsproduct.getlist'=>'app\modules\v1\forms\goods\product\GetListForm',
-        'goodsproduct.update'=>'app\modules\v1\forms\goods\product\UpdateForm',
-        'goodsproduct.getall'=>'app\modules\v1\forms\goods\product\GetAllForm',
+
+        'goodsproduct.add'=>'app\modules\v2\forms\goods\product\AddForm',
+        'goodsproduct.delete'=>'app\modules\v2\forms\goods\product\DeleteForm',
+        'goodsproduct.update'=>'app\modules\v2\forms\goods\product\UpdateForm',
+        'goodsproduct.getlist'=>'app\modules\v2\forms\goods\product\GetListForm',
+        'goodsproduct.getall'=>'app\modules\v2\forms\goods\product\GetAllForm',
+
     ];
+
 
 }

@@ -1,15 +1,19 @@
 <?php
 
-namespace app\modules\v2\forms\member\baseinfo;
+namespace app\modules\v1\forms\member\baseinfo;
 
 
 
 use app\componments\sql\SqlCreate;
+use app\componments\utils\HttpUtils;
 use app\componments\utils\Ip;
 use app\componments\utils\RandomUtils;
+use app\models\api\common\setting\CommonSettingApi;
 use app\models\api\member\group\MemberGroupApi;
 use app\models\api\wx\xcx\WxXcxApi;
-use app\modules\v2\forms\CommonForm;
+use app\models\common\setting;
+use app\modules\v1\forms\CommonForm;
+use yii\debug\models\search\Log;
 
 class XcxAddForm extends CommonForm
 {

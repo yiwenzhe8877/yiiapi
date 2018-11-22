@@ -1,29 +1,35 @@
 <?php
 
-namespace app\modules\v2\forms\goods\goods;
+namespace app\modules\v1\forms\goods\goods;
 
 use app\componments\sql\SqlCreate;
+use app\modules\v1\forms\CommonForm;
 
-use app\modules\v2\forms\CommonForm;
 
 class AddForm extends CommonForm
 {
-    public $group_name;
+
+    public $name;
+    public $store; //库存
+    public $pic1;
+    public $express_type;//1表示使用运费模板，2表示统一邮费
 
 
     public function addRule(){
         return [
-            [['group_name'],'required','message'=>'{attribute}不能为空'],
-            ['group_name', 'unique', 'targetClass' => 'app\models\admin\group', 'message' => '{attribute}已经存在'],
+            [['name','store','pic1','express_type'],'required','message'=>'{attribute}不能为空'],
         ];
     }
 
+
     public function run($form){
+
 
         $obj=new SqlCreate();
         $obj->setTableName('goods_goods');
         $obj->setData($form);
-        $obj->run();
-
+        return $obj->run();
     }
+
+
 }

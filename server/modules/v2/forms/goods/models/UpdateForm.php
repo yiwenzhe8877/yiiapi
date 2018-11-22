@@ -1,34 +1,52 @@
 <?php
 
-namespace app\modules\v2\forms\goods\models;
+namespace app\modules\v1\forms\member\address;
 
 
 
 use app\componments\sql\SqlUpdate;
-use app\modules\v2\forms\CommonForm;
+use app\models\api\member\address\SetDefaultAddressApi;
+use app\modules\v1\forms\CommonForm;
 
 
 class UpdateForm extends CommonForm
 {
 
 
-    public $group_id;
+    public $name;
+    public $phone;
+    public $province;
+    public $city;
+    public $district;
+    public $community;
+    public $address;
+    public $is_default;
+    public $addr_id;
 
 
     public function addRule(){
         return [
-            [['group_id'],'required','message'=>'{attribute}不能为空'],
-            [['group_id'], 'exist','targetClass' => 'app\models\member\group', 'message' => '用户组不存在'],
+            [['name','phone','province','city',"district",'community','address','is_default','addr_id'],'required','message'=>'{attribute}不能为空'],
+            ['phone','match','pattern'=>'/^[1][3456789][0-9]{9}$/','message'=>'phone必须是手机号'],
+            [['addr_id'], 'exist','targetClass' => 'app\models\MemberAddress', 'message' => '地址id不存在'],
+            ['is_default','in','range'=>['1','0'],'message'=>'{attribute}非法'],
         ];
     }
 
     public function run($form){
 
+
+        if($form->is_default==1){
+            SetDefaultAddressApi::cancelAllDefaultByPrimaryId($form->addr_id);
+        }
+
         $obj=new SqlUpdate();
-        $obj->setTableName('goods_models');
+        $obj->setTableName('member_address');
         $obj->setData($form);
-        $obj->setWhere(['group_id='=>$form->group_id]);
+        $obj->setWhere(['addr_id='=>$form->addr_id]);
         return $obj->run();
 
     }
+
+
 }

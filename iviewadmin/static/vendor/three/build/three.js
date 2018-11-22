@@ -12188,7 +12188,7 @@
 			this.drawRange.start = source.drawRange.start;
 			this.drawRange.count = source.drawRange.count;
 
-			// adminUser data
+			// user data
 
 			this.userData = source.userData;
 
@@ -13050,7 +13050,7 @@
 
 		this.fog = false; // set to use scene fog
 		this.lights = false; // set to use scene lights
-		this.clipping = false; // set to use adminUser-defined clipping planes
+		this.clipping = false; // set to use user-defined clipping planes
 
 		this.skinning = false; // set to use skinning attribute streams
 		this.morphTargets = false; // set to use morph targets
@@ -21722,7 +21722,7 @@
 
 		this.sortObjects = true;
 
-		// adminUser-defined clipping
+		// user-defined clipping
 
 		this.clippingPlanes = [];
 		this.localClippingEnabled = false;
@@ -41618,7 +41618,7 @@
 
 				if ( action._cacheIndex === null ) {
 
-					// this action has been forgotten by the cache, but the adminUser
+					// this action has been forgotten by the cache, but the user
 					// appears to be still using it -> rebind
 
 					var rootUuid = ( action._localRoot || this._root ).uuid,

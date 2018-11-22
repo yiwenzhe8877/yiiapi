@@ -87,7 +87,7 @@ THREE.BokehShader = {
 		"uniform float zfar; // camera clipping end",
 
 		"//------------------------------------------",
-		"//adminUser variables",
+		"//user variables",
 
 		"const int samples = SAMPLES; //samples on the first ring",
 		"const int rings = RINGS; //ring count",

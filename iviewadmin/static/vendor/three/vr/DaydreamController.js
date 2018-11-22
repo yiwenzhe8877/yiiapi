@@ -56,7 +56,7 @@ THREE.DaydreamController = function () {
 
 			var pose = gamepad.pose;
 
-			if ( pose === null ) return; // no adminUser action yet
+			if ( pose === null ) return; // no user action yet
 
 			//  orientation
 

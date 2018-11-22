@@ -3251,7 +3251,7 @@ SEA3D.File.prototype.load = function ( url ) {
 
 		var position = 0;
 
-		xhr.overrideMimeType( 'text/plain; charset=x-adminUser-defined' );
+		xhr.overrideMimeType( 'text/plain; charset=x-user-defined' );
 
 	} else {
 

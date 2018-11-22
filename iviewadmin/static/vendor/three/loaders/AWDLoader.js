@@ -1198,7 +1198,7 @@
 		 */
 		readUTFBytes: function ( len ) {
 
-			// TODO(adminUser): Use native implementations if/when available
+			// TODO(user): Use native implementations if/when available
 			var out = [], c = 0;
 
 			while ( out.length < len ) {

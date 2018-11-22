@@ -320,7 +320,7 @@ THREE.DRACOLoader.prototype = {
           }
         }
 
-        // Add attributes of adminUser specified unique id. E.g. GLTF models.
+        // Add attributes of user specified unique id. E.g. GLTF models.
         for (var attributeName in attributeUniqueIdMap) {
           var attributeType = attributeTypeMap[attributeName] || Float32Array;
           var attributeId = attributeUniqueIdMap[attributeName];

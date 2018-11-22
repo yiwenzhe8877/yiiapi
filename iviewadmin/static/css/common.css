@@ -1,3 +1,6 @@
+body{
+  font-size:20px!important;
+}
 .df{
   display: flex;
 }
@@ -26,9 +29,17 @@
   color:#fff
 }
 
+.fz18{
+  font-size: 18px;
+}
+/*重写iview*/
+
 .ivu-menu-item-active, .ivu-menu-item-selected{
-  background: darkorange!important;
+  background: pink!important;
 }
 .h20{
   height: 20px;
+}
+.ivu-form .ivu-form-item-label{
+  font-size: 16px!important;
 }

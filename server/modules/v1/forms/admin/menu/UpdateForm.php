@@ -4,10 +4,8 @@ namespace app\modules\v1\forms\admin\menu;
 
 
 use app\componments\sql\SqlUpdate;
-use app\componments\utils\ApiException;
-use app\models\AdminMenu;
 use app\modules\v1\forms\CommonForm;
-use app\modules\v1\service\model\UpdateService;
+
 
 class UpdateForm extends CommonForm
 {
@@ -15,8 +13,6 @@ class UpdateForm extends CommonForm
     public $name;
     public $router;
     public $pid;
-
-
 
 
     public function addRule(){
@@ -28,8 +24,6 @@ class UpdateForm extends CommonForm
 
 
     public function run($form){
-
-
 
         $obj=new SqlUpdate();
         $obj->setTableName('admin_menu');

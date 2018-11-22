@@ -35,23 +35,33 @@ class QueryParamAuthBackEnd extends AuthMethod
     {
         //service
 
-        $service=$request->headers['service'];
+
+        $service='';
+
+        if(isset($request->headers['service']) && !empty($request->headers['service']))
+            $service=$request->headers['service'];
 
 
-        if(empty($service) || !isset($service))
+        if(empty($service))
+            $service=$request->post('service');
+
+
+
+        if(!isset($service) || empty($service))
             ApiException::run(ResponseMap::Map('10010015'),'10010015',__CLASS__,__METHOD__,__LINE__);
 
 
         if(in_array($service,$this->white)){
+
             return true;
         }
 
         //token
         $accessToken=$request->headers[\Yii::$app->params['admin_token']];
 
-        if(!$accessToken){
+        if(!$accessToken)
             $accessToken = $request->get(\Yii::$app->params['admin_token']);
-        }
+
 
         if(empty($accessToken))
             ApiException::run(ResponseMap::Map('10010014'),'10010014',__CLASS__,__METHOD__,__LINE__);

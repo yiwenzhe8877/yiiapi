@@ -14,6 +14,8 @@ class BaseinfoFactory extends BaseFactory
         'memberbaseinfo.getall'=>'app\modules\v1\forms\member\baseinfo\GetAllForm',
         'memberbaseinfo.xcxadd'=>'app\modules\v1\forms\member\baseinfo\XcxAddForm',
         'memberbaseinfo.xcxdecrptunionid'=>'app\modules\v1\forms\member\baseinfo\XcxDecrptUnionidForm',
+        'memberbaseinfo.changepassword'=>'app\modules\v1\forms\member\baseinfo\ChangePasswordForm',
+        'memberbaseinfo.changeriches'=>'app\modules\v1\forms\member\baseinfo\ChangeRichesForm',
     ];
 
 }

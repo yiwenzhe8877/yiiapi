@@ -6,6 +6,7 @@ namespace app\modules\v1\forms\member\baseinfo;
 
 
 use app\models\api\member\base\ChangePasswordApi;
+use app\models\api\member\baseinfo\MemberBaseinfoApi;
 use app\modules\v1\forms\CommonForm;
 
 
@@ -18,19 +19,13 @@ class ChangePasswordForm extends CommonForm
     public function addRule(){
         return [
             [['password','passwordagain','member_id'],'required','message'=>'{attribute}不能为空'],
-
-            [['member_id'], 'exist','targetClass' => 'app\models\member\base', 'message' => '用户不存在'],
+            [['member_id'], 'exist','targetClass' => 'app\models\member\baseinfo', 'message' => '{attribute}不存在'],
         ];
     }
 
     public function run($form){
 
-        $obj=new ChangePasswordApi();
-        $obj->setMemberId($form->member_id);
-        $obj->setPassword($form->password);
-        $obj->setPasswordagain($form->passwordagain);
-        $obj->changePwd();
-        return "";
+        return MemberBaseinfoApi::changePwd($form->member_id,$form->password,$form->passwordagain);
     }
 
 }

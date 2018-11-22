@@ -3,6 +3,7 @@
 namespace app\modules\v1\controllers;
 
 use app\componments\utils\ApiException;
+use app\componments\utils\DateUtils;
 use app\modules\v1\common\BaseController;
 use app\modules\v1\factory\Factory;
 
@@ -16,12 +17,19 @@ class IndexController  extends BaseController
 
 
 
-
         $service=\Yii::$app->getRequest()->headers['service'];
+
 
         $postData=\Yii::$app->getRequest()->post();
 
+        if(empty($service))
+            $service= $postData['service'];
+
+
         $factory = Factory::createInstance($service);
+
+
+
 
         define('FORM_CLASS',$factory->form_map[$service]);
 
@@ -31,6 +39,7 @@ class IndexController  extends BaseController
 
         if(!$form->validate())
             ApiException::run($form->getError(),'10010001',__CLASS__,__METHOD__,__LINE__);
+
 
 
 
@@ -45,7 +54,11 @@ class IndexController  extends BaseController
         $objdata=(object)$data;
 
 
-        return $service->run($objdata);
+
+
+        return   $service->run($objdata);
+
+
 
     }
 

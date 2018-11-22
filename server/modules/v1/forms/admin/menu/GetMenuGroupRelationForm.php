@@ -16,7 +16,8 @@ class GetMenuGroupRelationForm extends CommonForm
 
     public function run(){
 
-        return AdminGroupApi::getGroupMenus( GetLoginedAdminUserApi::getGroupId());
+        return AdminGroupApi::getGroupMenus(GetLoginedAdminUserApi::getGroupId());
+
     }
 
 }

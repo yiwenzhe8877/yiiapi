@@ -18,7 +18,7 @@ class UpdateForm extends CommonForm
     public function addRule(){
         return [
             [['group_id'],'required','message'=>'{attribute}不能为空'],
-            [['group_id'], 'exist','targetClass' => 'app\models\member\group', 'message' => '用户组不存在'],
+            [['group_id'], 'exist','targetClass' => 'app\models\member\group', 'message' => '{attribute}不存在'],
         ];
     }
 

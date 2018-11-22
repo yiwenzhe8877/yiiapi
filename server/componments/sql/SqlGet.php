@@ -4,6 +4,7 @@ namespace app\componments\sql;
 
 use app\componments\utils\ApiException;
 use app\componments\utils\Assert;
+use app\componments\utils\DateUtils;
 use app\componments\utils\Filter;
 
 /**
@@ -138,17 +139,25 @@ class SqlGet
         $result = $command->queryAll();
         $count=count($result);
 
-        $sql.=' limit '.($this->getPageNum()-1)*($pagesize).','.($pagesize*$this->getPageNum());
+        $sql.=' limit '.($this->getPageNum()-1)*($pagesize).','.($pagesize);
+
+
 
 
         $command = $connection->createCommand($sql);
         $result = $command->queryAll();
+
+
+
+
+
         return [
             'pageNum'=>$this->getPageNum(),
             'pageSize'=>$pagesize,
             'total'=>$count,
             'list'=>$result
         ];
+
 
     }
     public  function get_all(){

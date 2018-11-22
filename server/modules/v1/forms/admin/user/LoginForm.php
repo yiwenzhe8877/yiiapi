@@ -46,14 +46,14 @@ class LoginForm extends CommonForm
 
         $user=user::findOne(['username'=>$this->username,'status'=>0]);
 
-        if($user){
-            ApiException::run("用户被禁用","100012");
-        }
+        if($user)
+            ApiException::run("管理员被禁用","10040006");
+
         $user=user::findOne(['username'=>$this->username,'del'=>1]);
 
-        if($user){
-            ApiException::run("用户被删除","100013");
-        }
+        if($user)
+            ApiException::run("管理员被删除","10040007");
+
 
         return true;
     }
@@ -64,17 +64,18 @@ class LoginForm extends CommonForm
 
 
 
-        if(YII_DEBUG){
+        /*if(YII_DEBUG){
             $auth_key="bdegkortvwxyABDIKMQRSTUWYZ023456";
         }else{
-            $auth_key=getRandom();
 
-            user::updateAll([
-                'auth_key'=>$auth_key
-            ],[
-                'username'=>$form->username
-            ]);
-        }
+        }*/
+        $auth_key=getRandom();
+
+        user::updateAll([
+            'auth_key'=>$auth_key
+        ],[
+            'username'=>$form->username
+        ]);
 
         return ['accessToken'=>$auth_key];
     }

@@ -62,8 +62,6 @@ class Factory
         'membergroup.update'=>'app\modules\v1\factory\member\GroupFactory',
         'membergroup.getlist'=>'app\modules\v1\factory\member\GroupFactory',
         'membergroup.getall'=>'app\modules\v1\factory\member\GroupFactory',
-        'membergroup.changepassword'=>'app\modules\v1\factory\member\GroupFactory',
-        'membergroup.changeriches'=>'app\modules\v1\factory\member\GroupFactory',
         'membergroup.setdefault'=>'app\modules\v1\factory\member\GroupFactory',
 
         'memberaddress.add'=>'app\modules\v1\factory\member\AddressFactory',
@@ -87,6 +85,9 @@ class Factory
         'goodsmodels.getlist'=>'app\modules\v1\factory\goods\ModelsFactory',
         'goodsmodels.getall'=>'app\modules\v1\factory\goods\ModelsFactory',
 
+
+        //统计接口
+        'adminindex.statistics'=>'app\modules\v1\factory\statistics\StatisticsFactory',
 
     ];
 

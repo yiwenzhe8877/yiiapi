@@ -19,7 +19,7 @@ class GetAllForm extends CommonForm
 
 
         $obj=new SqlGet();
-        $obj->setTableName('member_base');
+        $obj->setTableName('member_baseinfo');
         $obj->setOrderBy('member_id desc');
         return $obj->get_all();
     }

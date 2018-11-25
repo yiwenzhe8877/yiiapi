@@ -12,6 +12,7 @@ class StoreFactory extends BaseFactory
         'storestore.getlist'=>'app\modules\v2\forms\store\store\GetListForm',
         'storestore.update'=>'app\modules\v2\forms\store\store\UpdateForm',
         'storestore.getall'=>'app\modules\v2\forms\store\store\GetAllForm',
+        'storeuser.login'=>'app\modules\v2\forms\store\store\LoginForm',
     ];
 
 }

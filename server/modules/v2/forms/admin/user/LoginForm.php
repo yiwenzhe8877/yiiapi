@@ -3,6 +3,7 @@
 namespace app\modules\v2\forms\admin\user;
 
 
+use app\componments\sql\SqlUpdate;
 use app\componments\utils\ApiException;
 use app\models\admin\user;
 use app\modules\v2\forms\CommonForm;
@@ -33,9 +34,10 @@ class LoginForm extends CommonForm
 
         $user=user::findOne(['username'=>$this->username,'password'=>md5($this->password.\Yii::$app->params['salt'])]);
 
-        if(!$user){
-            ApiException::run($params['wrong_pwd'],"100011");
-        }
+        if(!$user)
+            ApiException::run($params['wrong_pwd'],'100011',__CLASS__,__METHOD__,__LINE__);
+
+
         $this->_user=$user;
         return true;
     }
@@ -47,12 +49,14 @@ class LoginForm extends CommonForm
         $user=user::findOne(['username'=>$this->username,'status'=>0]);
 
         if($user)
-            ApiException::run("管理员被禁用","10040006");
+            ApiException::run("管理员被禁用",'10040006',__CLASS__,__METHOD__,__LINE__);
+
 
         $user=user::findOne(['username'=>$this->username,'del'=>1]);
 
         if($user)
-            ApiException::run("管理员被删除","10040007");
+            ApiException::run("管理员被删除",'10040007',__CLASS__,__METHOD__,__LINE__);
+
 
 
         return true;
@@ -64,18 +68,21 @@ class LoginForm extends CommonForm
 
 
 
-        /*if(YII_DEBUG){
-            $auth_key="bdegkortvwxyABDIKMQRSTUWYZ023456";
-        }else{
 
-        }*/
+
         $auth_key=getRandom();
 
-        user::updateAll([
+        $obj=new SqlUpdate();
+        $obj->setTableName('store_user');
+        $obj->setData(['auth_key'=>$auth_key]);
+        $obj->setWhere(['username='=>$form->username]);
+        $obj->run();
+
+        /*user::updateAll([
             'auth_key'=>$auth_key
         ],[
             'username'=>$form->username
-        ]);
+        ]);*/
 
         return ['accessToken'=>$auth_key];
     }

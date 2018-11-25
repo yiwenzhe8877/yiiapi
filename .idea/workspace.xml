@@ -2,157 +2,681 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0444797-2417-4062-91be-2659b99bb471" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/iviewadmin/src/api/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iviewadmin/src/config/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iviewadmin/src/mixins/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iviewadmin/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iviewadmin/src/store/user_store.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iviewadmin/src/utils/date.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iviewadmin/src/utils/format.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iviewadmin/src/views/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iviewadmin/src/views/TK_User/create.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iviewadmin/src/views/TK_User/list.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iviewadmin/static/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iviewadmin/static/css/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/componments/auth/QueryParamAuthMiddleEnd.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v2/forms/store/menu/GetRelationMenuForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v2/forms/store/user/LoginForm.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/modules/v2/forms/store/user/LogoutForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/.gitignore.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/src" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/components/HeaderNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/src/components/HeaderNav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/components/LeftNav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/src/components/LeftNav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/components/tool/Frame.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/components/tool/Global.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/components/tool/ueditor.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/src/components/tool/ueditor.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/config/ERP_Department.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Account/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Account/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Account/power.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_BodyAttr/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_BodyAttr/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Brand/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Brand/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_CarCategory/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_CarCategory/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_CarPacking/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_CarPicture/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_CarProduct/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_CarProduct/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_CarProductApplies/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_CarProductPrice/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Category/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Category/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Color/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Color/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Company/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Company/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_DIY/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_DIY/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Department/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Department/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Industry/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Industry/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Materials/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Materials/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Module/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Module/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Order/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Order/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Product/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Product/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_PurchaseOrder/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_PurchaseOrder/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Rolepart/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Rolepart/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_SellProduct/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_SellProduct/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Series/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Series/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Size/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Size/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Supplier/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Supplier/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_ThreeD/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_ThreeD/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_ThreeDParts/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_ThreeDParts/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_ThreeDProducts/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_ThreeDProducts/create3D.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_ThreeDProducts/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_ThreeDProducts/relatMaterial.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_ThreeDProducts/relatSameMaterial.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_UV/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_UV/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_UVFont/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_UVFont/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_WebHelpCenter/agreement.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_WebHelpCenter/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_WebHelpCenter/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_Website/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_WishAccount/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_WishAccount/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_WishKeyword/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_WishKeyword/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_WishProduct/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/ERP_WishProduct/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/db/create.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/db/list.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/entry/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/iviewadmin/src/views/entry/login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/iviewadmin/src/views/main.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/config/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/.babelrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/.postcssrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/build/check-versions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/build/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/build/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/build/vue-loader.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/build/webpack.base.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/build/webpack.dev.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/build/webpack.prod.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/config/dev.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/config/prod.env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/src" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/css/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/css/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/maps/DM820928-60_Color.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/CY_b.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/CY_b.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/CY_bs.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/CY_bs.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/CY_y.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/CY_y.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/CY_z.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/CY_z.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/LZ_n.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/LZ_n.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/LZ_w.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/LZ_w.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/MJ_n.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/MJ_n.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/MJ_w.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/MJ_w.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/NK.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/NK.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/XK_y.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/XK_y.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/XK_z.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/XK_z.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/XZ_y.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/XZ_y.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/XZ_y01.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/XZ_y01.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/XZ_z.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/XZ_z.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/XZ_z01.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/mold/mold3/XZ_z01.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/keesoft.3d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/AnimationClipCreator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/BufferGeometryUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/Car.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/Cloth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/ConvexObjectBreaker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/CurveExtras.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/Detector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/GPUComputationRenderer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/GPUParticleSystem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/Gyroscope.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/ImprovedNoise.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/MD2Character.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/MD2CharacterComplex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/MarchingCubes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/MorphAnimMesh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/MorphBlendMesh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/Ocean.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/Octree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/PRNG.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/ParametricGeometries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/QuickHull.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/RollerCoaster.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/ShaderGodRays.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/ShaderSkin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/ShaderTerrain.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/ShaderToon.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/ShaderTranslucent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/SimplexNoise.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/TimelinerController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/TypedArrayUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/UCSCharacter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/Volume.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/VolumeSlice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/animation/CCDIKSolver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/animation/MMDAnimationHelper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/animation/MMDPhysics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/build/OrbitControls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/build/three.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/build/three.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/build/three.module.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/cameras/CinematicCamera.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/controls/DeviceOrientationControls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/controls/DragControls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/controls/EditorControls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/controls/FirstPersonControls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/controls/FlyControls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/controls/OrbitControls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/controls/OrthographicTrackballControls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/controls/PointerLockControls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/controls/TrackballControls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/controls/TransformControls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/controls/VRControls.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/crossfade/gui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/crossfade/scenes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/crossfade/transition.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/curves/NURBSCurve.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/curves/NURBSSurface.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/curves/NURBSUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/effects/AnaglyphEffect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/effects/AsciiEffect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/effects/OutlineEffect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/effects/ParallaxBarrierEffect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/effects/PeppersGhostEffect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/effects/StereoEffect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/effects/VREffect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/exporters/GLTFExporter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/exporters/MMDExporter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/exporters/OBJExporter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/exporters/PLYExporter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/exporters/STLExporter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/exporters/TypedGeometryExporter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/geometries/ConvexGeometry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/geometries/DecalGeometry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/geometries/TeapotBufferGeometry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/geometries/hilbert2D.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/geometries/hilbert3D.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/ammo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/dat.gui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/draco/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/draco/draco_decoder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/draco/draco_decoder.wasm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/draco/draco_wasm_wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/draco/gltf/draco_decoder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/draco/gltf/draco_decoder.wasm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/draco/gltf/draco_encoder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/draco/gltf/draco_wasm_wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/gunzip.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/inflate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/jszip.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/mmdparser.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/msgpack-js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/o3dgc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/opentype.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/stats.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/system.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/timeliner_gui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/libs/tween.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/lights/RectAreaLightUniformsLib.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/lines/Line2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/lines/LineGeometry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/lines/LineMaterial.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/lines/LineSegments2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/lines/LineSegmentsGeometry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/lines/Wireframe.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/lines/WireframeGeometry2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/3MFLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/AMFLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/AWDLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/AssimpJSONLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/AssimpLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/BVHLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/BabylonLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/BinaryLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/ColladaLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/DDSLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/DRACOLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/EXRLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/EquiangularToCubeGenerator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/FBXLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/GCodeLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/GLTFLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/HDRCubeTextureLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/KMZLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/KTXLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/LoaderSupport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/MD2Loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/MMDLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/MTLLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/NRRDLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/NodeMaterialLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/OBJLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/OBJLoader2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/PCDLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/PDBLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/PLYLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/PRWMLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/PVRLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/PlayCanvasLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/RGBELoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/STLLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/SVGLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/TDSLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/TGALoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/TTFLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/UTF8Loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/VRMLLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/VRMLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/VTKLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/XLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/ctm/CTMLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/ctm/CTMWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/ctm/ctm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/ctm/license/OpenCTM.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/ctm/license/js-lzma.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/ctm/license/js-openctm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/ctm/lzma.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/deprecated/LegacyGLTFLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/sea3d/SEA3D.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/sea3d/SEA3DDeflate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/sea3d/SEA3DLZMA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/sea3d/SEA3DLegacy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/sea3d/SEA3DLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/sea3d/o3dgc/SEA3DGC.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/sea3d/physics/SEA3DAmmo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/sea3d/physics/SEA3DAmmoLoader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/loaders/sea3d/physics/SEA3DRigidBody.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/math/ColorConverter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/math/Lut.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/modifiers/BufferSubdivisionModifier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/modifiers/ExplodeModifier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/modifiers/SimplifyModifier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/modifiers/SubdivisionModifier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/modifiers/TessellateModifier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/AttributeNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/ConstNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/FunctionCallNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/FunctionNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/GLNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/InputNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/NodeBuilder.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/NodeFrame.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/NodeLib.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/NodeMaterial.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/NodeUniform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/RawNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/TempNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/VarNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/accessors/CameraNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/accessors/ColorsNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/accessors/LightNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/accessors/NormalNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/accessors/PositionNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/accessors/ReflectNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/accessors/ScreenUVNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/accessors/UVNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/inputs/ColorNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/inputs/CubeTextureNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/inputs/FloatNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/inputs/IntNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/inputs/Matrix3Node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/inputs/Matrix4Node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/inputs/ReflectorNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/inputs/ScreenNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/inputs/TextureNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/inputs/Vector2Node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/inputs/Vector3Node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/inputs/Vector4Node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/materials/PhongNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/materials/PhongNodeMaterial.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/materials/SpriteNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/materials/SpriteNodeMaterial.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/materials/StandardNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/materials/StandardNodeMaterial.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/math/Math1Node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/math/Math2Node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/math/Math3Node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/math/OperatorNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/postprocessing/NodePass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/utils/BlurNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/utils/BumpNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/utils/ColorAdjustmentNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/utils/JoinNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/utils/LuminanceNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/utils/NoiseNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/utils/NormalMapNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/utils/ResolutionNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/utils/RoughnessToBlinnExponentNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/utils/SwitchNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/utils/TimerNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/utils/UVTransformNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/nodes/utils/VelocityNode.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/objects/Lensflare.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/objects/Reflector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/objects/ReflectorRTT.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/objects/Refractor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/objects/ShadowMesh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/objects/Sky.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/objects/Water.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/objects/Water2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/pmrem/PMREMCubeUVPacker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/pmrem/PMREMGenerator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/AdaptiveToneMappingPass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/BloomPass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/BokehPass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/ClearPass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/CubeTexturePass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/DotScreenPass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/EffectComposer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/FilmPass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/GlitchPass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/HalftonePass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/MaskPass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/OutlinePass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/RenderPass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/SAOPass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/SMAAPass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/SSAARenderPass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/SSAOPass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/SavePass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/ShaderPass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/TAARenderPass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/TexturePass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/postprocessing/UnrealBloomPass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/renderers/CSS2DRenderer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/renderers/CSS3DRenderer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/renderers/CanvasRenderer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/renderers/Projector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/renderers/RaytracingRenderer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/renderers/RaytracingWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/renderers/SVGRenderer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/renderers/SoftwareRenderer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/renderers/WebGLDeferredRenderer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/BasicShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/BleachBypassShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/BlendShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/BokehShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/BokehShader2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/BrightnessContrastShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/ColorCorrectionShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/ColorifyShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/ConvolutionShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/CopyShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/DOFMipMapShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/DepthLimitedBlurShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/DigitalGlitch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/DotScreenShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/FXAAShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/FilmShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/FocusShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/FreiChenShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/FresnelShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/GammaCorrectionShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/HalftoneShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/HorizontalBlurShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/HorizontalTiltShiftShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/HueSaturationShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/KaleidoShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/LuminosityHighPassShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/LuminosityShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/MirrorShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/NormalMapShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/OceanShaders.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/ParallaxShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/PixelShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/RGBShiftShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/SAOShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/SMAAShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/SSAOShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/SepiaShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/SobelOperatorShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/TechnicolorShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/ToneMapShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/TriangleBlurShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/UnpackDepthRGBAShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/VerticalBlurShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/VerticalTiltShiftShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/VignetteShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/shaders/WaterRefractionShader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/utils/GeometryUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/utils/MathUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/utils/SceneUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/utils/ShadowMapViewer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/utils/UVsDebug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/vr/DaydreamController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/vr/GearVRController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/vr/PaintViveController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/vr/ViveController.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/vr/WebVR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/three/workers/OffscreenCanvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/anchor/anchor.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/attachment.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/attachment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/attachment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_chm.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_default.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_doc.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_exe.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_jpg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_mp3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_mv.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_pdf.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_ppt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_psd.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_rar.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_txt.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/fileTypeImages/icon_xls.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/images/alignicon.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/images/alignicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/images/file-icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/images/file-icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/attachment/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/background/background.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/background/background.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/background/background.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/background/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/background/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/charts/chart.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/charts/charts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/charts/charts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/charts/charts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/charts/images/charts0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/charts/images/charts1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/charts/images/charts2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/charts/images/charts3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/charts/images/charts4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/charts/images/charts5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/emotion/emotion.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/emotion/emotion.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/emotion/emotion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/emotion/images/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/emotion/images/bface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/emotion/images/cface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/emotion/images/fface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/emotion/images/jxface2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/emotion/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/emotion/images/tface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/emotion/images/wface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/emotion/images/yface.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/gmap/gmap.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/help/help.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/help/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/help/help.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/image/image.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/image/image.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/image/image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/image/images/alignicon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/image/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/image/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/image/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/image/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/image/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/image/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/image/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/insertframe/insertframe.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/internal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/link/link.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/map/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/map/show.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/music/music.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/music/music.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/music/music.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/preview/preview.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/scrawl/images/addimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/scrawl/images/brush.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/scrawl/images/delimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/scrawl/images/delimgH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/scrawl/images/empty.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/scrawl/images/emptyH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/scrawl/images/eraser.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/scrawl/images/redo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/scrawl/images/redoH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/scrawl/images/scale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/scrawl/images/scaleH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/scrawl/images/size.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/scrawl/images/undo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/scrawl/images/undoH.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/scrawl/scrawl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/scrawl/scrawl.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/scrawl/scrawl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/searchreplace/searchreplace.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/searchreplace/searchreplace.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/snapscreen/snapscreen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/spechars/spechars.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/spechars/spechars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/table/dragicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/table/edittable.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/table/edittable.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/table/edittable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/table/edittd.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/table/edittip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/template/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/template/images/bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/template/images/pre0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/template/images/pre1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/template/images/pre2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/template/images/pre3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/template/images/pre4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/template/template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/template/template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/template/template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/video/images/bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/video/images/center_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/video/images/file-icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/video/images/file-icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/video/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/video/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/video/images/image.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/video/images/left_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/video/images/none_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/video/images/progress.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/video/images/right_focus.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/video/images/success.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/video/images/success.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/video/video.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/video/video.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/video/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/webapp/webapp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/wordimage/fClipboard_ueditor.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/wordimage/imageUploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/wordimage/tangram.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/wordimage/wordimage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/dialogs/wordimage/wordimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/images/addimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/images/alldeletebtnhoverskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/images/alldeletebtnupskin.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/images/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/images/button.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/images/deletedisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/images/deleteenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/images/listbackground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/images/rotateleftdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/images/rotateleftenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/images/rotaterightdisable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/images/rotaterightenable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/en/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/zh-cn/images/copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/zh-cn/images/localimage.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/zh-cn/images/music.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/zh-cn/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/lang/zh-cn/zh-cn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/css/ueditor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/css/ueditor.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/dialogbase.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/anchor.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/arrow_down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/arrow_up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/button-bg.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/cancelbutton.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/charts.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/cursor_h.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/cursor_h.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/cursor_v.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/cursor_v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/dialog-title-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/filescan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/highlighted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/icons-all.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/icons.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/loaderror.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/lock.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/neweditor-tab-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/pagebreak.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/scale.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/sortable.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/spacer.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/sparator_v.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/table-cell-align.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/tangram-colorpicker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/toolbar_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/unhighlighted.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/upload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/videologo.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/word.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/default/images/wordpaste.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/themes/iframe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/SyntaxHighlighter/shCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/codemirror/codemirror.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/codemirror/codemirror.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/adapters/mootools-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/adapters/mootools-adapter.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/adapters/prototype-adapter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/adapters/prototype-adapter.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/adapters/standalone-framework.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/adapters/standalone-framework.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/highcharts-more.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/highcharts-more.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/highcharts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/highcharts.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/annotations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/annotations.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/canvas-tools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/canvas-tools.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/data.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/drilldown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/drilldown.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/exporting.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/exporting.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/funnel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/funnel.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/heatmap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/heatmap.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/map.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/no-data-to-display.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/modules/no-data-to-display.src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/themes/dark-blue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/themes/dark-green.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/themes/gray.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/themes/grid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/highcharts/themes/skies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/jquery-1.10.2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/jquery-1.10.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/jquery-1.10.2.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/snapscreen/UEditorSnapscreen.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/video-js/font/vjs.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/video-js/font/vjs.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/video-js/font/vjs.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/video-js/font/vjs.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/video-js/video-js.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/video-js/video-js.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/video-js/video-js.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/video-js/video.dev.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/video-js/video.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/webuploader/Uploader.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/webuploader/webuploader.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/webuploader/webuploader.custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/webuploader/webuploader.custom.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/webuploader/webuploader.flashonly.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/webuploader/webuploader.flashonly.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/webuploader/webuploader.html5only.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/webuploader/webuploader.html5only.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/webuploader/webuploader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/webuploader/webuploader.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/webuploader/webuploader.withoutimage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/webuploader/webuploader.withoutimage.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/xss.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/zeroclipboard/ZeroClipboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/zeroclipboard/ZeroClipboard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/third-party/zeroclipboard/ZeroClipboard.swf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/ueditor.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/ueditor.all.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/ueditor.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/ueditor.parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iviewadmin/static/vendor/ueditor/ueditor.parse.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/SiteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/api/store/menu/StoreMenuApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/api/store/menu/StoreMenuApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/models/api/store/store/StoreStoreApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/api/store/store/StoreStoreApi.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/GetMenuGroupRelationForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/GetMenuGroupRelationForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v2/common/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/common/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/components/auth/QueryParamAuth.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v2/controllers/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/controllers/IndexController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/factory/BaseFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/factory/BaseFactory.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/modules/v2/factory/Factory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/factory/Factory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/factory/goods/CategoryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/factory/goods/CategoryFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/factory/goods/GoodsFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/factory/goods/GoodsFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/factory/goods/LabelFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/factory/goods/LogsFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/factory/goods/LogsFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/factory/goods/ModelsFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/factory/goods/ModelsFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/factory/goods/ProductFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/factory/goods/ProductFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/factory/member/BaseinfoFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/factory/member/BaseinfoFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/CommonForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/CommonForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/category/AddForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/category/AddForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/category/DeleteForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/category/DeleteForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/category/GetallForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/category/GetallForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/category/GetlistForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/category/GetlistForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/category/UpdateForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/goods/AddForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/goods/AddForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/goods/DeleteForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/goods/DeleteForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/goods/GetallForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/goods/GetallForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/goods/GetlistForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/goods/GetlistForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/goods/UpdateForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/label/AddForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/label/DeleteForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/label/GetallForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/label/GetlistForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/label/UpdateForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/logs/AddForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/logs/AddForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/logs/DeleteForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/logs/DeleteForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/logs/GetallForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/logs/GetallForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/logs/GetlistForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/logs/GetlistForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/logs/UpdateForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/logs/UpdateForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/models/AddForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/models/AddForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/models/DeleteForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/models/DeleteForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/models/GetallForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/models/GetallForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/models/GetlistForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/models/GetlistForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/models/UpdateForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/models/UpdateForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/product/AddForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/product/AddForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/product/DeleteForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/product/DeleteForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/product/GetallForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/product/GetallForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/product/GetlistForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/product/GetlistForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/goods/product/UpdateForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/goods/product/UpdateForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/member/ForgetPasswordForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/member/GetBaseInfoForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/member/LoginForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/member/LogoutForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/member/RegisterForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/member/baseinfo/XcxAddForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/member/baseinfo/XcxAddForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/member/baseinfo/XcxDecrptUnionidForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/member/baseinfo/XcxDecrptUnionidForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/modules/v2/v2.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/v2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v2/factory/store/MenuFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/factory/store/MenuFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v2/factory/store/StoreFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/factory/store/StoreFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/admin/user/LoginForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/admin/user/LoginForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/admin/user/LogoutForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/modules/v2/forms/admin/user/LogoutForm.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,45 +691,48 @@
     <session id="-1702205763">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.28" value="1" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="bak" value="2" />
-          <entry key="log" value="20" />
-          <entry key="php" value="730" />
+          <entry key="log" value="24" />
+          <entry key="php" value="784" />
           <entry key="txt" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="730" />
-          <entry key="PLAIN_TEXT" value="34" />
+          <entry key="PHP" value="784" />
+          <entry key="PLAIN_TEXT" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="150" />
-          <entry key="log" value="5" />
-          <entry key="php" value="13166" />
+          <entry key="log" value="7" />
+          <entry key="php" value="14021" />
           <entry key="txt" value="206" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="13166" />
-          <entry key="PLAIN_TEXT" value="361" />
+          <entry key="PHP" value="14021" />
+          <entry key="PLAIN_TEXT" value="363" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="49" />
+          <entry key="PHP Class.type" value="50" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -218,112 +745,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/common/district/DeleteForm.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/models/api/store/menu/StoreMenuApi.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/common/district/GetAllForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/common/district/GetListForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/common/dlycorp/AddForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/common/dlycorp/DeleteForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/common/dlycorp/GetAllForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/common/dlycorp/GetListForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/common/setting/AddForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/common/setting/DeleteForm.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+            <state relative-caret-position="421">
+              <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
               <folding>
-                <element signature="e#55#94#0#PHP" expanded="true" />
+                <element signature="e#47#80#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/runtime/logs/app.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-            </state>
-          </provider>
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ckass</find>
-      <find>pref</find>
-      <find>Memberadmin</find>
-      <find>MemberMsgFactory</find>
-      <find>goodsCategoryFactory</find>
-      <find>CodeMsgMap</find>
-      <find>set</find>
-      <find>sync`</find>
-      <find>goods</find>
       <find>category</find>
       <find>models</find>
       <find>menu</find>
@@ -336,6 +778,24 @@
       <find>sync</find>
       <find>;</find>
       <find>v1</find>
+      <find>test_</find>
+      <find>api_create_order</find>
+      <find>api_jiesuan_order</find>
+      <find>storemenu.getrelationmenu</find>
+      <find>$menu_id</find>
+      <find>$pidarr</find>
+      <find>money_change</find>
+      <find>money_change(</find>
+      <find>jiesuan</find>
+      <find>crontab</find>
+      <find>order_deal_search_crontab</find>
+      <find>下级订单</find>
+      <find>order_deal_search_crontab_app</find>
+      <find>下级订单:</find>
+      <find>$remark</find>
+      <find>api_jie</find>
+      <find>api_jiesuan</find>
+      <find>sendWxTemplateByOpenid</find>
     </findStrings>
     <replaceStrings>
       <replace>class</replace>
@@ -353,6 +813,7 @@
       <replace>dlycorp</replace>
       <replace>setting</replace>
       <replace>v2</replace>
+      <replace>$id</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -361,31 +822,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/admin/MenuFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/admin/OperatorLogsFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/admin/UserFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/common/DistrictFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/common/DlycorpFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/common/SettingFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/freight/TemplateFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/goods/GoodsFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/goods/CategoryFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/goods/ModelsFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/goods/LogsFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/goods/ProductFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/member/AddressFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/member/BaseinfoFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/member/GroupFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/member/MsgFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/statistics/StatisticsFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/store/AuthFactory.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/factory/store/GroupFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/store/MenuFactory.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/factory/store/OperatorlogsFactory.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/factory/store/SettingFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/store/StoreFactory.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/factory/BaseFactory.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/factory/Factory.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/forms/CommonForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/forms/store/auth/AddForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/forms/store/auth/DeleteForm.php" />
@@ -398,8 +838,6 @@
         <option value="$PROJECT_DIR$/server/modules/v2/forms/admin/user/getAdminForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/forms/admin/user/GetListForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/forms/admin/user/GetOneForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/forms/admin/user/LoginForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/forms/admin/user/LogoutForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/forms/admin/user/UpdateForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/forms/common/district/AddForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/forms/common/district/DeleteForm.php" />
@@ -411,7 +849,30 @@
         <option value="$PROJECT_DIR$/server/modules/v2/forms/common/dlycorp/GetListForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/forms/common/setting/AddForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/forms/common/setting/DeleteForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v1/forms/admin/menu/GetMenuGroupRelationForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v2/factory/store/MenuFactory.php" />
+        <option value="$PROJECT_DIR$/server/modules/v2/factory/store/StoreFactory.php" />
+        <option value="$PROJECT_DIR$/server/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/server/modules/v2/forms/store/store/LoginForm.php" />
+        <option value="$PROJECT_DIR$/server/models/api/store/store/StoreStoreApi.php" />
+        <option value="$PROJECT_DIR$/server/modules/v2/forms/store/store/LogoutForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v2/common/BaseController.php" />
+        <option value="$PROJECT_DIR$/server/modules/v2/forms/store/user/LoginForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v2/factory/Factory.php" />
+        <option value="$PROJECT_DIR$/server/modules/v2/factory/store/UserFactory.php" />
+        <option value="$PROJECT_DIR$/server/runtime/logs/error.log" />
+        <option value="$PROJECT_DIR$/server/modules/v2/forms/admin/user/LogoutForm.php" />
+        <option value="&lt;e1d8acea-3d30-42b3-8013-4b5a1f000fc9&gt;/www/a.tk.com/application/controllers/site/home.php" />
+        <option value="$PROJECT_DIR$/server/models/api/store/user/StoreUserApi.php" />
+        <option value="$PROJECT_DIR$/server/modules/v2/forms/admin/user/LoginForm.php" />
+        <option value="$PROJECT_DIR$/server/modules/v2/controllers/IndexController.php" />
+        <option value="$PROJECT_DIR$/server/componments/auth/QueryParamAuthMiddleEnd.php" />
+        <option value="$PROJECT_DIR$/server/modules/v2/forms/store/user/LogoutForm.php" />
+        <option value="$PROJECT_DIR$/server/functions.php" />
+        <option value="$PROJECT_DIR$/server/modules/v2/forms/store/menu/GetRelationMenuForm.php" />
+        <option value="&lt;e1d8acea-3d30-42b3-8013-4b5a1f000fc9&gt;/www/a.tk.com/application/models/tkuser/order.php" />
         <option value="$PROJECT_DIR$/server/runtime/logs/app.log" />
+        <option value="$PROJECT_DIR$/server/models/api/store/menu/StoreMenuApi.php" />
       </list>
     </option>
   </component>
@@ -422,11 +883,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/iviewadmin/node_modules" />
+    <handled-path value="$PROJECT_DIR$/shop_client/iview-admin/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/iviewadmin/package.json" />
+      <path value="$PROJECT_DIR$/shop_client/iview-admin/package.json" />
     </packageJsonPaths>
   </component>
   <component name="PhpServers">
@@ -502,8 +963,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="254" />
-    <option name="y" value="162" />
+    <option name="x" value="-63" />
+    <option name="y" value="80" />
     <option name="width" value="1519" />
     <option name="height" value="832" />
   </component>
@@ -513,7 +974,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -525,6 +985,19 @@
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="componments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="componments" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
@@ -548,14 +1021,90 @@
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+              <item name="upload" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
@@ -571,14 +1120,6 @@
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="v2" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v2" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
@@ -595,60 +1136,6 @@
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="v2" type="462c0819:PsiDirectoryNode" />
               <item name="factory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v2" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v2" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v2" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-              <item name="freight" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v2" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-              <item name="goods" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v2" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-              <item name="member" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v2" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-              <item name="statistics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
@@ -693,45 +1180,6 @@
               <item name="modules" type="462c0819:PsiDirectoryNode" />
               <item name="v2" type="462c0819:PsiDirectoryNode" />
               <item name="forms" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v2" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="district" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v2" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="dlycorp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v2" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="setting" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v2" type="462c0819:PsiDirectoryNode" />
-              <item name="forms" type="462c0819:PsiDirectoryNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -742,22 +1190,27 @@
               <item name="v2" type="462c0819:PsiDirectoryNode" />
               <item name="forms" type="462c0819:PsiDirectoryNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v3" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="modules" type="462c0819:PsiDirectoryNode" />
-              <item name="v3" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
@@ -776,6 +1229,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -792,19 +1246,19 @@
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v2\forms\store\user" />
+      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\componments\auth" />
+      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v2\forms\store\store" />
+      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v1\forms\member\baseinfo" />
+      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v1\forms\common\setting" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\models\goods" />
       <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\models\member" />
       <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\models\admin" />
       <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v1\factory\goods" />
       <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v1\factory\member" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v1\forms\member\baseinfo" />
-      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v1\forms\common\setting" />
-      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v1\forms\common\dlycorp" />
-      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v1\forms\common\district" />
-      <recent name="F:\phpstudy2018\PHPTutorial\WWW\yiiapi\server\modules\v1\forms\admin\operatorlogs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -833,11 +1287,14 @@
       <workItem from="1542196963856" duration="7112000" />
       <workItem from="1542280419007" duration="9918000" />
       <workItem from="1542624237755" duration="17295000" />
+      <workItem from="1543048712641" duration="6398000" />
+      <workItem from="1543109869563" duration="1798000" />
+      <workItem from="1543113490787" duration="4325000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78540000" />
+    <option name="totallyTimeSpent" value="91662000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -849,9 +1306,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="254" y="162" width="1519" height="832" extended-state="0" />
+    <frame x="-63" y="80" width="1519" height="832" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23989034" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22481151" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -870,7 +1327,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Remote Host" order="4" weight="0.15565032" />
+      <window_info anchor="right" id="Remote Host" order="4" weight="0.20202559" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23303632" />
@@ -902,191 +1359,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/admin/UserFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/common/DistrictFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/common/DlycorpFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/common/SettingFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/freight/TemplateFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/goods/GoodsFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/goods/CategoryFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/goods/ModelsFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="16" column="45" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/goods/LogsFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/goods/ProductFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/member/AddressFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/member/BaseinfoFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/member/GroupFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="13" column="30" lean-forward="true" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/member/MsgFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/statistics/StatisticsFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/store/AuthFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/store/GroupFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/store/MenuFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/store/OperatorlogsFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/store/SettingFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/store/StoreFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/BaseFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="13">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/Factory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="89" column="48" selection-start-line="89" selection-start-column="48" selection-end-line="89" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/Factory.php.bak">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/CommonForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/v2.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/store/auth/AddForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/store/auth/DeleteForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -1157,20 +1429,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/admin/user/LoginForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/admin/user/LogoutForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/admin/user/UpdateForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
@@ -1227,13 +1485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/common/dlycorp/GetListForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/common/setting/AddForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1245,16 +1496,194 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="726">
           <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-          <folding>
-            <element signature="e#55#94#0#PHP" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/common/dlycorp/GetListForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/store/menu/GetlistForm.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/store/menu/GetallForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="19" selection-end-line="28" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/store/menu/UpdateForm.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/api/admin/group/AdminGroupApi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="209" column="4" selection-start-line="209" selection-start-column="4" selection-end-line="254" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v1/forms/admin/menu/GetMenuGroupRelationForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="422" column="21" selection-start-line="422" selection-start-column="21" selection-end-line="422" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/store/store/LoginForm.php" />
+    <entry file="file://$PROJECT_DIR$/server/models/api/admin/user/GetLoginedAdminUserApi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/params.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/api/store/store/StoreStoreApi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/store/store/LogoutForm.php" />
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/store/StoreFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/runtime/logs/error.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/admin/user/LogoutForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/admin/user/LoginForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2574">
+          <caret line="78" column="8" selection-start-line="78" selection-start-column="8" selection-end-line="78" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v3/common/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/componments/auth/QueryParamAuthMiddleEnd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/common/BaseController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/controllers/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/store/user/LoginForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1353">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/store/user/LogoutForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/api/admin/menu/AdminMenuSyncApi.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/api/store/user/StoreUserApi.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" column="40" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/store/menu/GetRelationMenuForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/store/MenuFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/Factory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="16" column="34" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/store/UserFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/runtime/logs/app.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/api/store/menu/StoreMenuApi.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        <state relative-caret-position="421">
+          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+          <folding>
+            <element signature="e#47#80#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

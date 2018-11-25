@@ -415,13 +415,12 @@ class SiteController extends Controller
     public function actionIndex()
     {
 
-        echo 2;
-        return;
 
 
 
-        $tablename='tk_apitest_usercase';
-        $module='v1';
+
+        $tablename='tk_store_user';
+        $module='v2';
 
         $this->makeApi($tablename);
         $this->makeModel($tablename);

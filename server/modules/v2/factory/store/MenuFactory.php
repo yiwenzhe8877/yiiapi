@@ -12,6 +12,7 @@ class MenuFactory extends BaseFactory
         'storemenu.getlist'=>'app\modules\v2\forms\store\menu\GetListForm',
         'storemenu.update'=>'app\modules\v2\forms\store\menu\UpdateForm',
         'storemenu.getall'=>'app\modules\v2\forms\store\menu\GetAllForm',
+        'storemenu.getrelationmenu'=>'app\modules\v2\forms\store\menu\GetRelationMenuForm'
     ];
 
 }

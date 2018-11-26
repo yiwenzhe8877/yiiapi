@@ -15,7 +15,6 @@ class CategoryFactory extends BaseFactory
         'goodscategory.update'=>'app\modules\v2\forms\goods\category\UpdateForm',
         'goodscategory.getlist'=>'app\modules\v2\forms\goods\category\GetListForm',
         'goodscategory.getall'=>'app\modules\v2\forms\goods\category\GetAllForm',
-
     ];
 
 

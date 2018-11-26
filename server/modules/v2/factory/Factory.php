@@ -14,8 +14,14 @@ class Factory
         'storeuser.logout'=>'app\modules\v2\factory\store\UserFactory',
 
         //菜单
-        'storemenu.getrelationmenu'=>'app\modules\v2\factory\store\MenuFactory'
+        'storemenu.getrelationmenu'=>'app\modules\v2\factory\store\MenuFactory',
 
+
+        //商品分类
+        'goodscategory.getlist'=>'app\modules\v2\factory\goods\CategoryFactory',
+        'goodscategory.add'=>'app\modules\v2\factory\goods\CategoryFactory',
+        'goodscategory.update'=>'app\modules\v2\factory\goods\CategoryFactory',
+        'goodscategory.delete'=>'app\modules\v2\factory\goods\CategoryFactory',
     ];
 
 

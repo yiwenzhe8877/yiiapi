@@ -70,7 +70,7 @@ class LoginForm extends CommonForm
 
 
 
-        $auth_key=getRandom();
+        $auth_key=1;
 
         $obj=new SqlUpdate();
         $obj->setTableName('store_user');

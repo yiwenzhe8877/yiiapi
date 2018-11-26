@@ -10,6 +10,7 @@ namespace app\componments\auth;
 use app\componments\utils\ApiException;
 use app\componments\utils\ResponseMap;
 
+use app\models\store\store;
 use app\models\store\user;
 use yii\filters\auth\AuthMethod;
 
@@ -74,7 +75,16 @@ class QueryParamAuthMiddleEnd extends AuthMethod
         if ($identity === null)
             ApiException::run(ResponseMap::Map('10010005'),'10010005',__CLASS__,__METHOD__,__LINE__);
 
-       // $this->handleApiAuth($identity,$service);
+
+        $store_id=$identity->store_id;
+
+        $store=store::find()
+            ->andWhere(['=','store_id',$store_id])
+            ->one();
+        if(!$store)
+            ApiException::run("店铺id不存在",'-1',__CLASS__,__METHOD__,__LINE__);
+
+        // $this->handleApiAuth($identity,$service);
 
 
         return true;

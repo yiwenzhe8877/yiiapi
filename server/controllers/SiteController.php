@@ -416,8 +416,7 @@ class SiteController extends Controller
     {
 
 
-
-
+        return 123;
 
         $tablename='tk_store_user';
         $module='v2';

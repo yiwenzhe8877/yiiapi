@@ -4,11 +4,11 @@ namespace app\modules\v2\forms\freight\template;
 
 use app\componments\sql\SqlCreate;
 
+use app\models\api\store\user\StoreUserApi;
 use app\modules\v2\forms\CommonForm;
 
 class AddForm extends CommonForm
 {
-    public $store_id;
 	public $name;
 	public $prictype;
 	public $express_start;
@@ -22,15 +22,20 @@ class AddForm extends CommonForm
 
     public function addRule(){
         return [
-            [["store_id","name","prictype","express_start","express_postage","express_plus","express_postageplus","express_addon","remark"],'required','message'=>'{attribute}不能为空'],
+            [["name","prictype","express_start","express_postage","express_plus","express_postageplus","express_addon","remark"],'required','message'=>'{attribute}不能为空'],
         ];
     }
 
     public function run($form){
+        $cover=[
+            'store_id'=>StoreUserApi::getLoginedStoreId(),
+
+        ];
 
         $obj=new SqlCreate();
         $obj->setTableName('freight_template');
         $obj->setData($form);
+        $obj->setCoverData($cover);
         $obj->run();
 
     }

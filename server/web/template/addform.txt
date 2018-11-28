@@ -8,13 +8,12 @@ use app\modules\{module}\forms\CommonForm;
 
 class AddForm extends CommonForm
 {
-    public $group_name;
+    {fields}
 
 
     public function addRule(){
         return [
-            [['group_name'],'required','message'=>'{attribute}不能为空'],
-            ['group_name', 'unique', 'targetClass' => 'app\models\admin\group', 'message' => '{attribute}已经存在'],
+            [[{required}],'required','message'=>'{attribute}不能为空'],
         ];
     }
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace app\modules\v1\forms\freight\template;
+namespace app\modules\v2\forms\freight\template;
 
 
 
 use app\componments\sql\SqlGet;
-use app\modules\v1\forms\CommonForm;
+use app\modules\v2\forms\CommonForm;
 
 
 class GetAllForm extends CommonForm
@@ -20,7 +20,7 @@ class GetAllForm extends CommonForm
 
         $obj=new SqlGet();
         $obj->setTableName('freight_template');
-        $obj->setOrderBy('group_id desc');
+        $obj->setOrderBy('ex_id desc');
         $obj->setWhere( ['is_enabled='=>1]);
 
         return $obj->get_all();

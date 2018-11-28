@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0444797-2417-4062-91be-2659b99bb471" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/componments/utils/TableUtils.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/controllers/SiteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/controllers/SiteController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/freight/template/AddForm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/freight/template/DeleteForm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/freight/template/GetallForm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/freight/template/GetlistForm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/modules/v2/forms/freight/template/UpdateForm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/web/template/addform.txt" beforeDir="false" afterPath="$PROJECT_DIR$/server/web/template/addform.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/web/template/deleteform.txt" beforeDir="false" afterPath="$PROJECT_DIR$/server/web/template/deleteform.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/web/template/getallform.txt" beforeDir="false" afterPath="$PROJECT_DIR$/server/web/template/getallform.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/web/template/getlistform.txt" beforeDir="false" afterPath="$PROJECT_DIR$/server/web/template/getlistform.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/web/template/updateform.txt" beforeDir="false" afterPath="$PROJECT_DIR$/server/web/template/updateform.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,93 +91,125 @@
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="3" />
+          <entry key="PHP Class.type" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="log" value="1" />
-          <entry key="php" value="13" />
+          <entry key="php" value="36" />
+          <entry key="txt" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="13" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="PHP" value="36" />
+          <entry key="PLAIN_TEXT" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="php" value="143" />
+          <entry key="php" value="753" />
+          <entry key="txt" value="86" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="143" />
+          <entry key="PHP" value="753" />
+          <entry key="PLAIN_TEXT" value="86" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="131">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/Factory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="181">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/controllers/SiteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="2" selection-start-line="2" selection-end-line="3" />
+            <state relative-caret-position="7233">
+              <caret line="662" lean-forward="true" selection-start-line="662" selection-end-line="662" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/componments/utils/TableUtils.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/controllers/ImagesController.php">
+        <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/freight/template/GetallForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="406">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="232">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
-                <element signature="e#120#156#0#PHP" expanded="true" />
+                <element signature="e#59#90#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/runtime/logs/app.log">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/freight/template/GetlistForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-87" />
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/modules/v2/controllers/IndexController.php">
+        <entry file="file://$PROJECT_DIR$/server/web/template/getallform.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="62" />
+            <state relative-caret-position="638">
+              <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/models/api/upload/UploadImgApi.php">
+        <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/freight/template/UpdateForm.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2842">
-              <caret line="103" column="24" selection-start-line="103" selection-start-column="24" selection-end-line="103" selection-end-column="24" />
+            <state relative-caret-position="-145">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/web/index.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/web/template/getlistform.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="335">
-              <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+            <state relative-caret-position="435">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/web/template/deleteform.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="406">
+              <caret line="14" selection-start-line="14" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/freight/template/AddForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/web/template/updateform.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -174,8 +218,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>menu</find>
-      <find>goodscategory</find>
       <find>goods\category</find>
       <find>district</find>
       <find>dlycorp</find>
@@ -204,6 +246,8 @@
       <find>v1</find>
       <find>withdraw_form</find>
       <find>Access-Control-Allow-Origin</find>
+      <find>do_add</find>
+      <find>addform</find>
     </findStrings>
     <replaceStrings>
       <replace>class</replace>
@@ -230,15 +274,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/modules/v2/forms/admin/user/getAdminForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/forms/admin/user/GetListForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/forms/admin/user/GetOneForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/forms/admin/user/UpdateForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/forms/common/district/AddForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/forms/common/district/DeleteForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/forms/common/district/GetAllForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/forms/common/district/GetListForm.php" />
-        <option value="$PROJECT_DIR$/server/modules/v2/forms/common/dlycorp/AddForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/forms/common/dlycorp/DeleteForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/forms/common/dlycorp/GetAllForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/forms/common/dlycorp/GetListForm.php" />
@@ -275,12 +310,21 @@
         <option value="$PROJECT_DIR$/server/modules/v2/factory/images/ImagesFactory.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/forms/images/upload/UploadForm.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/controllers/ImagesController.php" />
-        <option value="$PROJECT_DIR$/server/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/server/controllers/ImagesController.php" />
-        <option value="$PROJECT_DIR$/server/runtime/logs/app.log" />
         <option value="&lt;e1d8acea-3d30-42b3-8013-4b5a1f000fc9&gt;/www/a.tk.com/application/theme/default/wap/tk/tpl_tkuser_usercenter_withdrawform.php" />
         <option value="$PROJECT_DIR$/server/modules/v2/factory/Factory.php" />
         <option value="$PROJECT_DIR$/server/web/index.php" />
+        <option value="$PROJECT_DIR$/server/modules/v2/forms/freight/template/AddForm.php" />
+        <option value="$PROJECT_DIR$/server/runtime/logs/app.log" />
+        <option value="$PROJECT_DIR$/server/web/template/addform.txt" />
+        <option value="$PROJECT_DIR$/server/web/template/deleteform.txt" />
+        <option value="$PROJECT_DIR$/server/modules/v2/forms/freight/template/DeleteForm.php" />
+        <option value="$PROJECT_DIR$/server/web/template/updateform.txt" />
+        <option value="$PROJECT_DIR$/server/modules/v2/forms/freight/template/UpdateForm.php" />
+        <option value="$PROJECT_DIR$/server/web/template/getlistform.txt" />
+        <option value="$PROJECT_DIR$/server/web/template/getallform.txt" />
+        <option value="$PROJECT_DIR$/server/controllers/SiteController.php" />
+        <option value="$PROJECT_DIR$/server/componments/utils/TableUtils.php" />
       </list>
     </option>
   </component>
@@ -367,11 +411,11 @@
       <path value="$PROJECT_DIR$/server/vendor/phpdocumentor/reflection-common" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="41" />
-    <option name="y" value="134" />
-    <option name="width" value="1870" />
-    <option name="height" value="832" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="229" />
+    <option name="y" value="46" />
+    <option name="width" value="1618" />
+    <option name="height" value="902" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -395,13 +439,119 @@
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="componments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="componments" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="factory" type="462c0819:PsiDirectoryNode" />
+              <item name="freight" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="freight" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="freight" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+              <item name="category" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="modules" type="462c0819:PsiDirectoryNode" />
+              <item name="v2" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
+              <item name="goods" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
               <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yiiapi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yiiapi" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="template" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -411,7 +561,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
@@ -470,12 +620,12 @@
       <workItem from="1543113490787" duration="4325000" />
       <workItem from="1543231558928" duration="4875000" />
       <workItem from="1543302386843" duration="3242000" />
-      <workItem from="1543366358002" duration="1631000" />
+      <workItem from="1543366358002" duration="7377000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101410000" />
+    <option name="totallyTimeSpent" value="107156000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -487,10 +637,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="134" width="1870" height="832" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19797525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23915401" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -509,7 +659,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Remote Host" order="4" weight="0.34364453" />
+      <window_info anchor="right" id="Remote Host" order="4" weight="0.104611926" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23303632" />
@@ -541,94 +691,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/models/api/admin/user/GetLoginedAdminUserApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/api/store/store/StoreStoreApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/store/store/LogoutForm.php" />
-    <entry file="file://$PROJECT_DIR$/server/runtime/logs/error.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v3/common/BaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/common/BaseController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/store/user/LoginForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1353">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/store/user/LogoutForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/api/admin/menu/AdminMenuSyncApi.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/store/menu/GetRelationMenuForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/store/UserFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/models/api/store/menu/StoreMenuApi.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="421">
-          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/componments/auth/QueryParamAuthMiddleEnd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="80" column="7" lean-forward="true" selection-start-line="80" selection-start-column="7" selection-end-line="82" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/models/api/store/user/StoreUserApi.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="676">
           <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="e#47#80#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -725,13 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/goods/category/DeleteForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/componments/sql/SqlUpdate.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -792,13 +854,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" selection-start-line="2" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/controllers/ImagesController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
@@ -808,9 +863,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/runtime/logs/app.log">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server/modules/v2/controllers/IndexController.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -830,6 +882,114 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="335">
           <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/factory/freight/TemplateFactory.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="44" column="21" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/runtime/logs/app.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/goods/goods/DeleteForm.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/goods/category/DeleteForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/freight/template/DeleteForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/web/template/addform.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="17" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/web/template/deleteform.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="14" selection-start-line="14" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/web/template/updateform.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/freight/template/AddForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/freight/template/UpdateForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-145">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/web/template/getlistform.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/freight/template/GetlistForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-87" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/web/template/getallform.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/modules/v2/forms/freight/template/GetallForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#59#90#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7233">
+          <caret line="662" lean-forward="true" selection-start-line="662" selection-end-line="662" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/componments/utils/TableUtils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
         </state>
       </provider>
     </entry>

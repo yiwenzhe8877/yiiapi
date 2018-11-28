@@ -1,20 +1,28 @@
 <?php
 
-namespace app\modules\v1\forms\freight\template;
+namespace app\modules\v2\forms\freight\template;
 
 use app\componments\sql\SqlCreate;
 
-use app\modules\v1\forms\CommonForm;
+use app\modules\v2\forms\CommonForm;
 
 class AddForm extends CommonForm
 {
-    public $group_name;
+    public $store_id;
+	public $name;
+	public $prictype;
+	public $express_start;
+	public $express_postage;
+	public $express_plus;
+	public $express_postageplus;
+	public $express_addon;
+	public $remark;
+	
 
 
     public function addRule(){
         return [
-            [['group_name'],'required','message'=>'{attribute}不能为空'],
-            ['group_name', 'unique', 'targetClass' => 'app\models\admin\group', 'message' => '{attribute}已经存在'],
+            [["store_id","name","prictype","express_start","express_postage","express_plus","express_postageplus","express_addon","remark"],'required','message'=>'{attribute}不能为空'],
         ];
     }
 

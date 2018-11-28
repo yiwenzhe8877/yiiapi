@@ -1,25 +1,36 @@
 <?php
 
-namespace app\modules\v1\forms\freight\template;
+namespace app\modules\v2\forms\freight\template;
 
 
 
 use app\componments\sql\SqlUpdate;
-use app\modules\v1\forms\CommonForm;
+use app\modules\v2\forms\CommonForm;
 
 
 class UpdateForm extends CommonForm
 {
 
 
-    public $group_id;
+   public $ex_id;
+	public $store_id;
+	public $name;
+	public $prictype;
+	public $express_start;
+	public $express_postage;
+	public $express_plus;
+	public $express_postageplus;
+	public $express_addon;
+	public $remark;
+	
 
 
     public function addRule(){
-        return [
-            [['group_id'],'required','message'=>'{attribute}不能为空'],
-            [['group_id'], 'exist','targetClass' => 'app\models\member\group', 'message' => '用户组不存在'],
-        ];
+       return [
+           [["ex_id","store_id","name","prictype","express_start","express_postage","express_plus","express_postageplus","express_addon","remark"],'required','message'=>'{attribute}不能为空'],
+           [['ex_id'], 'exist','targetClass' => 'app\models\freight\template', 'message' => '{attribute}不存在'],
+
+       ];
     }
 
     public function run($form){
@@ -27,7 +38,7 @@ class UpdateForm extends CommonForm
         $obj=new SqlUpdate();
         $obj->setTableName('freight_template');
         $obj->setData($form);
-        $obj->setWhere(['group_id='=>$form->group_id]);
+        $obj->setWhere(['ex_id='=>$form->ex_id]);
         return $obj->run();
 
     }

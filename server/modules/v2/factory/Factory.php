@@ -22,7 +22,13 @@ class Factory
         'goodscategory.add'=>'app\modules\v2\factory\goods\CategoryFactory',
         'goodscategory.update'=>'app\modules\v2\factory\goods\CategoryFactory',
         'goodscategory.delete'=>'app\modules\v2\factory\goods\CategoryFactory',
+
         'goodscategory.getall'=>'app\modules\v2\factory\goods\CategoryFactory',
+
+
+        //图片
+        'images.upload'=>'app\modules\v2\factory\images\ImageFactory',
+
     ];
 
 

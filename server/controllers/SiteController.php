@@ -6,9 +6,13 @@ use app\componments\sql\SqlGet;
 use app\componments\testapi\ApiTest;
 use app\componments\utils\HttpUtils;
 use app\componments\utils\RandomUtils;
+use app\componments\utils\TableUtils;
 use app\models\api\common\setting\CommonSettingApi;
 use app\models\apitest\usercase;
 use app\models\common\setting;
+use app\models\member\msg;
+use yii\db\Migration;
+use yii\db\TableSchema;
 use yii\web\Controller;
 
 
@@ -417,20 +421,20 @@ class SiteController extends Controller
 
 
 
-
-
-        $tablename='tk_store_user';
+        $tablename='tk_freight_template';
         $module='v2';
 
         $this->makeApi($tablename);
         $this->makeModel($tablename);
         $this->makeFactory($tablename,$module);
-        $this->makeform($tablename,$module,'add');
-        $this->makeform($tablename,$module,'update');
-        $this->makeform($tablename,$module,'delete');
-        $this->makeform($tablename,$module,'getlist');
-        $this->makeform($tablename,$module,'getall');
+        $this->addform($tablename,$module,'add');
+        $this->deleteform($tablename,$module,'delete');
+        $this->updateform($tablename,$module,'update');
+        $this->getlistform($tablename,$module,'getlist');
+        $this->getallform($tablename,$module,'getall');
     }
+
+
 
     private function makeApi($tablename){
         if($tablename=='')return;
@@ -522,6 +526,8 @@ class SiteController extends Controller
         $z=str_replace('{two}',$two,$z);
         $z=str_replace('{tablename_noprefix}',$one.'_'.$two,$z);
 
+
+
         $dir_one='../modules/'.$module.'/forms/'.$one;
         $dir_two=$dir_one.'/'.$two;
 
@@ -540,6 +546,219 @@ class SiteController extends Controller
         }
     }
 
+    public function addform($tablename,$module,$method){
+        if($tablename==''|| $method=='' || $module=='')return;
+
+        $arr=explode('_',$tablename);
+        $one=$arr[1];
+        $two=$arr[2];
+        $z=file_get_contents('./template/'.$method.'form.txt');
+        $z=str_replace('{module}',$module,$z);
+        $z=str_replace('{one}',$one,$z);
+        $z=str_replace('{two}',$two,$z);
+        $z=str_replace('{tablename_noprefix}',$one.'_'.$two,$z);
+        $f=TableUtils::getTableFields($tablename);
+        $str="";
+        for ($i=1;$i<count($f);$i++){
+            $str.='public $'.$f[$i].";\r\n\t";
+        }
+        $z=str_replace('{fields}',$str,$z);
+
+
+        $str="";
+        for ($i=1;$i<count($f);$i++){
+            $str.='"'.$f[$i].'"'.',';
+        }
+        $str=substr($str,'0',strlen($str)-1);
+        $z=str_replace('{required}',$str,$z);
+
+
+        $dir_one='../modules/'.$module.'/forms/'.$one;
+        $dir_two=$dir_one.'/'.$two;
+
+        $filename=ucfirst($method).'Form.php';
+        if(!is_dir($dir_one)){
+            mkdir($dir_one);
+        }
+        if(!is_dir($dir_two)){
+            mkdir($dir_two);
+        }
+
+        if(!file_exists($dir_two.'/'.$filename)){
+            $myfile = fopen($dir_two.'/'.$filename, "w") or die("Unable to open file!");
+            fwrite($myfile, $z);
+            fclose($myfile);
+        }
+    }
+
+    public function updateform($tablename,$module,$method){
+        if($tablename==''|| $method=='' || $module=='')return;
+
+        $arr=explode('_',$tablename);
+        $one=$arr[1];
+        $two=$arr[2];
+        $z=file_get_contents('./template/'.$method.'form.txt');
+        $z=str_replace('{module}',$module,$z);
+        $z=str_replace('{one}',$one,$z);
+        $z=str_replace('{two}',$two,$z);
+        $z=str_replace('{tablename_noprefix}',$one.'_'.$two,$z);
+        $f=TableUtils::getTableFields($tablename);
+
+        //字段
+        $str="";
+        for ($i=0;$i<count($f);$i++){
+            $str.='public $'.$f[$i].";\r\n\t";
+        }
+        $z=str_replace('{fields}',$str,$z);
+
+        //必填项
+        $str="";
+        for ($i=0;$i<count($f);$i++){
+            $str.='"'.$f[$i].'"'.',';
+        }
+        $str=substr($str,'0',strlen($str)-1);
+        $z=str_replace('{required}',$str,$z);
+
+        //id
+        $z=str_replace('{id}',$f[0],$z);
+        $tablepath=$one.'\\'.$two;
+
+        $z=str_replace('{tablepath}',$tablepath,$z);
+
+        $dir_one='../modules/'.$module.'/forms/'.$one;
+        $dir_two=$dir_one.'/'.$two;
+
+        $filename=ucfirst($method).'Form.php';
+        if(!is_dir($dir_one)){
+            mkdir($dir_one);
+        }
+        if(!is_dir($dir_two)){
+            mkdir($dir_two);
+        }
+
+        if(!file_exists($dir_two.'/'.$filename)){
+            $myfile = fopen($dir_two.'/'.$filename, "w") or die("Unable to open file!");
+            fwrite($myfile, $z);
+            fclose($myfile);
+        }
+    }
+
+    public function getallform($tablename,$module,$method){
+        if($tablename==''|| $method=='' || $module=='')return;
+
+        $arr=explode('_',$tablename);
+        $one=$arr[1];
+        $two=$arr[2];
+        $z=file_get_contents('./template/'.$method.'form.txt');
+        $z=str_replace('{module}',$module,$z);
+        $z=str_replace('{one}',$one,$z);
+        $z=str_replace('{two}',$two,$z);
+        $z=str_replace('{tablename_noprefix}',$one.'_'.$two,$z);
+        $f=TableUtils::getTableFields($tablename);
+
+        //字段
+
+        //必填项
+
+
+
+        //id
+        $z=str_replace('{id}',$f[0],$z);
+
+
+        $dir_one='../modules/'.$module.'/forms/'.$one;
+        $dir_two=$dir_one.'/'.$two;
+
+        $filename=ucfirst($method).'Form.php';
+        if(!is_dir($dir_one)){
+            mkdir($dir_one);
+        }
+        if(!is_dir($dir_two)){
+            mkdir($dir_two);
+        }
+
+        if(!file_exists($dir_two.'/'.$filename)){
+            $myfile = fopen($dir_two.'/'.$filename, "w") or die("Unable to open file!");
+            fwrite($myfile, $z);
+            fclose($myfile);
+        }
+    }
+
+
+    public function getlistform($tablename,$module,$method){
+        if($tablename==''|| $method=='' || $module=='')return;
+
+        $arr=explode('_',$tablename);
+        $one=$arr[1];
+        $two=$arr[2];
+        $z=file_get_contents('./template/'.$method.'form.txt');
+        $z=str_replace('{module}',$module,$z);
+        $z=str_replace('{one}',$one,$z);
+        $z=str_replace('{two}',$two,$z);
+        $z=str_replace('{tablename_noprefix}',$one.'_'.$two,$z);
+        $f=TableUtils::getTableFields($tablename);
+
+
+
+        //id
+        $z=str_replace('{id}',$f[0],$z);
+
+
+        $dir_one='../modules/'.$module.'/forms/'.$one;
+        $dir_two=$dir_one.'/'.$two;
+
+        $filename=ucfirst($method).'Form.php';
+        if(!is_dir($dir_one)){
+            mkdir($dir_one);
+        }
+        if(!is_dir($dir_two)){
+            mkdir($dir_two);
+        }
+
+        if(!file_exists($dir_two.'/'.$filename)){
+            $myfile = fopen($dir_two.'/'.$filename, "w") or die("Unable to open file!");
+            fwrite($myfile, $z);
+            fclose($myfile);
+        }
+    }
+
+    public function deleteform($tablename,$module,$method){
+        if($tablename==''|| $method=='' || $module=='')return;
+
+        $arr=explode('_',$tablename);
+        $one=$arr[1];
+        $two=$arr[2];
+        $z=file_get_contents('./template/'.$method.'form.txt');
+        $z=str_replace('{module}',$module,$z);
+        $z=str_replace('{one}',$one,$z);
+        $z=str_replace('{two}',$two,$z);
+        $z=str_replace('{tablename_noprefix}',$one.'_'.$two,$z);
+        $f=TableUtils::getTableFields($tablename);
+
+        $z=str_replace('{id}',$f[0],$z);
+        $tablepath=$one.'\\'.$two;
+
+        $z=str_replace('{tablepath}',$tablepath,$z);
+
+
+
+        $dir_one='../modules/'.$module.'/forms/'.$one;
+        $dir_two=$dir_one.'/'.$two;
+
+        $filename=ucfirst($method).'Form.php';
+        if(!is_dir($dir_one)){
+            mkdir($dir_one);
+        }
+        if(!is_dir($dir_two)){
+            mkdir($dir_two);
+        }
+
+        if(!file_exists($dir_two.'/'.$filename)){
+            $myfile = fopen($dir_two.'/'.$filename, "w") or die("Unable to open file!");
+            fwrite($myfile, $z);
+            fclose($myfile);
+        }
+    }
 
 
 

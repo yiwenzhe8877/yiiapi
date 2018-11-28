@@ -7,15 +7,21 @@ use app\modules\{module}\forms\CommonForm;
 
 class DeleteForm extends CommonForm
 {
-    public $id;
+    public ${id};
 
+    public function addRule(){
+        return [
+            [['{id}'],'required','message'=>'{attribute}不能为空'],
+            [['{id}'], 'exist','targetClass' => 'app\models\{tablepath}', 'message' => '{attribute}不存在'],
+        ];
+    }
 
 
     public function run($form){
         $obj=new SqlUpdate();
         $obj->setTableName('{tablename_noprefix}');
         $obj->setData(['del'=>1]);
-        $obj->setWhere(['member_id='=>$form->member_id]);
+        $obj->setWhere(['{id}='=>$form->{id}]);
         return $obj->run();
 
     }

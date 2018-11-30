@@ -6,7 +6,7 @@
  * Time: 17:20
  */
 
-namespace app\modules\v3\forms;
+namespace app\componments\common;
 
 
 use yii\base\Model;

@@ -12,8 +12,8 @@ class UpdateForm extends CommonForm
 {
 
 
-   public $ex_id;
-	public $store_id;
+    public $ex_id;
+
 	public $name;
 	public $prictype;
 	public $express_start;
@@ -27,7 +27,7 @@ class UpdateForm extends CommonForm
 
     public function addRule(){
        return [
-           [["ex_id","store_id","name","prictype","express_start","express_postage","express_plus","express_postageplus","express_addon","remark"],'required','message'=>'{attribute}不能为空'],
+           [["ex_id","name","prictype","express_start","express_postage","express_plus","express_postageplus","express_addon","remark"],'required','message'=>'{attribute}不能为空'],
            [['ex_id'], 'exist','targetClass' => 'app\models\freight\template', 'message' => '{attribute}不存在'],
 
        ];

@@ -16,7 +16,7 @@ class LogoutForm extends CommonForm
 
         $model=user::findone($uid);
 
-        $model->auth_key=getRandom();
+        $model->auth_key=1;
         $model->save();
 
         return "";

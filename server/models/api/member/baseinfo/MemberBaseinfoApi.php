@@ -26,4 +26,30 @@ class MemberBaseinfoApi
         ],['member_id'=>$member_id]);
         return "";
     }
+
+    //取消所有的默认
+    public static function getUid(){
+        return   baseinfo::findOne(['auth_key'=>self::getAdminToken()])->member_id;
+    }
+    public static function getName(){
+       // return   baseinfo::findOne(['auth_key'=>self::getAdminToken()])->username;
+    }
+
+    public static function getGroupId(){
+        //return   baseinfo::findOne(['auth_key'=>self::getAdminToken()])->group_id;
+
+    }
+    public static function getAllInfo(){
+       // return   baseinfo::findOne(['auth_key'=>self::getAdminToken()]);
+    }
+    public static function getAdminToken(){
+        $request=\Yii::$app->getRequest();
+
+        $accessToken=$request->headers[\Yii::$app->params['member_token']];
+
+        if(!$accessToken){
+            $accessToken = $request->get(\Yii::$app->params['member_token']);
+        }
+        return $accessToken;
+    }
 }

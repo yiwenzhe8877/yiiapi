@@ -1,6 +1,6 @@
 <?php
 
-namespace app\modules\v2\common;
+namespace app\modules\v3\common;
 
 use app\componments\auth\QueryParamAuthFrontEnd;
 use app\componments\filter\VerbFilter;

@@ -22,7 +22,7 @@ class AddForm extends CommonForm
         $obj=new SqlCreate();
         $obj->setTableName('{tablename_noprefix}');
         $obj->setData($form);
-        $obj->run();
+        return $obj->run();
 
     }
 }

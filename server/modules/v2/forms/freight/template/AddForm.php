@@ -17,12 +17,13 @@ class AddForm extends CommonForm
 	public $express_postageplus;
 	public $express_addon;
 	public $remark;
-	
+
 
 
     public function addRule(){
         return [
             [["name","prictype","express_start","express_postage","express_plus","express_postageplus","express_addon","remark"],'required','message'=>'{attribute}不能为空'],
+            ['name', 'unique', 'targetClass' => 'app\models\freight\template', 'message' => '{attribute}已经存在。'],
         ];
     }
 
@@ -36,7 +37,7 @@ class AddForm extends CommonForm
         $obj->setTableName('freight_template');
         $obj->setData($form);
         $obj->setCoverData($cover);
-        $obj->run();
+        return $obj->run();
 
     }
 }

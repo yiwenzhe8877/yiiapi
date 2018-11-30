@@ -17,6 +17,18 @@ class TableUtils
         $fields = \yii\helpers\ArrayHelper::getColumn($tableSchema->columns, 'name', false);
         return $fields;
     }
+    public static function getAllTableNames(){
 
+        $connection = \Yii::$app->db;//get connection
+        $dbSchema = $connection->schema;
+//or $connection->getSchema();
+        $tables = $dbSchema->getTableNames();//returns array of tbl schema's
+
+        return $tables;
+        /*foreach($tables as $tbl)
+        {
+            echo $tbl->rawName, ':<br/>', implode(', ', $tbl->columnNames), '<br/>';
+        }*/
+    }
 
 }

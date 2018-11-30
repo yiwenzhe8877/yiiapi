@@ -13,6 +13,7 @@ use app\componments\utils\ResponseMap;
 use app\models\admin\auth;
 use app\models\admin\group;
 use app\models\admin\groupauth;
+use app\models\member\baseinfo;
 use yii\filters\auth\AuthMethod;
 
 /**
@@ -35,17 +36,17 @@ class QueryParamAuthFrontEnd extends AuthMethod
      */
     public function authenticate($user, $request, $response)
     {
+
+
         //service
         $post=$request->post();
 
         if(empty($post['service']) || !isset($post['service']))
             ApiException::run(ResponseMap::Map('10010015'),'10010015',__CLASS__,__METHOD__,__LINE__);
 
-
         if(in_array($post['service'],$this->white)){
             return true;
         }
-
         //token
         $accessToken=$request->headers[\Yii::$app->params['admin_token']];
 
@@ -53,12 +54,12 @@ class QueryParamAuthFrontEnd extends AuthMethod
             $accessToken = $request->get(\Yii::$app->params['admin_token']);
         }
 
+
         if(empty($accessToken))
             ApiException::run(ResponseMap::Map('10010014'),'10010014',__CLASS__,__METHOD__,__LINE__);
 
 
-
-        $identity = $user->loginByAccessToken($accessToken, get_class($this));
+        $identity =baseinfo::find()->andWhere(['=','auth_key',$accessToken])->one();
 
         if ($identity === null)
             ApiException::run(ResponseMap::Map('10010005'),'10010005',__CLASS__,__METHOD__,__LINE__);
@@ -72,6 +73,8 @@ class QueryParamAuthFrontEnd extends AuthMethod
 
     public function handleApiAuth($identity){
 
+
+        return;
         if($identity->username=='admin'){
             return;
         }

@@ -18,12 +18,9 @@ class IndexController  extends BaseController
 
         $service=\Yii::$app->getRequest()->headers['service'];
 
-
         $postData=\Yii::$app->getRequest()->post();
-
         if(empty($service))
             $service= $postData['service'];
-
 
         $factory = Factory::createInstance($service);
 
@@ -31,6 +28,7 @@ class IndexController  extends BaseController
 
 
         define('FORM_CLASS',$factory->form_map[$service]);
+
 
         $form=$factory->getForm($service);
 

@@ -23,33 +23,4 @@ class cart extends \yii\db\ActiveRecord
         return 'tk_member_cart';
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function rules()
-    {
-        return [
-            [['name'], 'required'],
-            [['name'], 'string', 'max' => 50],
-        ];
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function attributeLabels()
-    {
-        return [
-            'category_id' => 'Category ID',
-            'name' => 'Name',
-        ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getArticleCategories()
-    {
-        return $this->hasMany(ArticleCategory::className(), ['category_id' => 'category_id']);
-    }
 }

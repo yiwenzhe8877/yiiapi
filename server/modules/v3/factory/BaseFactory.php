@@ -6,7 +6,7 @@
  * Time: 10:11
  */
 
-namespace app\modules\v2\factory;
+namespace app\modules\v3\factory;
 
 class BaseFactory
 {

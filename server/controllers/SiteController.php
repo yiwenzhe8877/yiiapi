@@ -420,10 +420,9 @@ class SiteController extends Controller
     {
 
 
-
-        $tablename='tk_freight_template';
-        $module='v2';
-
+        $tablename='tk_member_cart';
+        $module='v3';
+        $this->makeFactoryCurd($module);
         $this->makeApi($tablename);
         $this->makeModel($tablename);
         $this->makeFactory($tablename,$module);
@@ -432,6 +431,68 @@ class SiteController extends Controller
         $this->updateform($tablename,$module,'update');
         $this->getlistform($tablename,$module,'getlist');
         $this->getallform($tablename,$module,'getall');
+        $this->sqlCreate();
+    }
+
+    private function sqlCreate(){
+        $result = TableUtils::getAllTableNames();
+        $str='';
+        foreach ($result as $k =>$v){
+
+            $arr=explode('_',$v);
+            $m=$arr[1]."_".$arr[2];
+            $n="app\\models\\".$arr[1]."\\".$arr[2];
+            $str.='"'.$m.'"'.'=>'."'".$n."'".','."\r\n\t";
+        }
+
+        $z=file_get_contents('./template/sqlcreate.txt');
+        $z=str_replace('{models}',$str,$z);
+
+        $path='../componments/sql/SqlCreate.php';
+        if(file_exists($path)){
+            unlink($path);
+
+        }
+
+        $myfile = fopen($path, "w") or die("Unable to open file!");
+        fwrite($myfile, $z);
+        fclose($myfile);
+
+    }
+
+    private function makeFactoryCurd($module){
+        $result = TableUtils::getAllTableNames();
+
+        $methods_map=['add','update','delete','getlist','getall'];
+
+        $str='';
+        foreach ($result as $k =>$v){
+
+            $arr=explode('_',$v);
+
+            //app\modules\v2\factory\store\UserFactory
+            foreach ($methods_map as $a=>$b){
+                $m=$arr[1].$arr[2];
+                $n="app\\modules\\$module\\factory\\".$arr[1]."\\".$arr[2].'Factory';
+                $str.='"'.$m.'.'.$b.'"'.'=>'."'".$n."'".','."\r\n\t";
+            }
+        }
+
+
+        $z=file_get_contents('./template/factory_curd.txt');
+
+        $z=str_replace('{methods}',$str,$z);
+        $z=str_replace('{module}',$module,$z);
+
+        $path='../modules/'.$module.'/factory/Factory.php';
+        if(file_exists($path)){
+            unlink($path);
+        }
+
+        $myfile = fopen($path, "w") or die("Unable to open file!");
+        fwrite($myfile, $z);
+        fclose($myfile);
+
     }
 
 

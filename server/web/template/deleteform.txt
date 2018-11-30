@@ -20,7 +20,6 @@ class DeleteForm extends CommonForm
     public function run($form){
         $obj=new SqlUpdate();
         $obj->setTableName('{tablename_noprefix}');
-        $obj->setData(['del'=>1]);
         $obj->setWhere(['{id}='=>$form->{id}]);
         return $obj->run();
 

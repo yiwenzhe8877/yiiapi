@@ -66,7 +66,7 @@ class LoginForm extends CommonForm
         }else{
 
         }*/
-        $auth_key=getRandom();
+        $auth_key=1;
 
         user::updateAll([
             'auth_key'=>$auth_key

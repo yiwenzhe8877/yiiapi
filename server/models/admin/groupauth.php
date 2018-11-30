@@ -20,7 +20,7 @@ class groupauth extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'tk_admin_group_auth';
+        return 'tk_admin_groupauth';
     }
 
 }

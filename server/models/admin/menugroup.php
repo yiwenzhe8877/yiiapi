@@ -20,7 +20,7 @@ class menugroup extends \yii\db\ActiveRecord
      */
     public static function tableName()
     {
-        return 'tk_admin_menu_group';
+        return 'tk_admin_menugroup';
     }
 
     /**

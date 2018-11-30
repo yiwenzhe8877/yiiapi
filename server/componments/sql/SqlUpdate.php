@@ -97,7 +97,7 @@ class SqlUpdate
         return $result;
     }
 
-    public function increase(){
+    public function changeonefield(){
 
         Assert::isEmpty(['表名'=>$this->getTableName()]);
         Assert::isEmpty(['setdata'=>$this->getData()]);

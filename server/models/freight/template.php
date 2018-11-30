@@ -1,7 +1,6 @@
 <?php
 
-namespace app\models\goods;
-
+namespace app\models\freight;
 
 
 class template extends \yii\db\ActiveRecord
@@ -13,6 +12,5 @@ class template extends \yii\db\ActiveRecord
     {
         return 'tk_freight_template';
     }
-
 
 }

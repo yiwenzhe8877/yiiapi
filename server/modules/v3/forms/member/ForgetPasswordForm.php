@@ -4,7 +4,6 @@ namespace app\modules\v2\forms\member;
 
 
 use app\componments\utils\ApiException;
-use app\models\user;
 use app\modules\v2\forms\CommonForm;
 
 class ForgetPasswordForm extends CommonForm

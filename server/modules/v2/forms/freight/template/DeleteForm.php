@@ -2,7 +2,9 @@
 
 namespace app\modules\v2\forms\freight\template;
 
+use app\componments\sql\SqlDeleteTrue;
 use app\componments\sql\SqlUpdate;
+use app\models\api\store\user\StoreUserApi;
 use app\modules\v2\forms\CommonForm;
 
 class DeleteForm extends CommonForm
@@ -18,10 +20,10 @@ class DeleteForm extends CommonForm
 
 
     public function run($form){
-        $obj=new SqlUpdate();
+        $obj=new SqlDeleteTrue();
+
         $obj->setTableName('freight_template');
-        $obj->setData(['del'=>1]);
-        $obj->setWhere(['ex_id='=>$form->ex_id]);
+        $obj->setWhere(['ex_id='=>$form->ex_id,' and store_id='=>StoreUserApi::getLoginedStoreId()]);
         return $obj->run();
 
     }

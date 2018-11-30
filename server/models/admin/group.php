@@ -2,7 +2,6 @@
 
 namespace app\models\admin;
 
-use app\modules\v1\utils\CodeMsgMap;
 use Yii;
 
 /**

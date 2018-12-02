@@ -1,20 +1,26 @@
 <?php
 
-namespace app\modules\v2\forms\goods\models;
+namespace app\modules\v3\forms\goods\models;
 
 use app\componments\sql\SqlCreate;
 
-use app\modules\v2\forms\CommonForm;
+use app\componments\common\CommonForm;
 
 class AddForm extends CommonForm
 {
-    public $group_name;
+    public $store_id;
+	public $classid;
+	public $name;
+	public $choices;
+	public $is_enable;
+	public $sort;
+	public $del;
+	
 
 
     public function addRule(){
         return [
-            [['group_name'],'required','message'=>'{attribute}不能为空'],
-            ['group_name', 'unique', 'targetClass' => 'app\models\admin\group', 'message' => '{attribute}已经存在'],
+            [["store_id","classid","name","choices","is_enable","sort","del"],'required','message'=>'{attribute}不能为空'],
         ];
     }
 
@@ -23,7 +29,7 @@ class AddForm extends CommonForm
         $obj=new SqlCreate();
         $obj->setTableName('goods_models');
         $obj->setData($form);
-        $obj->run();
+        return $obj->run();
 
     }
 }

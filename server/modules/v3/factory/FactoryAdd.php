@@ -23,6 +23,7 @@ class FactoryAdd
         'images.upload'=>'app\modules\v3\factory\images\ImageFactory',
         //购物车
         'membercart.changecart'=>'app\modules\v3\factory\member\CartFactory',
+        //
 
     ];
 

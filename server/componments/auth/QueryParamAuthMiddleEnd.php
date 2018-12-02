@@ -10,6 +10,7 @@ namespace app\componments\auth;
 use app\componments\utils\ApiException;
 use app\componments\utils\ResponseMap;
 
+use app\componments\utils\Service;
 use app\models\store\store;
 use app\models\store\user;
 use yii\filters\auth\AuthMethod;
@@ -33,19 +34,9 @@ class QueryParamAuthMiddleEnd extends AuthMethod
         //service
 
 
-        $service='';
-
-        if(isset($request->headers['service']) && !empty($request->headers['service']))
-            $service=$request->headers['service'];
+        $service=Service::getServiceName();
 
 
-        if(empty($service))
-            $service=$request->post('service');
-
-
-
-        if(!isset($service) || empty($service))
-            ApiException::run(ResponseMap::Map('10010015'),'10010015',__CLASS__,__METHOD__,__LINE__);
 
 
         if(in_array($service,$this->white)){

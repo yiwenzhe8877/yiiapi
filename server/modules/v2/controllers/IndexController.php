@@ -3,6 +3,7 @@
 namespace app\modules\v2\controllers;
 
 use app\componments\utils\ApiException;
+use app\componments\utils\Service;
 use app\modules\v2\common\BaseController;
 use app\modules\v2\factory\Factory;
 
@@ -15,33 +16,21 @@ class IndexController  extends BaseController
     {
 
 
+        $post=\Yii::$app->getRequest()->post();
 
-        $service=\Yii::$app->getRequest()->headers['service'];
-
-        $postData=\Yii::$app->getRequest()->post();
-        if(empty($service))
-            $service= $postData['service'];
-
-        $factory = Factory::createInstance($service);
+        $service=Service::getServiceName();
 
 
+        $form = Factory::createInstance($service);
+        $formName = Factory::getFormName($service);
 
 
-        define('FORM_CLASS',$factory->form_map[$service]);
+        define('FORM_CLASS',$formName);
 
+        if($form->load(\Yii::$app->getRequest()->post(),'') && !$form->validate())
+            ApiException::run($form->getError(),'900000',__CLASS__,__METHOD__,__LINE__);
 
-        $form=$factory->getForm($service);
-
-        $form->load($postData,'');
-
-        if(!$form->validate())
-            ApiException::run($form->getError(),'10010001',__CLASS__,__METHOD__,__LINE__);
-
-
-
-
-        $service=$factory->getRun($service);
-        $data=$postData;
+        $data=\Yii::$app->getRequest()->post();
 
         foreach ($data as $key=>$value)
         {
@@ -50,14 +39,8 @@ class IndexController  extends BaseController
         }
         $objdata=(object)$data;
 
-
-
-
-        return   $service->run($objdata);
-
-
+        return $form->run($objdata);
 
     }
-
 
 }

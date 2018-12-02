@@ -4,8 +4,8 @@ namespace app\modules\v2\forms\common\dlycorp;
 
 
 
+use app\componments\common\CommonForm;
 use app\componments\sql\SqlCreate;
-use app\modules\v2\forms\CommonForm;
 
 class AddForm extends CommonForm
 {

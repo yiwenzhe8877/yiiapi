@@ -1,11 +1,11 @@
 <?php
 
-namespace app\modules\v2\forms\goods\label;
+namespace app\modules\v3\forms\goods\label;
 
 
 
 use app\componments\sql\SqlGet;
-use app\modules\v2\forms\CommonForm;
+use app\componments\common\CommonForm;
 
 
 class GetAllForm extends CommonForm
@@ -20,7 +20,7 @@ class GetAllForm extends CommonForm
 
         $obj=new SqlGet();
         $obj->setTableName('goods_label');
-        $obj->setOrderBy('group_id desc');
+        $obj->setOrderBy('label_id desc');
         $obj->setWhere( ['is_enabled='=>1]);
 
         return $obj->get_all();

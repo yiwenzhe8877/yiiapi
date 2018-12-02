@@ -3,7 +3,7 @@
 namespace app\modules\{module}\forms\{one}\{two};
 
 use app\componments\sql\SqlUpdate;
-use app\modules\{module}\forms\CommonForm;
+use app\componments\common\CommonForm;
 
 class DeleteForm extends CommonForm
 {

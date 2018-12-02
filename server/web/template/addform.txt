@@ -4,7 +4,7 @@ namespace app\modules\{module}\forms\{one}\{two};
 
 use app\componments\sql\SqlCreate;
 
-use app\modules\{module}\forms\CommonForm;
+use app\componments\common\CommonForm;
 
 class AddForm extends CommonForm
 {

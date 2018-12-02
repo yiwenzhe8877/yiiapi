@@ -1,11 +1,11 @@
 <?php
 
-namespace app\modules\v2\forms\goods\goods;
+namespace app\modules\v3\forms\goods\goods;
 
 
 
 use app\componments\sql\SqlGet;
-use app\modules\v2\forms\CommonForm;
+use app\componments\common\CommonForm;
 
 class GetListForm extends CommonForm
 {
@@ -24,7 +24,7 @@ class GetListForm extends CommonForm
 
         $obj=new SqlGet();
         $obj->setTableName('goods_goods');
-        $obj->setOrderBy('group_id desc');
+        $obj->setOrderBy('goods_id desc');
         $obj->setPageNum($form->pageNum);
         return $obj->get_list();
     }

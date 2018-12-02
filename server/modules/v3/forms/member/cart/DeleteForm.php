@@ -3,7 +3,7 @@
 namespace app\modules\v3\forms\member\cart;
 
 use app\componments\sql\SqlUpdate;
-use app\modules\v3\forms\CommonForm;
+use app\componments\common\CommonForm;
 
 class DeleteForm extends CommonForm
 {

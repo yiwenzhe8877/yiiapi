@@ -1,25 +1,27 @@
 <?php
 
-namespace app\modules\v2\forms\goods\category;
+namespace app\modules\v3\forms\goods\category;
 
 use app\componments\sql\SqlCreate;
 
-use app\modules\v2\forms\CommonForm;
+use app\componments\common\CommonForm;
 
 class AddForm extends CommonForm
 {
-    public $classname;
-    public $display;
-    public $sort;
-    public $level;
-    public $upid;
-    public $classtype;
+    public $store_id;
+	public $classname;
+	public $display;
+	public $sort;
+	public $level;
+	public $pid;
+	public $classtype;
+	public $remark;
+	
 
 
     public function addRule(){
         return [
-            [['classname'],'required','message'=>'{attribute}不能为空'],
-            ['classname', 'unique', 'targetClass' => 'app\models\goods\category', 'message' => '{attribute}已经存在'],
+            [["store_id","classname","display","sort","level","pid","classtype","remark"],'required','message'=>'{attribute}不能为空'],
         ];
     }
 
@@ -28,7 +30,7 @@ class AddForm extends CommonForm
         $obj=new SqlCreate();
         $obj->setTableName('goods_category');
         $obj->setData($form);
-        $obj->run();
+        return $obj->run();
 
     }
 }

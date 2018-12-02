@@ -3,7 +3,7 @@
 namespace app\modules\v3\controllers;
 
 use app\componments\utils\ApiException;
-use app\models\api\sms\SendSmsCodeApi;
+use app\componments\utils\Service;
 use app\modules\v3\common\BaseController;
 use app\modules\v3\factory\Factory;
 
@@ -15,31 +15,18 @@ class IndexController  extends BaseController
     {
 
 
-        $post=\Yii::$app->getRequest()->post();
-        if(empty($post['service']) || !isset($post['service']))
-            ApiException::run("service参数缺失",'900001',__CLASS__,__METHOD__,__LINE__);
+
+        $service=Service::getServiceName();
 
 
-        $service=$post['service'];
-
-        $factory = Factory::createInstance($service);
-
+        $form = Factory::createInstance($service);
+        $formName = Factory::getFormName($service);
 
 
-        define('FORM_CLASS',$factory->form_map[$service]);
-
-        $form=$factory->getForm($service);
-
-
-
+        define('FORM_CLASS',$formName);
 
         if($form->load(\Yii::$app->getRequest()->post(),'') && !$form->validate())
             ApiException::run($form->getError(),'900000',__CLASS__,__METHOD__,__LINE__);
-
-
-
-
-        $service=$factory->getRun($service);
 
         $data=\Yii::$app->getRequest()->post();
 
@@ -50,8 +37,7 @@ class IndexController  extends BaseController
         }
         $objdata=(object)$data;
 
-
-        return $service->run($objdata);
+        return $form->run($objdata);
 
     }
 

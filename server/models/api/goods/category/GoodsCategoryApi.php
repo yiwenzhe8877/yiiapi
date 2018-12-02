@@ -42,11 +42,11 @@ class GoodsCategoryApi
 
         //先把list3套到list2,再把list2套进list1
         for ($i=0;$i<count($list2);$i++){
-                for ($m=0;$m<count($list3);$m++){
-                    if($list3[$m]['pid']==$list2[$i]['classid'] && !in_array($list3[$m],$list2[$i]['two'])){
-                        array_push($list2[$i]['two'],$list3[$m]);
-                    }
+            for ($m=0;$m<count($list3);$m++){
+                if($list3[$m]['pid']==$list2[$i]['classid'] && !in_array($list3[$m],$list2[$i]['two'])){
+                    array_push($list2[$i]['two'],$list3[$m]);
                 }
+            }
         }
         for ($i=0;$i<count($list1);$i++){
             for ($m=0;$m<count($list2);$m++){

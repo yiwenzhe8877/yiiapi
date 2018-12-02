@@ -1,25 +1,34 @@
 <?php
 
-namespace app\modules\v2\forms\goods\models;
+namespace app\modules\v3\forms\goods\models;
 
 
 
 use app\componments\sql\SqlUpdate;
-use app\modules\v2\forms\CommonForm;
+use app\componments\common\CommonForm;
 
 
 class UpdateForm extends CommonForm
 {
 
 
-    public $group_id;
+   public $id;
+	public $store_id;
+	public $classid;
+	public $name;
+	public $choices;
+	public $is_enable;
+	public $sort;
+	public $del;
+	
 
 
     public function addRule(){
-        return [
-            [['group_id'],'required','message'=>'{attribute}不能为空'],
-            [['group_id'], 'exist','targetClass' => 'app\models\member\group', 'message' => '用户组不存在'],
-        ];
+       return [
+           [["id","store_id","classid","name","choices","is_enable","sort","del"],'required','message'=>'{attribute}不能为空'],
+           [['id'], 'exist','targetClass' => 'app\models\goods\models', 'message' => '{attribute}不存在'],
+
+       ];
     }
 
     public function run($form){
@@ -27,7 +36,7 @@ class UpdateForm extends CommonForm
         $obj=new SqlUpdate();
         $obj->setTableName('goods_models');
         $obj->setData($form);
-        $obj->setWhere(['group_id='=>$form->group_id]);
+        $obj->setWhere(['id='=>$form->id]);
         return $obj->run();
 
     }

@@ -24,7 +24,17 @@ class Factory
             ApiException::run("该服务不存在",'100010');
         }
 
-        $clazz = self::$SERVICE_MAP[$service];
+        $clazz =array_merge(self::$SERVICE_MAP,FactoryAdd::getAdd())[$service];
         return new $clazz();
     }
+     public static function getFormName($service)
+     {
+            //判断是否存在这个服务
+            if(!array_key_exists($service,array_merge(self::$SERVICE_MAP,FactoryAdd::getAdd())))
+            {
+                ApiException::run("该服务不存在",'100010');
+            }
+
+            return array_merge(self::$SERVICE_MAP,FactoryAdd::getAdd())[$service];
+     }
 }
